@@ -1,0 +1,90 @@
+<apex:component >
+	<apex:attribute name="Control" description="control del Objeto" type="EPPublicRatesPortalLogin" required="true"/>
+	<apex:attribute name="MuestraInicioSes" description="mostrar Inicio de sesion" type="boolean" required="false" default="true"/>
+	    <nav class="navbar navbar-inverse navbar-fixed-top" style="background: #0c528a;font-size: 90%;">
+      <div class="container">
+        <div class="navbar-header" style="text-align: center;">
+        	<apex:outputLink value="{!$Page.EpRatesHome}">
+          <img style="margin: 10px 0px;" height="40px" src="{!URLFOR($Resource.serviceCot,'image/EP_groupBCO.png')}" class="logo-navbar" /></apex:outputLink>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="background: #0c528a;margin-top: 11px;">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="http://www.europartners.com.mx/carga-critica-lp/">
+					<img src="{!URLFOR($Resource.serviceCot,'image/cargo.png')}" />
+				</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="tel:018008883876">
+					<span class="topicon ionicons ion-ios-telephone"></span>
+					01 800 888 EURO
+				</a></li>
+				<li><a href="mailto:info.mexico@europartners.com.mx" target="_blank">
+					<span class="topicon ionicons ion-android-mail"></span>
+					info.mexico@europartners.com.mx
+				</a></li>
+				<li class="noImportant">
+					<p>
+					<a target="_blank" href="https://www.facebook.com/EuropartnersLogistics/">
+						<span class="ionicons ion-social-facebook"></span>
+					</a>
+					<a target="_blank" href="https://twitter.com/logisticsep?lang=es">
+						<span class="ionicons ion-social-twitter"></span>
+					</a>
+					<a target="_blank" href="https://www.linkedin.com/company/europartners">
+						<span class="ionicons ion-social-linkedin"></span>
+					</a>
+					<a target="_blank" href="https://www.youtube.com/user/Europartnersofficial">
+						<span class="ionicons ion-social-youtube"></span>
+					</a>
+					</p>
+				</li>
+				<li class="dropdown" style="display: {!if(control.NameLogged != null,'','none')};">
+					<p class="navbar-text" style="margin: 0px;">{!$Label.EPC_Signedas}:&nbsp;<apex:outputLink value="{!$Page.EPRegisterUser}" styleclass="navbar-link">{!control.NameLogged}</apex:outputLink></p>
+				</li>
+				<li class="dropdown" style="display: {!if(control.NameLogged != null,'none','')};">
+					<apex:outputLink value="#" styleClass="dropdown-toggle" html-data-toggle="dropdown" rendered="{!MuestraInicioSes}">
+          				<b>{!$label.EPC_Login}</b><span class="caret"></span>
+          			</apex:outputLink>
+					<ul id="login-dp" class="dropdown-menu" style="background-color: #FFF;">
+						<li>
+					 		<apex:outputPanel layout="block" styleClass="row" rendered="{!MuestraInicioSes}">
+								<div class="col-md-12">
+								 	<apex:form >
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputEmail2">{!$Label.EPC_Email}</label>
+											 <apex:inputText value="{!control.PublicUser.CorreoElect}" styleClass="form-control" html-placeholder="{!$Label.EPC_Email}" />
+										</div>
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputPassword2">{!$Label.EPC_Password}</label>
+											 <apex:inputSecret value="{!control.PublicUser.PasswordNew}" styleClass="form-control" html-placeholder="{!$Label.EPC_Password}" />
+                                             <div class="help-block text-right"><a href="">{!$Label.EPC_ForgetPassword}</a></div>
+										</div>
+										<div class="form-group">
+											 <apex:commandButton value="{!$Label.EPC_SignIn}" styleClass="btn btn-primary btn-block" action="{!control.loegarse}"/>
+										</div>
+										<div class="checkbox">
+											 <label style="color: #000;">
+											 <apex:inputCheckbox value="{!control.PublicUser.Remember}" />{!$Label.EPC_KeepMeLogged}
+											 </label>
+										</div>
+								 	</apex:form>
+								</div>
+								<div class="bottom text-center" style="color: #000;">
+									{!$LABEL.EPC_Newhere}&nbsp;
+									<apex:outputLink value="{!$Page.EPRegisterUser}"><b>{!$Label.EPC_JoinUs}</b></apex:outputLink>
+								</div>
+					 		</apex:outputPanel>
+						</li>
+					</ul>
+        		</li>
+			</ul>
+        </div>
+      </div>
+    </nav>
+</apex:component>

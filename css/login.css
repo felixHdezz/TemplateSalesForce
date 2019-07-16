@@ -1,0 +1,222 @@
+.position-relative, .pos-rel {
+    position: relative;
+}
+
+.widget-box {
+    background-color: #fff;
+}
+
+.login-container .widget-box.visible {
+    visibility: visible;
+    position: relative;
+    z-index: auto;
+}
+
+.login-container .widget-box {
+    /*padding: 15px 24px 10px!important;*/
+}
+
+.login-container .widget-box {
+    visibility: hidden;
+    position: fixed;
+    z-index: -5;
+    border: 1px solid rgba(58, 88, 112, 0.12);
+    background-clip: padding-box;
+    border-radius: 10px;
+    /*padding: 15px;*/
+}
+
+.widget-box.no-border {
+    border-width: 0;
+}
+
+.widget-box {
+    padding: 0;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #E6E8EB;
+}
+
+.login-container .widget-box .widget-main {
+    padding: 0;
+}
+
+.login-container .login-box .widget-main {
+    padding-bottom: 16px;
+}
+
+.login-container .widget-box .widget-main {
+    padding: 16px 36px 15px;
+}
+
+.widget-main {
+    padding: 12px;
+}
+
+.login-container .widget-box .widget-main form {
+    margin: 0;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.login-container label {
+    margin-bottom: 10px;
+}
+
+.block {
+    display: block !important;
+}
+
+label {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-container .input-group {
+    width: 100%;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.login-container .input-group .input-group-addon {
+    display: none;
+}
+
+.input-group .input-group-addon {
+    border-radius: 0 !important;
+}
+
+.input-group-addon:first-child {
+    border-right: 0;
+}
+
+.login-container .block input, .login-container .input-group input, .login-container .input-group select {
+    padding-left: 12px;
+    border: none;
+    border-radius: 6px;
+    height: 38px;
+    font-size: 110%;
+    font-weight: 300;
+    color: #000000 !important;
+    background-color: #f3f4f5;
+}
+
+.login-container label {
+    margin-bottom: 10px;
+}
+
+label.inline {
+    margin-bottom: 3px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+label {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.login-container .social-login .btn-primary, .login-container .widget-main .btn-primary, .login-container #forgot-box .btn-danger, .login-container #signup-box .btn-danger, .login-container #forgot-box .btn-success, .login-container #signup-box .btn-success {
+    height: 38px;
+    font-size: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.login-container .widget-main .btn-primary, .login-container .widget-main .btn-success {
+    width: 100% !important;
+    background-color: #009de8 !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64dbff', endColorstr='#1c8ae2', GradientType=1 );
+    border: none !important;
+    border-radius: 4px;
+}
+
+.login-container .toolbar {
+    padding-top: 14px;
+}
+
+.login-box .toolbar > div:first-child {
+    float: left;
+    text-align: left;
+}
+
+.login-container .toolbar .btn {
+    color: #000;
+    font-weight: 600;
+    font-size: 110% !important;
+}
+
+.login-box .toolbar > div:first-child > a {
+    margin-left: 11px;
+}
+
+.no-shadow {
+    box-shadow: none;
+}
+
+.btn {
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.2px;
+    opacity: 0.93;
+}
+
+.login-box .toolbar > div:first-child + div {
+    float: right;
+    text-align: right;
+}
+
+.modal-new.login-layout .toolbar .btn {
+    color: #000;
+    font-weight: 600;
+    font-size: 110% !important;
+}
+
+.login-box .toolbar > div:first-child + div > a {
+    margin-right: 11px;
+}
+
+.blue {
+    color: #009de7 !important;
+}
+
+a [class^="icon-"], a [class*=" icon-"] {
+    display: inline;
+}
+
+.ml10 {
+    margin-left: 10px !important;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    margin-top: 0;
+}

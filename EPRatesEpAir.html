@@ -1,0 +1,462 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="referrer" content="always">
+    <meta charset="utf-8">
+    <meta name="Author" content="SeaRates LTD">
+    <meta property="og:site_name" content="SeaRates">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <link rel="apple-touch-icon" href="https://www.searates.com/design/images/apple-touch-icon-iphone-60x60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://www.searates.com/design/images/apple-touch-icon-ipad-76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://www.searates.com/design/images/apple-touch-icon-iphone-retina-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.searates.com/design/images/apple-touch-icon-ipad-retina-152x152.png">
+
+    <link rel="icon" type="image/png" href="https://www.searates.com/design/images/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="https://www.searates.com/design/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="https://www.searates.com/design/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://www.searates.com/design/images/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="https://www.searates.com/design/images/favicon-128.png" sizes="128x128" />
+
+    <meta name="application-name" content="SeaRates.com" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="https://www.searates.com/design/images/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="https://www.searates.com/design/images/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="https://www.searates.com/design/images/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="https://www.searates.com/design/images/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="https://www.searates.com/design/images/mstile-310x310.png" />
+
+    <title>Envío internacional de contenedores | Agente de carga y transitario</title>
+
+
+    <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://europartners.secure.force.com/rates/resource/1540508436000/serviceCot/js/jquery-ui.js"></script>
+    <link href="css/index-home-searates.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/select2.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/fonts.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/jquery-ui-1.10.3.full.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/ui.jqgrid.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/buttons.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/ace.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/themify-icons.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/common.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/flag-icon.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-slider.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/bulk-ico.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome/font-awesome-4.7.0/css/font-awesome.css" media="screen" rel="stylesheet" type="text/css">
+
+    <meta property="og:image" content="https://www.searates.com/design/images/apple-touch-icon-ipad-retina-152x152.png">
+
+    <script type="text/javascript">
+        var ContainerValues = [];
+        var banNotReset = false;
+        var inputPickId;
+        $(document).ready(function () {
+            initJs();
+        });
+
+        function initJs() {
+            cargaAutoComplete($('.ESTOYCtrl'), $("[id$='ESTOYLocation']"));
+            cargaAutoComplete($('.VOYCtrl'), $("[id$='VOYLocation']"));
+        }
+
+        function cargaAutoComplete(inpt, IDinpt) {
+            $(inpt).autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: "https://europartners.secure.force.com/rates/services/apexrest/airlocationsearch",
+                        dataType: "json",
+                        type: 'GET',
+                        data: { term: request.term },
+                        success: function (data) { response(data); },
+                        error: function (exception, status, et) { console.log(exception); }
+                    });
+                },
+                minLength: 2,
+                select: function (event, ui) {
+                    $(IDinpt).val(ui.item.id);
+                    /*$(inptPICK).val('');
+                        calculaLocations();
+                        calculaArrastres(ui.item.id);
+                        inputPickId = inptPICK;*/
+                }
+            });
+        }
+
+        function showLoading(valorT) {
+            $('.loadingBlock').css('display', ((valorT) ? 'block' : 'none'));
+        }
+
+        /* function doChange(selectedOption)
+        {
+            document.getElementById("sip2").style.display="none";
+            document.getElementById("sip1").style.display="none";
+            $("[id$='zip1']").val('');
+            $("[id$='zip2']").val('');
+
+            if(selectedOption.value == 'DAP'){
+                //document.getElementById("sip1").style.visibility="visible";
+                document.getElementById("sip1").style.display="block";
+
+                document.getElementById("sip2").style.display="block";
+            }
+            else if(selectedOption.value == 'EXW'){
+
+                var origenValue = $('[id$=origenID]').val();
+                var destinoValue =$('[id$=destinoID]').val();
+
+                if(origenValue.includes("[MEX]"))
+                {
+                    document.getElementById("sip1").style.display="block";
+                }
+                else if(destinoValue.includes("[MEX]"))
+                {
+                    document.getElementById("sip2").style.display="block";
+                }
+                    else  if(origenValue.includes("[MEX]") && destinoValue.includes("[MEX]"))
+                    {
+                        document.getElementById("sip1").style.display="block";
+                        document.getElementById("sip2").style.display="block";
+                    }
+            }
+
+        }*/
+    </script>
+</head>
+<body>
+    <span id="j_id0:esperaBLK.start" style="display: none"></span>
+    <script type="text/javascript">
+        window.document.getElementById('j_id0:esperaBLK.start').onstart = function () { showLoading(true);; };
+    </script><span id="j_id0:esperaBLK.stop"></span>
+    <script type="text/javascript">
+        window.document.getElementById('j_id0:esperaBLK.stop').onstop = function () { showLoading(false);; };
+
+        /**/</script>
+
+    <header>
+        <div id="message_conteiner" style="position:absolute"></div>
+        <nav class="navbar home-page">
+            <div class="container navbar-container ">
+                <button style="display: none !important;" type="button" class="navbar-toggle navbar-toggler-right" data-toggle="collapse" aria-expanded="false" data-target="#cbp-hrmenu">
+                    <span class="sr-only">Cambiar modo de Navegación</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="/es/" class="navbar-brand"></a>
+                <div id="main-menu">
+                    <p class="close-menu">
+                        <i class="icon icon-times" aria-hidden="true"></i>
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="tel:018008883876">
+                                <span class="fa fa-phone"></span>
+                                01 800 888 EURO
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info.mexico@europartners.com.mx" target="_blank">
+                                <span class="fa fa-envelope-open"></span>
+                                info.mexico@europartners.com.mx
+                            </a>
+                        </li>
+                        <li class="noImportant">
+                            <p>
+                                <a href="https://www.facebook.com/EuropartnersLogistics/" target="_blank">
+                                    <span class="fa fa-facebook-official"></span>
+                                </a>
+                                <a href="https://twitter.com/logisticsep?lang=es" target="_blank">
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+                                <a href="https://www.linkedin.com/company/europartners" target="_blank">
+                                    <span class="fa fa-linkedin-square"></span>
+                                </a>
+                                <a href="https://www.youtube.com/user/Europartnersofficial" target="_blank">
+                                    <span class="fa fa-youtube-play"></span>
+                                </a>
+                            </p>
+                        </li>
+                        <li class="log-prov-li">
+                            <a href="http://www.europartners.com.mx/carga-critica-lp/">
+                                <img src="https://europartners.secure.force.com/rates/resource/1540508436000/serviceCot/image/cargo.png" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar-buttons pull-right">
+                    <ul class="nav ace-nav">
+                        <li>
+                            <a class="log_link" href="#" data-toggle="modal" data-target="#loginModal" data-box="login-box">Login</a>
+                        </li>
+                    </ul>
+                </div>
+                <div href="" id="hmbrg">☰</div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content home-page">
+        <div class="content-wrapper">
+            <div class="container">
+                <div class="latest-requests-new" id="latest-request-block">
+                    <div class="sr-requests">
+                        <h2>Find the best charge quote</h2>
+                        <b>Shipping to and from anywhere</b>
+                        <div class="filter_controls">
+                            <div class="row shipping-box">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body text-center">
+                                            <div class="modal-new">
+                                                <div class="modal-container1">
+                                                    <div id="login-box" class="login-box visible widget-box no-border">
+                                                        <div class="widget-main">
+                                                            <div id="filter-index-page" class="container">
+                                                                <form class="filter-shipping" method="get" action="/es/freight" autocomplete="off">
+                                                                    <div class="col-md-12 col-sm-12 no-padding">
+                                                                        <div class="clearfix">
+                                                                            <div class="col-md-6 padding-sp dir-field-lg">
+                                                                                <div class="input-icon">
+                                                                                    <span>ORIGIN OF SHIPMENT</span>
+                                                                                    <input type="text" placeholder="Country,City,Port" value="" class="form-control input-lg ui-autocomplete-input" id="place_a" autocomplete="off">
+                                                                                    <input type="hidden" name="from" value="" id="pol-input">
+                                                                                    <i class="icon-map-a point"></i>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-md-6 padding-sp dir-field-lg">
+                                                                                <div class="input-icon">
+                                                                                    <span>DESTINATION OF SHIPMENT</span>
+                                                                                    <input type="text" placeholder="Country,City,Port" value="" class="form-control input-lg ui-autocomplete-input" id="place_k" autocomplete="off">
+                                                                                    <input type="hidden" name="to" value="" id="pod-input">
+                                                                                    <i class="icon-map-b point"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="clearfix">
+                                                                            <div class="col-md-4 col-sm-12 col-xs-12 padding-sp dir-field-lg">
+                                                                                <div class="input-icon">
+                                                                                    <span>Origin ZIP Code (for Drayage)</span>
+                                                                                    <input type="text" placeholder="Country,City,Port" value="" class="form-control input-lg ui-autocomplete-input" id="place_k" autocomplete="off">
+                                                                                    <input type="hidden" name="to" value="" id="pod-input">
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                            <div class="col-md-4 col-sm-12 col-xs-12 padding-sp dir-field-lg">
+                                                                                <div class="input-icon">
+                                                                                    <span>Delivery ZIP Code (for Drayage)</span>
+                                                                                    <input type="text" placeholder="Country,City,Port" value="" class="form-control input-lg ui-autocomplete-input" id="place_k" autocomplete="off">
+                                                                                    <input type="hidden" name="to" value="" id="pod-input">
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                            <div class="col-md-4 col-sm-12 col-xs-12 padding-sp dir-field">
+                                                                                <div class="input-icon">
+                                                                                    <span>How much does the load weigh?</span>
+                                                                                </div>
+                                                                                <button class="btn btn-warning btn-lg" data-target="#modalBoxes" data-toggle="modal" style="width: 100%; margin-top:9%;" type="button">Add boxes</button>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+
+                                                                        <div class="clearfix">
+                                                                            <div class="col-md-4 col-sm-12 col-xs-12 padding-sp dir-field-lg">
+                                                                                <div class="input-icon">
+                                                                                    <span>Chargeable weight</span>
+                                                                                    <input type="text" placeholder="Country,City,Port" value="" class="form-control input-lg ui-autocomplete-input" id="place_k" autocomplete="off">
+                                                                                    <input type="hidden" name="to" value="" id="pod-input">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                        <div class="clearfix">
+                                                                            <div class="clearfix help-block text-center">
+                                                                                <input class="btn input-lg btn-search-shipping" id="j_id0:j_id46:j_id117" name="j_id0:j_id46:j_id117" onclick="return A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id117','html5Validate':true,'oncomplete':function(request,event,data){$('#modalBoxes').modal('hide');},'parameters':{'j_id0:j_id46:j_id117':'j_id0:j_id46:j_id117'} ,'status':'j_id0:esperaBLK'} );" value="Show me" type="submit" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBoxes" role="dialog" tabindex="-1" aria-hidden="false" data-reload="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-body">
+                <div class="login-layout  modal-new">
+                    <div class="login-container">
+                        <div class="modal-content">
+                            <div class="position-relative">
+                                <div id="login-box" class="login-box visible widget-box no-border">
+                                    <button type="button" class="close close col-xs-1" data-dismiss="modal">&times;</button>
+
+                                    <div class="widget-main">
+                                        <h4 class="blue">
+                                            Login in your account
+                                        </h4>
+                                        <div class="space-6"></div>
+                                        <div class="row">
+                                            <div id="dropdown-shipment" class="col-md-6 col-sm-12 col-ms-12 no-padding">
+                                                <div class="dropdown-shipment">
+                                                    <span class="top-title">Calculate weight in</span>
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="ns-icon-fcl-light"></i><span>FCL</span><i class="icon-angle-down"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li style="display: list-item;">
+                                                            <a data-mode="sea" data-type="KGS" href="javascript:;"><i class="ns-icon-fcl-light"></i><span>KGS</span></a>
+                                                        </li>
+                                                        <li style="display: list-item;">
+                                                            <a data-mode="sea" data-type="LBS" href="javascript:;"><i class="ns-icon-lcl-light"></i><span>LBS</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div id="dropdown-shipment" class="col-md-6 col-sm-12 col-ms-12 no-padding">
+                                                <div class="dropdown-shipment">
+                                                    <span class="top-title">Calculate dimensions in</span>
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="ns-icon-fcl-light"></i><span>FCL</span><i class="icon-angle-down"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li style="display: list-item;">
+                                                            <a data-mode="sea" data-type="CM" href="javascript:;"><i class="ns-icon-fcl-light"></i><span>Centimeters</span></a>
+                                                        </li>
+                                                        <li style="display: list-item;">
+                                                            <a data-mode="sea" data-type="IN" href="javascript:;"><i class="ns-icon-lcl-light"></i><span>Inches</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div id="j_id0:j_id46:listaCajas" class="table-responsive col-md-12">
+                                                <br /><br />
+                                                <table class="table">
+                                                    <tr>
+                                                        <th></th>
+                                                        <th>Packaging Units</th>
+                                                        <th>Length</th>
+                                                        <th>Width</th>
+                                                        <th>Height</th>
+                                                        <th>Packaging Unit Weight</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <a class="btn btn-success btn-sm" href="#" id="j_id0:j_id46:j_id98:0:j_id100" name="j_id0:j_id46:j_id98:0:j_id100" onclick="A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id98:0:j_id100','parameters':{'j_id0:j_id46:j_id98:0:j_id100':'j_id0:j_id46:j_id98:0:j_id100'} ,'status':'j_id0:esperaBLK'} );return false;">+</a>
+                                                        </th>
+                                                        <th>
+                                                            <input type="number" name="j_id0:j_id46:j_id98:0:j_id104" class="form-control" placeholder="Quantity" />
+                                                        </th>
+                                                        <th>
+                                                            <input type="number" name="j_id0:j_id46:j_id98:0:j_id106" class="form-control" placeholder="In Centimeters" />
+                                                        </th>
+                                                        <th>
+                                                            <input type="number" name="j_id0:j_id46:j_id98:0:j_id108" class="form-control" placeholder="In Centimeters" />
+                                                        </th>
+                                                        <th>
+                                                            <input type="number" name="j_id0:j_id46:j_id98:0:j_id110" class="form-control" placeholder="In Centimeters" />
+                                                        </th>
+                                                        <th>
+                                                            <input type="number" name="j_id0:j_id46:j_id98:0:j_id112" class="form-control" placeholder="Weight in Kgs" />
+                                                        </th>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div class="clearfix help-block text-right">
+                                            <input class="btn input-lg btn-search-shipping-small" id="j_id0:j_id46:j_id117" name="j_id0:j_id46:j_id117" onclick="return A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id117','html5Validate':true,'oncomplete':function(request,event,data){$('#modalBoxes').modal('hide');},'parameters':{'j_id0:j_id46:j_id117':'j_id0:j_id46:j_id117'} ,'status':'j_id0:esperaBLK'} );" value="Apply" type="submit" />
+                                            <button class="btn btn-lg btn-control-default-close" data-dismiss="modal" type="button">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="sea-footer-top-wrapper">
+            <div class="sea-footer-top"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img height="30" src="./img/EP_groupBCO.png" />
+                    &nbsp;Av. Revoluci&oacute;n #649-3 Col. Jard&iacute;n Espa&ntilde;ol, Monterrey, N.L.
+                    M&eacute;xico.&nbsp;|&nbsp;
+                    <a href="#" onclick="$('#ModalTerminos').modal('show');return false">
+                        Terms
+                        and Conditions
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container breadcrumbs-box">
+            <div class="row">
+                <div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+            $(document).ready(function () {
+
+                // ROUTE CLICK
+
+                $('.btn-nav').on('click', function () {
+                    $('.btn-type-active').removeClass('btn-type-active');
+                    $(this).addClass('btn-type-active');
+
+                    var type = $(this).data('type');
+                    $('.type-delivery-active').removeClass('type-delivery-active');
+                    $('.type-' + type + '-item').addClass('type-delivery-active');
+                });
+
+                // FILTER
+
+                $('.dropdown-shipment li > a').on('click', function () {
+                    // CURRENT_MODE = $(this).data('mode');
+                    var type = $(this).data('type');
+                    $('.filter-shipping [name="type"]').val(type);
+                    $('.dropdown-shipment > a').html($(this).html() + '<i class="icon-angle-down"></i>');
+                });
+
+                $('.route-mode a').click(function () {
+                    var mode = $(this).data('mode');
+                    $('.dropdown-shipment li').hide();
+                    $('.dropdown-shipment li:has([data-mode="' + mode + '"])').show().find('a').first().click();
+                });
+
+                $('.route-mode [data-mode="sea"]').click();
+            });
+
+
+        </script>
+    <script type="text/javascript">
+        Sfdc.onReady(function () {
+            SfdcApp && SfdcApp.Visualforce && SfdcApp.Visualforce.VSManager && SfdcApp.Visualforce.VSManager.vfPrepareForms(["j_id0:j_id16:j_id17:j_id30", "j_id0:j_id46"]);
+
+        });
+    </script>
+</body>
+</html>

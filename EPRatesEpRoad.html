@@ -1,0 +1,322 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+<script src="/rates/static/111213/js/perf/stub.js" type="text/javascript"></script>
+<script src="/rates/faces/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.AjaxScript?rel=1562614401000" type="text/javascript"></script><script src="/rates/jslibrary/1548902828220/ui-sfdc-javascript-impl/SfdcCore.js" type="text/javascript"></script>
+<script src="/rates/resource/1540508435000/bootstrap337/js/jquery.min.js" type="text/javascript"></script>
+<script src="/rates/resource/1540508436000/serviceCot/js/jquery-ui.js" type="text/javascript"></script>
+<script src="/rates/resource/1540508435000/bootstrap337/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/rates/static/111213/js/picklist4.js" type="text/javascript"></script>
+<script src="/rates/jslibrary/1553583056220/sfdc/VFState.js" type="text/javascript"></script>
+<link class="user" href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link class="user" href="./css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+<link class="user" href="./css/ionicons.css" rel="stylesheet" type="text/css" />
+<link class="user" href="./css/loading.css" rel="stylesheet" type="text/css" />
+<link class="user" href="./css/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link class="user" href="./css/EPServiceStyle.css" rel="stylesheet" type="text/css" />
+<link href="./css/main.css" rel="stylesheet">
+<link href="./css/cards.css" rel="stylesheet">
+<script>(function(UITheme) {
+    UITheme.getUITheme = function() { 
+        return UserContext.uiTheme;
+    };
+}(window.UITheme = window.UITheme || {}));</script><meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+<meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link href="//fonts.googleapis.com/css?family=PT+Sans%3A200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRaleway%3A200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7C&amp;#038;subset=latin%2Cgreek-ext%2Ccyrillic%2Clatin-ext%2Cgreek%2Ccyrillic-ext%2Cvietnamese&amp;#038;ver=4.7.3" id="autolog-google-fonts-css" media="all" rel="stylesheet" type="text/css" />
+        <style type="text/css">
+            body{background-color: #FFF;}
+            .fondoInferior{
+            text-align: center;
+            background: #182e3c url("./img/slider-carga-aerea.jpg") no-repeat fixed;
+            width: 100%;
+            opacity: 0.8;
+            overflow: hidden;
+            background-position: center center;
+            background-size: cover;
+            height: 570px;
+            }
+            .baseFondo{
+            position: absolute;
+            margin-top: 40px;
+            background: #182e3c;
+            height: 570px;
+            width: 100%;
+            }
+            .ui-autocomplete-loading{
+            background: white url("/rates/resource/1540508436000/serviceCot/image/seat_spinner.gif") right 10px center no-repeat;
+            background-size: 24px;
+            }
+            .panel-body div{
+            padding-bottom: 8px;
+            }
+            .form-signin .mb-4{display: none;}
+            @media screen and (min-width: 768px) {
+            .logo-header,.contPrincpal .row{width: 690px;display: block;}
+            .form-signin .mb-4{display: block;}
+            .noImportant{display: none !important;}
+            .logo-navbar{display: none;}
+            .page-title-header h1 {font-size: 56px;}
+            h6.section-sub-title{font-size: 15px;}
+            h4.section-sub-title{font-size: 24px;}
+            }
+            @media screen and (min-width: 992px) {
+            .logo-header,.contPrincpal .row{width: 912px;}
+            .noImportant{display: block !important;}
+            }
+            @media screen and (min-width: 1200px) {
+            .logo-header,.contPrincpal .row{width: 1112px;}
+            }
+            .form-signin {
+            width: 100%;
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+            color: #FFF;
+            }
+            .form-signin a:hover{
+            color: #71D8EF;
+            }
+            .thumbnail {background: #DDD;}
+        </style>
+        <script type="text/javascript">
+        var ContainerValues = [];
+        var banNotReset = false;
+        $(document).ready(function() {
+            initJs();
+        });
+        
+        function initJs(){
+            cargaAutoComplete($('.ESTOYCtrl'),$("[id$='ESTOYLocation']"));
+            cargaAutoComplete($('.VOYCtrl'),$("[id$='VOYLocation']"));
+        }
+        
+        function cargaAutoComplete(inpt,IDinpt){
+            $(inpt).autocomplete({
+                source: function( request, response ) {
+                    $.ajax( {
+                        url: "https://europartners.secure.force.com/rates/services/apexrest/roadlocationsearch",
+                        dataType: "json",
+                        type: 'GET',
+                        data: {term: request.term},
+                        success: function( data ) {response( data );},
+                        error:function(exception,status,et){console.log(exception);}
+                    });
+                },
+                minLength: 2,
+                select: function( event, ui ) {
+                    $(IDinpt).val(ui.item.id);
+                }
+            });
+        }
+        
+        function showLoading(valorT){
+            $('.loadingBlock').css('display', ((valorT)?'block':'none'));
+        }
+        </script>
+    </head>
+    <body>
+        <span id="j_id0:esperaBLK">
+            <span id="j_id0:esperaBLK.start" style="display: none">
+            </span>
+            <script type="text/javascript">
+window.document.getElementById('j_id0:esperaBLK.start').onstart=function(){showLoading(true);;};
+</script><span id="j_id0:esperaBLK.stop"></span><script type="text/javascript">
+window.document.getElementById('j_id0:esperaBLK.stop').onstop=function(){showLoading(false);;};
+</script></span>
+        <div class="loadingBlock"><div class="spinner">
+            <div class="double-bounce1"></div><div class="double-bounce2"></div>
+        </div>
+    </div>
+    <span id="j_id0:j_id16">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header" style="text-align: center;"><a href="/rates/EpRatesHome">
+          <img class="logo-navbar" height="40px" src="/rates/resource/1540508436000/serviceCot/image/EP_groupBCO.png" style="margin: 10px 0px;" /></a>
+          <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" style="background: #0c528a;margin-top: 11px;" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+			<ul class="nav navbar-nav">
+				<li><a href="http://www.europartners.com.mx/carga-critica-lp/">
+					<img src="/rates/resource/1540508436000/serviceCot/image/cargo.png" />
+				</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="tel:018008883876">
+					<span class="topicon ionicons ion-ios-telephone"></span>
+					01 800 888 EURO
+				</a></li>
+				<li><a href="mailto:info.mexico@europartners.com.mx" target="_blank">
+					<span class="topicon ionicons ion-android-mail"></span>
+					info.mexico@europartners.com.mx
+				</a></li>
+				<li class="noImportant">
+					<p>
+					<a href="https://www.facebook.com/EuropartnersLogistics/" target="_blank">
+						<span class="ionicons ion-social-facebook"></span>
+					</a>
+					<a href="https://twitter.com/logisticsep?lang=es" target="_blank">
+						<span class="ionicons ion-social-twitter"></span>
+					</a>
+					<a href="https://www.linkedin.com/company/europartners" target="_blank">
+						<span class="ionicons ion-social-linkedin"></span>
+					</a>
+					<a href="https://www.youtube.com/user/Europartnersofficial" target="_blank">
+						<span class="ionicons ion-social-youtube"></span>
+					</a>
+					</p>
+				</li>
+				<li class="dropdown" style="display: ;">
+					<p class="navbar-text" style="margin: 0px;">Signed in as:&nbsp;<a href="/rates/EPRegisterUser" class="navbar-link">test1, Test1</a></p>
+				</li>
+				<li class="dropdown" style="display: none;"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          				<b>Login</b><span class="caret"></span></a>
+					<ul class="dropdown-menu" id="login-dp" style="background-color: #FFF;">
+						<li><div id="j_id0:j_id16:j_id17:j_id28" class="row">
+								<div class="col-md-12">
+<form id="j_id0:j_id16:j_id17:j_id30" name="j_id0:j_id16:j_id17:j_id30" method="post" action="/rates/EPRatesEpRoad" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id0:j_id16:j_id17:j_id30" value="j_id0:j_id16:j_id17:j_id30" />
+
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputEmail2">E-Mail</label><input type="text" name="j_id0:j_id16:j_id17:j_id30:j_id32" value="test1@hotmail.com" class="form-control" placeholder="E-Mail" />
+										</div>
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputPassword2">Password</label><input type="password" name="j_id0:j_id16:j_id17:j_id30:j_id34" value="" class="form-control" placeholder="Password" />
+                                             <div class="help-block text-right"><a>Forget the password?</a></div>
+										</div>
+										<div class="form-group"><input type="submit" name="j_id0:j_id16:j_id17:j_id30:j_id36" value="Sign in" class="btn btn-primary btn-block" />
+										</div>
+										<div class="checkbox">
+											 <label style="color: #000;"><input type="checkbox" name="j_id0:j_id16:j_id17:j_id30:j_id38" />keep me logged-in
+											 </label>
+										</div><div id="j_id0:j_id16:j_id17:j_id30:j_id147"></div>
+</form><span id="ajax-view-state-page-container" style="display: none"><span id="ajax-view-state" style="display: none"><input type="hidden"  id="com.salesforce.visualforce.ViewState" name="com.salesforce.visualforce.ViewState" value="i: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" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateVersion" name="com.salesforce.visualforce.ViewStateVersion" value="201907081933210485" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateMAC" name="com.salesforce.visualforce.ViewStateMAC" value="AGV5SnViMjVqWlNJNklrdHRSMlZLYjFkWVYyRmpNbWxzVEVZMmVGRnJPRU5yU2poNVdFWmtkVEpoZVRNM0xXNVRYMU5ST0d0Y2RUQXdNMlFpTENKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUlzSW10cFpDSTZJbnRjSW5SY0lqcGNJakF3UkRCWk1EQXdNREF3VEdaM1pGd2lMRndpZGx3aU9sd2lNREpITUZrd01EQXdNREJuY2poVlhDSXNYQ0poWENJNlhDSjJabk5wWjI1cGJtZHJaWGxjSWl4Y0luVmNJanBjSWpBd05URjJNREF3TURBMFpYSTFVbHdpZlNJc0ltTnlhWFFpT2xzaWFXRjBJbDBzSW1saGRDSTZNVFUyTWpjek1qRTFOamMzTVN3aVpYaHdJam93ZlE9PS4udzhRVEFzOTJlaVR4VXQ1V3ZpTmU2TE5XZllQUjRnSnp0M0FHXzZHeEZpMD0=" /></span></span>
+								</div>
+								<div class="bottom text-center" style="color: #000;">
+									New here?&nbsp;<a href="/rates/EPRegisterUser"><b>Join Us</b></a>
+								</div></div>
+						</li>
+					</ul>
+        		</li>
+			</ul>
+        </div>
+      </div>
+    </nav></span>
+        <div style="position: relative;">
+            <div class="baseFondo"><div class="fondoInferior"></div></div>
+        </div>
+<form id="j_id0:j_id46" name="j_id0:j_id46" method="post" action="/rates/EPRatesEpRoad" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id0:j_id46" value="j_id0:j_id46" />
+
+            <div class="container" style="text-align: center;padding-top: 40px;padding-bottom: 30px;">
+                <div style="position: relative;">
+                    <div class="logo-header"><a href="/rates/EpRatesHome">
+                            <img height="50px" src="/rates/resource/1540508436000/serviceCot/image/EP_groupBCO.png" /></a>
+                    </div>
+                    <div class="page-title-header text-center" style="padding-top: 10px;">
+                        <h1 class="entry-title">EP Road</h1>         
+                    </div>
+                    <div class="section-heading">
+                        <h6 class="section-sub-title">OUR CHALLENGE?</h6>
+                        <h4 class="section-sub-title">HELP YOU IN THE LOGISTIC SITUATION YOU FACE</h4>
+                    </div>
+                    <br />
+                    <div class="col-md-6 bloquePrimPreguntas"><span class="labelcampo">Where is the cargo?</span>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">
+                                <span aria-hidden="true" class="glyphicon glyphicon-globe"></span>
+                            </span><input type="text" name="j_id0:j_id46:j_id61" class="form-control ESTOYCtrl" placeholder="City or Country" /><input id="j_id0:j_id46:ESTOYLocation" type="hidden" name="j_id0:j_id46:ESTOYLocation" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 bloquePrimPreguntas"><span class="labelcampo">Where do you want to take it?</span>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">
+                                <span aria-hidden="true" class="glyphicon glyphicon-globe"></span>
+                            </span><input type="text" name="j_id0:j_id46:j_id65" class="form-control VOYCtrl" placeholder="City or Country" /><input id="j_id0:j_id46:VOYLocation" type="hidden" name="j_id0:j_id46:VOYLocation" />
+                        </div>
+                    </div>
+                    <div class="col-md-2 bloquePrimPreguntas"><span class="labelcampo">Package Type</span>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">
+                                <span aria-hidden="true" class="ionicons ion-cube"></span>
+                            </span><select name="j_id0:j_id46:j_id69" class="form-control" size="1" onchange="A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id73','parameters':{'firstParam':'ROAD','j_id0:j_id46:j_id73':'j_id0:j_id46:j_id73'} ,'status':'j_id0:esperaBLK'} )">	<option value=""></option>
+	<option value="FTB">FTB</option>
+	<option value="FTL">FTL</option>
+</select>
+                        </div>
+                    </div><div id="j_id0:j_id46:pesoCargDat" class="col-md-4 bloquePrimPreguntas"><span class="labelcampo">What size is it?</span>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">
+                                <span aria-hidden="true" class="ionicons ion-cube"></span>
+                            </span><span style="text-align: right;background-color: #CECECE;" class="form-control">0 Containers</span>
+                            <span class="input-group-btn">
+                                <button class="btn btn-warning" data-target="#modalBoxes" data-toggle="modal" type="button">Edit</button>
+                            </span>
+                        </div></div>
+                    <div class="col-md-6 bloquePrimPreguntas"><span class="labelcampo">&#160;</span>
+                        <div class="input-group input-group-lg" style="width: 100%"><input type="submit" name="j_id0:j_id46:j_id85" value="Show me" style="width: 100%" class="btn btn-primary btn-lg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div aria-labelledby="myModalLabel" class="modal fade" id="modalBoxes" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-lg" role="document"><div id="j_id0:j_id46:tipocajas" class="modal-content">
+                        <div class="modal-header">
+                            <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Add boxes</h4>
+                        </div><div id="j_id0:j_id46:j_id125" class="modal-body">
+                            <div class="row">
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="thumbnail">
+                                            <div class="caption">
+                                                <h4></h4>
+                                                <p></p>
+                                                <div class="input-group input-group-lg"><input type="number" name="j_id0:j_id46:j_id127:0:j_id133" class="form-control" placeholder="Quantity" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div></div>
+                        <div class="modal-footer"><input class="btn btn-success" id="j_id0:j_id46:j_id137" name="j_id0:j_id46:j_id137" onclick="return A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id137','html5Validate':true,'oncomplete':function(request,event,data){$('#modalBoxes').modal('hide');},'parameters':{'j_id0:j_id46:j_id137':'j_id0:j_id46:j_id137'} ,'status':'j_id0:esperaBLK'} );" value="Apply" type="submit" />
+                            <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                        </div></div>
+                </div>
+            </div><div id="j_id0:j_id46:j_id148"></div>
+</form><span id="j_id0:j_id140">
+
+<div aria-labelledby="myModalLabel" class="modal fade" id="ModalTerminos" role="dialog" tabindex="-1">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Terms and Conditions</h4>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <img height="30px" src="/rates/resource/1540508436000/serviceCot/image/EP_groupBCO.png" />
+        &nbsp;Av. Revoluci&oacute;n #649-3 Col. Jard&iacute;n Espa&ntilde;ol, Monterrey, N.L. M&eacute;xico.&nbsp;|&nbsp;<a href="#" onclick="$('#ModalTerminos').modal('show');return false">Terms and Conditions</a>
+    </div>
+</footer></span>
+    </body><script type="text/javascript">Sfdc.onReady(function(){
+	SfdcApp && SfdcApp.Visualforce && SfdcApp.Visualforce.VSManager && SfdcApp.Visualforce.VSManager.vfPrepareForms(["j_id0:j_id16:j_id17:j_id30","j_id0:j_id46"]);
+
+});</script></html>

@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script src="https://europartners.secure.force.com/rates/static/111213/js/perf/stub.js" type="text/javascript"></script>
+    <script src="https://europartners.secure.force.com/rates/jslibrary/1548902828220/ui-sfdc-javascript-impl/SfdcCore.js" type="text/javascript"></script>
+    <script src="https://europartners.secure.force.com/rates/resource/1540508435000/bootstrap337/js/jquery.min.js" type="text/javascript"></script>
+    <script src="https://europartners.secure.force.com/rates/resource/1540508436000/serviceCot/js/jquery-ui.js" type="text/javascript"></script>
+    <script src="https://europartners.secure.force.com/rates/resource/1540508435000/bootstrap337/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://europartners.secure.force.com/rates/static/111213/js/picklist4.js" type="text/javascript"></script>
+    <script src="https://europartners.secure.force.com/rates/jslibrary/1553583056220/sfdc/VFState.js" type="text/javascript"></script>
+    <link class="user" href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link class="user" href="./css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link class="user" href="./css/ionicons.css" rel="stylesheet" type="text/css" />
+    <link class="user" href="./css/loading.css" rel="stylesheet" type="text/css" />
+    <link class="user" href="./css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link class="user" href="./css/EPServiceStyle.css" rel="stylesheet" type="text/css" />
+    <meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+    <meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="//fonts.googleapis.com/css?family=PT+Sans%3A200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRaleway%3A200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7C&amp;#038;subset=latin%2Cgreek-ext%2Ccyrillic%2Clatin-ext%2Cgreek%2Ccyrillic-ext%2Cvietnamese&amp;#038;ver=4.7.3" id="autolog-google-fonts-css" media="all" rel="stylesheet" type="text/css" />
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/cards.css" rel="stylesheet">
+
+    <link href="./css/login.css" rel="stylesheet">
+</head>
+
+<body>
+    <span id="j_id0:esperaBLK">
+        <span id="j_id0:esperaBLK.start" style="display: none">
+        </span>
+        <script type="text/javascript">
+            window.document.getElementById('j_id0:esperaBLK.start').onstart = function () { showLoading(true);; };
+        </script><span id="j_id0:esperaBLK.stop"></span>
+        <script type="text/javascript">
+            window.document.getElementById('j_id0:esperaBLK.stop').onstop = function () { showLoading(false);; };
+        </script>
+    </span>
+    <div class="loadingBlock">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <span id="j_id0:j_id16">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header" style="text-align: center;"><a href="/rates/EpRatesHome">
+                        <img class="logo-navbar" height="40px" src="./img/EP_groupBCO.png"
+                            style="margin: 10px 0px;" /></a>
+                    <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed"
+                        data-target="#navbar" data-toggle="collapse" style="background: #0c528a;margin-top: 11px;"
+                        type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="http://www.europartners.com.mx/carga-critica-lp/">
+                                <!--<img src="https://europartners.secure.force.com/rates/resource/1540508436000/serviceCot/image/cargo.png" />-->
+                                <img src="./img/EP_groupBCO.png" />
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="tel:018008883876">
+                                <span class="topicon ionicons ion-ios-telephone"></span>
+                                01 800 888 EURO
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info.mexico@europartners.com.mx" target="_blank">
+                                <span class="topicon ionicons ion-android-mail"></span>
+                                info.mexico@europartners.com.mx
+                            </a>
+                        </li>
+                        <li class="noImportant">
+                            <p>
+                                <a href="https://www.facebook.com/EuropartnersLogistics/" target="_blank">
+                                    <span class="ionicons ion-social-facebook"></span>
+                                </a>
+                                <a href="https://twitter.com/logisticsep?lang=es" target="_blank">
+                                    <span class="ionicons ion-social-twitter"></span>
+                                </a>
+                                <a href="https://www.linkedin.com/company/europartners" target="_blank">
+                                    <span class="ionicons ion-social-linkedin"></span>
+                                </a>
+                                <a href="https://www.youtube.com/user/Europartnersofficial" target="_blank">
+                                    <span class="ionicons ion-social-youtube"></span>
+                                </a>
+                            </p>
+                        </li>
+                        <li class="dropdown" style="display: none;">
+                            <p class="navbar-text" style="margin: 0px;">Signed in as:&nbsp;
+                                <a href="/rates/EPRegisterUser" class="navbar-link"></a>
+                            </p>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle"
+                                data-toggle="dropdown">
+                                <b>Login</b>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" id="login-dp" style="background-color: #FFF;">
+                                <li>                                    
+                                    <div class="login-container">
+                                        <div class="position-relative">
+                                            <div id="login-box" class="login-box widget-box no-border visible">
+                                                <button type="button" class="close close col-xs-1" data-dismiss="modal">×</button>
+                                                <div class="widget-main">
+                                                    <h4 class="blue">
+                                                        Login in your account        
+                                                    </h4>
+                                                    <div class="space-6"></div>
+                                                    <form action="/login/" method="post" novalidate="novalidate">
+                                                        <fieldset>
+                                                            <label class="block clearfix">
+                                                                <span class="input-group">
+                                                                    <span class="input-group-addon"><i class="icon-user w20 block"></i></span>
+                                                                    <input type="text" class="form-control" name="login" placeholder="E-Mail">
+                                                                </span>
+                                                            </label>
+                                                            <label class="block clearfix">
+                                                                <span class="input-group">
+                                                                    <span class="input-group-addon"><i class="icon-lock w20 block"></i></span>
+                                                                    <input type="password" class="form-control" name="password" placeholder="Password">
+                                                                </span>
+                                                            </label>
+                                                            <div class="clearfix help-block text-right">                                                                
+                                                                <a>Forget the password?</a>
+                                                            </div>
+                                                            <div class="clearfix">                                                                
+                                                                <button type="submit" class="width-35 pull-right btn btn-sm btn-primary" data-loading-text="Por favor espera...">
+                                                                    Sign in                    
+                                                                </button>
+                                                                <label class="inline">
+                                                                    <input type="checkbox" class="ace" name="rememberme" value="1" checked="checked">
+                                                                    <span class="lbl smaller-90"> keep me logged-in</span>
+                                                                </label>
+                                                            </div>
+                                                        </fieldset>
+                                                    </form>                                                    
+                                                </div>
+                                            
+                                                <div class="bottom text-center" style="color: #000;">
+                                                    New here?&nbsp;
+                                                    <a href="https://europartners.secure.force.com/rates/EPRegisterUser">
+                                                        <b>Join Us</b>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </span>
+    <div style="position: relative;">
+        <div class="baseFondo">
+            <div class="fondoInferior"></div>
+        </div>
+    </div>
+    <div class="container" style="padding-top: 40px;padding-bottom: 30px;">
+
+        <!--
+        <div class="row">
+            <div style="position: relative;">
+                <div class="logo-header"><a href="/rates/EpRatesHome">
+                        <img height="50px" src="./img/EP_groupBCO.png" /></a>
+                </div>
+                <br /><br />
+            </div>
+        </div>
+        -->
+
+        <div class="row container-title-home">
+            <h1>Find the best charge quote</h1>
+            <h3>Shipping to and from anywhere</h3>
+        </div>
+        
+        <!--<div class="wpb_column vc_main_column vc_column_container vc_col-sm-4 typo-default">
+            <div class="tpath-column-inner-wrapper vc_column-inner bg-style column-bg-default ">
+                <div class="wpb_wrapper">
+                    <div
+                        class="tpath-feature-box feature-box-style style-default-box  wpb_animate_when_almost_visible wpb_left-to-right wpb_start_animation">
+                        <div class="feature-box-item">
+                            <div class="feature-box-inner text-center box-dark_bg">
+                                <div class="feature-box-image">
+                                    <img class="attachment-autolog-feature-box" height="338"
+                                        src="https://europartners.secure.force.com/rates/resource/1540508436000/serviceCot/image/HOME_EP_AIR-500x338.jpg"
+                                        width="500" />
+                                </div>
+                                <div class="feature-content-wrapper">
+                                    <h4 class="feature-box-title">EP Air Freight</h4>
+                                    <div class="feature-box-desc">
+                                        <p>Safer and faster service of international logistics, designed for the
+                                            different needs of your cargo.</p>
+                                    </div>
+                                    <div class="feature-box-button text-center">
+                                    </div>
+                                    <div class="feature-box-button text-center"><a href="/rates/EPRegisterUser"
+                                            title="EP Air Freight"
+                                            class="btn btn-fbox btn-style-color btn-skin-theme">Quote now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wpb_column vc_main_column vc_column_container vc_col-sm-4 typo-default">
+            <div class="tpath-column-inner-wrapper vc_column-inner bg-style column-bg-default ">
+                <div class="wpb_wrapper">
+                    <div
+                        class="tpath-feature-box feature-box-style style-default-box  wpb_animate_when_almost_visible wpb_appear wpb_start_animation">
+                        <div class="feature-box-item">
+                            <div class="feature-box-inner text-center box-theme_bg">
+                                <div class="feature-box-image">
+                                    <img class="attachment-autolog-feature-box" height="1"
+                                        src="./img/HOME_EP_OCEAN.jpg"
+                                        width="1" />
+                                </div>
+                                <div class="feature-content-wrapper">
+                                    <h4 class="feature-box-title">EP Marine transport</h4>
+                                    <div class="feature-box-desc">
+                                        <p>Maritime service for LCL, FCL, refrigerated, in bulk, dangerous goods,
+                                            oversized.</p>
+                                    </div>
+                                    <div class="feature-box-button text-center">
+                                    </div>
+                                    <div class="feature-box-button text-center"><a href="/rates/EPRegisterUser"
+                                            title="EP Marine transport"
+                                            class="btn btn-fbox btn-style-color btn-skin-theme">Quote now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wpb_column vc_main_column vc_column_container vc_col-sm-4 typo-default">
+            <div class="tpath-column-inner-wrapper vc_column-inner bg-style column-bg-default ">
+                <div class="wpb_wrapper">
+                    <div
+                        class="tpath-feature-box feature-box-style style-default-box  wpb_animate_when_almost_visible wpb_right-to-left wpb_start_animation">
+                        <div class="feature-box-item">
+                            <div class="feature-box-inner text-center box-dark_bg">
+                                <div class="feature-box-image">
+                                    <img class="attachment-autolog-feature-box" height="338"
+                                        src="./img/OTR_recortada-500x338.jpg"
+                                        width="500" />
+                                </div>
+                                <div class="feature-content-wrapper">
+                                    <h4 class="feature-box-title">EP Road</h4>
+                                    <div class="feature-box-desc">
+                                        <p>Road transport between the main industrial zones, in consolidated,
+                                            complete, platforms and oversized loads.</p>
+                                    </div>
+                                    <div class="feature-box-button text-center">
+                                    </div>
+                                    <div class="feature-box-button text-center"><a href="/rates/EPRegisterUser"
+                                            title="EP Road"
+                                            class="btn btn-fbox btn-style-color btn-skin-theme">Quote now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+        
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body text-center">
+
+                    <div class="ico">
+                    </div>
+                    <h4 class="feature-box-title">EP Road</h4>
+                    <p style="height: 144px;">
+                            Safer and faster service of international logistics, designed for the
+                            different needs of your cargo.
+                    </p>
+
+                    <div class="pf-buttons">
+                        <a href="/es/shipping/request/" class="btn btn-sea btn-blue ">
+                            Quote now                                                
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body text-center">
+
+                    <div class="ico">
+                    </div>
+                    <h4 class="feature-box-title">EP Road</h4>
+                    <p style="height: 144px;">
+                            Maritime service for LCL, FCL, refrigerated, in bulk, dangerous goods,
+                            oversized.
+                    </p>
+
+                    <div class="pf-buttons">
+                        <a href="/es/shipping/request/" class="btn btn-sea btn-blue ">
+                            Quote now                                                
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body text-center">
+    
+                        <div class="ico">
+                        </div>
+                        <h4 class="feature-box-title">EP Road</h4>
+                        <p style="height: 144px;">
+                            Road transport between the main industrial zones, in consolidated,
+                                                complete, platforms and oversized loads.
+                        </p>
+    
+                        <div class="pf-buttons">
+                            <a href="/es/shipping/request/" class="btn btn-sea btn-blue ">
+                                Quote now                                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    </div><span id="j_id0:j_id67">
+        <footer class="footer">
+            <div class="container">
+                <img height="30px" src="./img/EP_groupBCO.png" />
+                &nbsp;Av. Revoluci&oacute;n #649-3 Col. Jard&iacute;n Espa&ntilde;ol, Monterrey, N.L.
+                M&eacute;xico.&nbsp;|&nbsp;<a href="#" onclick="$('#ModalTerminos').modal('show');return false">Terms
+                    and Conditions</a>
+            </div>
+        </footer>
+    </span>
+</body>
+</html>

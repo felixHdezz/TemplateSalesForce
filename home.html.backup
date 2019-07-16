@@ -1,0 +1,1857 @@
+
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="es">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,500italic,700,100,300,300italic,700italic,900,400italic&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <meta name="referrer" content="always">
+    <meta charset="utf-8">
+    <meta name="Author" content="SeaRates LTD">
+    <meta property="og:site_name" content="SeaRates">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="https://www.searates.com/design/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://www.searates.com/design/images/apple-touch-icon-iphone-60x60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://www.searates.com/design/images/apple-touch-icon-ipad-76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://www.searates.com/design/images/apple-touch-icon-iphone-retina-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.searates.com/design/images/apple-touch-icon-ipad-retina-152x152.png">
+
+    <link rel="icon" type="image/png" href="https://www.searates.com/design/images/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="https://www.searates.com/design/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="https://www.searates.com/design/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://www.searates.com/design/images/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="https://www.searates.com/design/images/favicon-128.png" sizes="128x128" />
+    
+    <meta name="application-name" content="SeaRates.com"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="https://www.searates.com/design/images/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="https://www.searates.com/design/images/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="https://www.searates.com/design/images/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="https://www.searates.com/design/images/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="https://www.searates.com/design/images/mstile-310x310.png" />
+
+    <title>Envío internacional de contenedores | Agente de carga y transitario</title>
+
+    <link href="css/index-home-searates.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="css/select2.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="css/bootstrap.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="css/fonts.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="css/jquery-ui-1.10.3.full.min.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="css/ui.jqgrid.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="css/buttons.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="css/ace.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="css/themify-icons.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="css/common.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="css/flag-icon.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="css/bootstrap-slider.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="css/bulk-ico.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="css/fontawesome-pro.css" media="screen" rel="stylesheet" type="text/css" >
+
+    <script type="text/javascript" src="https://www.searates.com/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.searates.com/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://www.searates.com/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.searates.com/js/jquery.jgrowl.js"></script>
+    <script type="text/javascript" src="https://www.searates.com/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://www.searates.com/js/global.js?33"></script>
+    <script type="text/javascript" src="https://www.searates.com/js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="https://www.searates.com/js/jquery.autosize.min.js"></script>
+    <script type="text/javascript" src="https://www.searates.com/js/ace/select2.min.js"></script>
+    <script type="text/javascript" src="https://www.searates.com/js/infinite/plugins/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="https://www.searates.com/js/index.js?6"></script>
+    
+    <script>
+        var G_LANG = '/es';
+        var platform = 1;
+        var IS_FAV = true;
+        var TIMER_FAV;
+        $(document).ready(function() {
+            var serverUrl = "https://www.searates.com";
+            var requestUri = "/";
+            var reg = "MX";
+
+            var items = '';
+            var lang_titles = {'en' : 'English (UK)', 'ru': 'Pусский', 'ua': 'Українська', 'de': 'Deutsch', 'es': 'Español', 'cn': '中文', 'fr': 'Français', 'ar': 'عربي', 'tr': 'Türkçe', 'it': 'Italiano', 'th': 'ไทย', 'ge': 'ქართული', 'ir': 'فارسی', 'kr': '한국어', 'jp': '日本語', 'il': 'עברית' , 'gr': 'Ελληνικά', 'pl': 'Polski', 'vi': 'Người việt nam', 'pt': 'Português'};
+
+            for (var key in lang_titles) {
+                items += '<li role="menuitem" class="countrylang-lang-item"><a href="javascript:;" data-region="' + reg + '" data-lang="' + key + '"><span aria-hidden="true" class="icon icon-chevron-right"></span> ' + lang_titles[key] + '</a></li>';
+            }
+
+            $('#js-countrylang-language').html(items);
+            $('#countrylang-content')
+                .on('click', '.countrylang-lang-item > a', function(){
+
+                    var lang = $(this).data('lang');
+                    var reg = $(this).data('region');
+
+                    setCookie('region',reg,{
+                        path: '/',
+                        expires:3600*24*7,
+                        domain: '.searates.com'
+                    });
+
+
+                    if (lang != 'en') document.location = serverUrl + '/' + lang + requestUri;
+                    else document.location = serverUrl + requestUri;
+                })
+                .on('click', '.countrylang-country-item', function(){
+                    var reg = $(this).data('country') || 'US';
+                    setCookie('region',reg,{
+                        path: '/',
+                        expires:3600*24*7,
+                        domain: '.searates.com'
+                    });
+                    document.location = serverUrl + requestUri;
+
+                });
+
+            //$('.countrylang-country-item[data-country="//"]').click();
+        });
+
+
+
+        function setCookie(name, value, options) {
+            options = options || {};
+
+            var expires = options.expires;
+
+            if (typeof expires == "number" && expires) {
+                var d = new Date();
+                d.setTime(d.getTime() + expires * 1000);
+                expires = options.expires = d;
+            }
+            if (expires && expires.toUTCString) {
+                options.expires = expires.toUTCString();
+            }
+
+            value = encodeURIComponent(value);
+
+            var updatedCookie = name + "=" + value;
+
+            for (var propName in options) {
+                updatedCookie += "; " + propName;
+                var propValue = options[propName];
+                if (propValue !== true) {
+                    updatedCookie += "=" + propValue;
+                }
+            }
+            document.cookie = updatedCookie + '; SameSite=Strict';
+        }
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-9016353-1', 'auto');
+                ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
+
+    <meta property="og:image" content="https://www.searates.com/design/images/apple-touch-icon-ipad-retina-152x152.png">
+</head>
+<body>
+    <header>
+        <div id="message_conteiner" style="position:absolute"></div>
+        <nav class="navbar home-page">
+            <div class="container navbar-container ">
+                <button style="display: none !important;" type="button" class="navbar-toggle navbar-toggler-right" data-toggle="collapse" aria-expanded="false" data-target="#cbp-hrmenu">
+                    <span class="sr-only">Cambiar modo de Navegación</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="/es/" class="navbar-brand"></a>
+
+                <div id="main-menu" >
+                    <p class="close-menu"><i class="icon icon-times" aria-hidden="true"></i></p>
+
+                    <ul>
+                        <li class="has-sub"><a href="#">Tools</a>
+
+                            <div class="submenu">
+                                <div class="back"><i class="icon icon-arrow-left" aria-hidden="true"></i> Back</div>
+                                <div class="desc">
+                                    <div class="desc-icon"><i class="icon icon-search" aria-hidden="true"></i></div>
+                                    <p class="title">Find a tool</p>
+                                    <p>Depending on your shipping business needs, you may choose the best logistics tool.</p>
+                                    <a href="/es/services/tools">Find tool<i class="icon-angle-right"></i></a>
+                                </div>
+                                <div class="list">
+                                    <ul>
+                                        <li class="title">Tools</li>
+                                        <li><a href="/es/reference/portdistance/"><i class="main-menu-icon-le"></i> Logistics Explorer</a></li>
+                                        <li><a href="/es/reference/stuffing"><i class="main-menu-icon-lc"></i> Load Calculator</a></li>
+                                        <li><a href="/es/shipping/cargo-wizard"><i class="main-menu-icon-dnp"></i> Cargo Wizard</a></li>
+                                        <li><a href="/es/container/tracking"><i class="main-menu-icon-ct"></i> Container Tracking</a></li>
+                                        <li><a href="/es/shipping/products/"><i class="main-menu-icon-it"></i> Tienda online B2B</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="title title-empty" style="visibility: hidden;">Title</li>
+                                        <li><a href="/es/services/distances-time/"><i class="main-menu-icon-ec"></i> Distances & Time</a></li>
+                                        <li><a href="/es/route-planner"><i class="main-menu-icon-rp"></i> Route Planner</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="has-sub"><a href="#">Services</a>
+
+                            <div class="submenu">
+                                <div class="back"><i class="icon icon-arrow-left" aria-hidden="true"></i> Back</div>
+                                <div class="desc">
+                                    <div class="desc-icon"><i class="icon icon-star" aria-hidden="true"></i></div>
+                                    <p class="title">Online Freight Marketplace</p>
+                                    <p>Compare freight quotes and freight services from carriers you know and trust.</p>
+                                    <a href="/freight">Get started<i class="icon-angle-right"></i></a>
+
+                                    <ul>
+                                        <li><a href="/es/shipping/request/">Quote Request Form</a></li>
+                                        <li><a href="/es/shipping/list/">Todos los cables de envío</a></li>
+                                        <li><a href="/es/about/container-tracking/">Rastrear un envío</a></li>
+                                    </ul>
+                                </div>
+                                <div class="list">
+                                    <ul>
+                                        <li class="title">Services</li>
+                                        <li><a href="/es/about/fcl-full-container-load-international-freight-shipment/"><i class="ns-icon-fcl-light"></i>FCL Shipping</a></li>
+                                        <li><a href="/es/about/lcl-less-container-load-international-freight-shipment"><i class="ns-icon-lcl-light"></i>LCL Shipping</a></li>
+                                        <li><a href="/es/about/breakbulk/"><i class="ns-icon-bulk-light"></i>Bulk & Break Bulk</a></li>
+                                        <li><a href="/es/about/dangerous-goods/"><i class="ti-alert"></i>Dangerous cargoes</a></li>
+                                        <li><a href="/es/about/cargo-insurance/"><i class="ti-briefcase"></i>Insurance</a></li>
+                                        <li><a href="/es/about/certification-services/"><i class="ti-layout-cta-left"></i>Certification</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="title title-empty" style="visibility: hidden;">Title</li>
+                                        <li><a  href="/es/about/project-cargo/"><i class="ti-truck"></i></i>Project Cargo</a></li>
+                                        <li><a  href="/es/about/customs-clearance/"><i class="ti-stamp"></i>Customs Clearance</a></li>
+                                        <li><a  href="/es/about/survey-services/"><i class="ti-settings"></i>Survey Services</a></li>
+                                        <li><a  href="/es/about/reefer-cargo/"><i class="ti-shine"></i>Reefer Cargoes</a></li>
+                                        <li><a  href="/es/about/warehouse-services/"><i class="ti-home"></i>Warehousing</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="/services/plans/">Pricing</a></li>
+                        <li class="has-sub"><a href="#">References</a>
+
+                            <div class="submenu ref">
+                                <div class="back"><i class="icon icon-arrow-left" aria-hidden="true"></i> Back</div>
+                                <div class="list">
+                                    <ul>
+                                        <li class="title">DImensions</li>
+                                        <li><a href="/es/reference/equipment/">Dimensiones del contenedor</a></li>
+                                        <li><a href="/es/reference/pallets/">Dimensiones de la paleta</a></li>
+                                        <li><a href="/es/reference/uld/">Tipos de contenedores ULD</a></li>
+                                        <li><a href="/es/reference/covered/">Tipos de vagones de ferrocarril</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="title">Info</li>
+                                        <li><a href="/es/reference/incoterms/">Incoterms 2010</a></li>
+                                        <li><a href="/es/reference/imo/">Clases IMO</a></li>
+                                        <li><a href="/es/services/temperature/">Carga refrigerada</a></li>
+                                        <li><a href="/es/reference/glossary/">Abreviaturas</a></li>
+                                        <li><a href="/es/reference/handling/">Términos del forro</a></li>
+                                        <li><a href="/es/reference/services-and-fees/">Servicios y tarifas</a></li>
+                                        <li><a href="/es/reference/quality-control/">Servicios de inspección</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="title">Locations</li>
+                                        <li><a href="/es/maritime/">Puertos marítimos del mundo</a></li>
+                                        <li><a href="/es/container/shippingport/">Find Ports by Shipping Line</a></li>
+                                        <li><a href="/es/container/shippingline/">Tiempo de tránsito</a></li>
+                                        <li><a href="/es/container/demurrage">Demoras y almacenamiento</a></li>
+                                        <li><a href="/es/products/add-product">Mostrar nuevo producto</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="has-sub"><a href="#">About Us</a>
+                            <div class="submenu ">
+                                <div class="back"><i class="icon icon-arrow-left" aria-hidden="true"></i> Back</div>
+                                <div class="desc">
+                                    <div class="desc-icon">
+                                        <i class="icon icon-search" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="title">Contact Info</p>
+
+
+                                    <div class="text-contact">
+                                        <b>City:</b>
+                                        <span>United Kingdom</span>
+                                    </div>
+                                    <div class="text-contact">
+                                        <b>E-mail:</b>
+                                        <span>sales@searates.com</span>
+                                    </div>
+                                    <div class="text-contact">
+                                        <b>Phone:</b>
+                                        <span>+442070486438</span>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <ul>
+                                        <li class="title">Company</li>
+                                        <li><a href="/es/contact/shippers-help/">Ayuda</a></li>
+                                        <li><a href="/es/contact/">Contáctenos</a></li>
+                                        <li><a href="/es/blog/">Blog</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        
+                                        <li class="cbp-link">
+                                <a href="#" data-toggle="modal" data-target="#loginModal" data-box="login-box" title="Virtual Office"><i class="icon-cloud"></i></a>
+                            </li>
+                        
+                        <li class="log-prov-li"><a href="/shipping/all-shipping-leads" class="btn log-prov"><i class="icon-ship"></i> <span>For CARRIERS</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-buttons pull-right">
+                    <ul class="nav ace-nav">
+                        <li>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="javascript:;">
+                                <i class="flag-icon flag-icon-mx mr5"></i><span class="text-lang">MX</span>
+                            </a>
+
+                            <div class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-closer country-top-menu" id="countrylang-content">
+                                <div class="country-lang-pointer"></div>
+                                <div id="countrylang-country" role="menuitem">
+                                    <strong class="countrylang-country-title" role="heading">Cambiar de país</strong>
+                                    <div class="js-countrylang-container">
+                                        <div class="countrylang-country-container">
+                                            <div class="countrylang-country-shadow"></div>
+                                            <div id="js-countrylang-country" class="dropdown-stop">
+                                                <ul><li id="A" class="countrylang-character character-A">A</li><li tabindex="-1" class="countrylang-country-item" aria-label="Afghanistan" role="menuitem" data-country="AF">Afghanistan</li><li tabindex="-1" class="countrylang-country-item" aria-label="Aland Islands" role="menuitem" data-country="AX">Aland Islands</li><li tabindex="-1" class="countrylang-country-item" aria-label="Albania" role="menuitem" data-country="AL">Albania</li><li tabindex="-1" class="countrylang-country-item" aria-label="Algeria" role="menuitem" data-country="DZ">Algeria</li><li tabindex="-1" class="countrylang-country-item" aria-label="American Samoa" role="menuitem" data-country="AS">American Samoa</li><li tabindex="-1" class="countrylang-country-item" aria-label="Andorra" role="menuitem" data-country="AD">Andorra</li><li tabindex="-1" class="countrylang-country-item" aria-label="Angola" role="menuitem" data-country="AO">Angola</li><li tabindex="-1" class="countrylang-country-item" aria-label="Anguilla" role="menuitem" data-country="AI">Anguilla</li><li tabindex="-1" class="countrylang-country-item" aria-label="Antigua and Barbuda" role="menuitem" data-country="AG">Antigua and Barbuda</li><li tabindex="-1" class="countrylang-country-item" aria-label="Argentina" role="menuitem" data-country="AR">Argentina</li><li tabindex="-1" class="countrylang-country-item" aria-label="Armenia" role="menuitem" data-country="AM">Armenia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Aruba" role="menuitem" data-country="AW">Aruba</li><li tabindex="-1" class="countrylang-country-item" aria-label="Australia" role="menuitem" data-country="AU">Australia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Austria" role="menuitem" data-country="AT">Austria</li><li tabindex="-1" class="countrylang-country-item" aria-label="Azerbaijan" role="menuitem" data-country="AZ">Azerbaijan</li><li id="B" class="countrylang-character character-B">B</li><li tabindex="-1" class="countrylang-country-item" aria-label="Bahamas" role="menuitem" data-country="BS">Bahamas</li><li tabindex="-1" class="countrylang-country-item" aria-label="Bahrain" role="menuitem" data-country="BH">Bahrain</li><li tabindex="-1" class="countrylang-country-item" aria-label="Bangladesh" role="menuitem" data-country="BD">Bangladesh</li><li tabindex="-1" class="countrylang-country-item" aria-label="Barbados" role="menuitem" data-country="BB">Barbados</li><li tabindex="-1" class="countrylang-country-item" aria-label="Belarus" role="menuitem" data-country="BY">Belarus</li><li tabindex="-1" class="countrylang-country-item" aria-label="Belgium" role="menuitem" data-country="BE">Belgium</li><li tabindex="-1" class="countrylang-country-item" aria-label="Belize" role="menuitem" data-country="BZ">Belize</li><li tabindex="-1" class="countrylang-country-item" aria-label="Benin" role="menuitem" data-country="BJ">Benin</li><li tabindex="-1" class="countrylang-country-item" aria-label="Bermuda" role="menuitem" data-country="BM">Bermuda</li><li tabindex="-1" class="countrylang-country-item" aria-label="Bhutan" role="menuitem" data-country="BT">Bhutan</li><li tabindex="-1" class="countrylang-country-item" aria-label="Bolivia" role="menuitem" data-country="BO">Bolivia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Bonaire, Saint Eustatius and Saba " role="menuitem" data-country="BQ">Bonaire, Saint Eustatius and Saba </li><li tabindex="-1" class="countrylang-country-item" aria-label="Bosnia and Herzegovina" role="menuitem" data-country="BA">Bosnia and Herzegovina</li><li tabindex="-1" class="countrylang-country-item" aria-label="Botswana" role="menuitem" data-country="BW">Botswana</li><li tabindex="-1" class="countrylang-country-item" aria-label="Brazil" role="menuitem" data-country="BR">Brazil</li><li tabindex="-1" class="countrylang-country-item" aria-label="British Indian Ocean Territory" role="menuitem" data-country="IO">British Indian Ocean Territory</li><li tabindex="-1" class="countrylang-country-item" aria-label="British Virgin Islands" role="menuitem" data-country="VG">British Virgin Islands</li><li tabindex="-1" class="countrylang-country-item" aria-label="Brunei" role="menuitem" data-country="BN">Brunei</li><li tabindex="-1" class="countrylang-country-item" aria-label="Bulgaria" role="menuitem" data-country="BG">Bulgaria</li><li tabindex="-1" class="countrylang-country-item" aria-label="Burkina Faso" role="menuitem" data-country="BF">Burkina Faso</li><li tabindex="-1" class="countrylang-country-item" aria-label="Burundi" role="menuitem" data-country="BI">Burundi</li><li id="C" class="countrylang-character character-C">C</li><li tabindex="-1" class="countrylang-country-item" aria-label="Cambodia" role="menuitem" data-country="KH">Cambodia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Cameroon" role="menuitem" data-country="CM">Cameroon</li><li tabindex="-1" class="countrylang-country-item" aria-label="Canada" role="menuitem" data-country="CA">Canada</li><li tabindex="-1" class="countrylang-country-item" aria-label="Cape Verde" role="menuitem" data-country="CV">Cape Verde</li><li tabindex="-1" class="countrylang-country-item" aria-label="Cayman Islands" role="menuitem" data-country="KY">Cayman Islands</li><li tabindex="-1" class="countrylang-country-item" aria-label="Central African Republic" role="menuitem" data-country="CF">Central African Republic</li><li tabindex="-1" class="countrylang-country-item" aria-label="Chad" role="menuitem" data-country="TD">Chad</li><li tabindex="-1" class="countrylang-country-item" aria-label="Chile" role="menuitem" data-country="CL">Chile</li><li tabindex="-1" class="countrylang-country-item" aria-label="China" role="menuitem" data-country="CN">China</li><li tabindex="-1" class="countrylang-country-item" aria-label="Christmas Island" role="menuitem" data-country="CX">Christmas Island</li><li tabindex="-1" class="countrylang-country-item" aria-label="Cocos Islands" role="menuitem" data-country="CC">Cocos Islands</li><li tabindex="-1" class="countrylang-country-item" aria-label="Colombia" role="menuitem" data-country="CO">Colombia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Comoros" role="menuitem" data-country="KM">Comoros</li><li tabindex="-1" class="countrylang-country-item" aria-label="Cook Islands" role="menuitem" data-country="CK">Cook Islands</li><li tabindex="-1" class="countrylang-country-item" aria-label="Costa Rica" role="menuitem" data-country="CR">Costa Rica</li><li tabindex="-1" class="countrylang-country-item" aria-label="Croatia" role="menuitem" data-country="HR">Croatia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Cuba" role="menuitem" data-country="CU">Cuba</li><li tabindex="-1" class="countrylang-country-item" aria-label="Curacao" role="menuitem" data-country="CW">Curacao</li><li tabindex="-1" class="countrylang-country-item" aria-label="Cyprus" role="menuitem" data-country="CY">Cyprus</li><li tabindex="-1" class="countrylang-country-item" aria-label="Czech Republic" role="menuitem" data-country="CZ">Czech Republic</li><li id="D" class="countrylang-character character-D">D</li><li tabindex="-1" class="countrylang-country-item" aria-label="Democratic Republic of the Congo" role="menuitem" data-country="CD">Democratic Republic of the Congo</li><li tabindex="-1" class="countrylang-country-item" aria-label="Denmark" role="menuitem" data-country="DK">Denmark</li><li tabindex="-1" class="countrylang-country-item" aria-label="Djibouti" role="menuitem" data-country="DJ">Djibouti</li><li tabindex="-1" class="countrylang-country-item" aria-label="Dominica" role="menuitem" data-country="DM">Dominica</li><li tabindex="-1" class="countrylang-country-item" aria-label="Dominican Republic" role="menuitem" data-country="DO">Dominican Republic</li><li id="E" class="countrylang-character character-E">E</li><li tabindex="-1" class="countrylang-country-item" aria-label="East Timor" role="menuitem" data-country="TL">East Timor</li><li tabindex="-1" class="countrylang-country-item" aria-label="Ecuador" role="menuitem" data-country="EC">Ecuador</li><li tabindex="-1" class="countrylang-country-item" aria-label="Egypt" role="menuitem" data-country="EG">Egypt</li><li tabindex="-1" class="countrylang-country-item" aria-label="El Salvador" role="menuitem" data-country="SV">El Salvador</li><li tabindex="-1" class="countrylang-country-item" aria-label="Equatorial Guinea" role="menuitem" data-country="GQ">Equatorial Guinea</li><li tabindex="-1" class="countrylang-country-item" aria-label="Eritrea" role="menuitem" data-country="ER">Eritrea</li><li tabindex="-1" class="countrylang-country-item" aria-label="Estonia" role="menuitem" data-country="EE">Estonia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Ethiopia" role="menuitem" data-country="ET">Ethiopia</li><li id="F" class="countrylang-character character-F">F</li><li tabindex="-1" class="countrylang-country-item" aria-label="Falkland Islands" role="menuitem" data-country="FK">Falkland Islands</li><li tabindex="-1" class="countrylang-country-item" aria-label="Faroe Islands" role="menuitem" data-country="FO">Faroe Islands</li><li tabindex="-1" class="countrylang-country-item" aria-label="Fiji" role="menuitem" data-country="FJ">Fiji</li><li tabindex="-1" class="countrylang-country-item" aria-label="Finland" role="menuitem" data-country="FI">Finland</li><li tabindex="-1" class="countrylang-country-item" aria-label="France" role="menuitem" data-country="FR">France</li><li tabindex="-1" class="countrylang-country-item" aria-label="French Guiana" role="menuitem" data-country="GF">French Guiana</li><li tabindex="-1" class="countrylang-country-item" aria-label="French Polynesia" role="menuitem" data-country="PF">French Polynesia</li><li id="G" class="countrylang-character character-G">G</li><li tabindex="-1" class="countrylang-country-item" aria-label="Gabon" role="menuitem" data-country="GA">Gabon</li><li tabindex="-1" class="countrylang-country-item" aria-label="Gambia" role="menuitem" data-country="GM">Gambia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Georgia" role="menuitem" data-country="GE">Georgia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Germany" role="menuitem" data-country="DE">Germany</li><li tabindex="-1" class="countrylang-country-item" aria-label="Ghana" role="menuitem" data-country="GH">Ghana</li><li tabindex="-1" class="countrylang-country-item" aria-label="Gibraltar" role="menuitem" data-country="GI">Gibraltar</li><li tabindex="-1" class="countrylang-country-item" aria-label="Greece" role="menuitem" data-country="GR">Greece</li><li tabindex="-1" class="countrylang-country-item" aria-label="Greenland" role="menuitem" data-country="GL">Greenland</li><li tabindex="-1" class="countrylang-country-item" aria-label="Grenada" role="menuitem" data-country="GD">Grenada</li><li tabindex="-1" class="countrylang-country-item" aria-label="Guadeloupe" role="menuitem" data-country="GP">Guadeloupe</li><li tabindex="-1" class="countrylang-country-item" aria-label="Guam" role="menuitem" data-country="GU">Guam</li><li tabindex="-1" class="countrylang-country-item" aria-label="Guatemala" role="menuitem" data-country="GT">Guatemala</li><li tabindex="-1" class="countrylang-country-item" aria-label="Guernsey" role="menuitem" data-country="GG">Guernsey</li><li tabindex="-1" class="countrylang-country-item" aria-label="Guinea" role="menuitem" data-country="GN">Guinea</li><li tabindex="-1" class="countrylang-country-item" aria-label="Guinea-Bissau" role="menuitem" data-country="GW">Guinea-Bissau</li><li tabindex="-1" class="countrylang-country-item" aria-label="Guyana" role="menuitem" data-country="GY">Guyana</li><li id="H" class="countrylang-character character-H">H</li><li tabindex="-1" class="countrylang-country-item" aria-label="Haiti" role="menuitem" data-country="HT">Haiti</li><li tabindex="-1" class="countrylang-country-item" aria-label="Honduras" role="menuitem" data-country="HN">Honduras</li><li tabindex="-1" class="countrylang-country-item" aria-label="Hong Kong" role="menuitem" data-country="HK">Hong Kong</li><li tabindex="-1" class="countrylang-country-item" aria-label="Hungary" role="menuitem" data-country="HU">Hungary</li><li id="I" class="countrylang-character character-I">I</li><li tabindex="-1" class="countrylang-country-item" aria-label="Iceland" role="menuitem" data-country="IS">Iceland</li><li tabindex="-1" class="countrylang-country-item" aria-label="India" role="menuitem" data-country="IN">India</li><li tabindex="-1" class="countrylang-country-item" aria-label="Indonesia" role="menuitem" data-country="ID">Indonesia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Iran" role="menuitem" data-country="IR">Iran</li><li tabindex="-1" class="countrylang-country-item" aria-label="Iraq" role="menuitem" data-country="IQ">Iraq</li><li tabindex="-1" class="countrylang-country-item" aria-label="Ireland" role="menuitem" data-country="IE">Ireland</li><li tabindex="-1" class="countrylang-country-item" aria-label="Isle of Man" role="menuitem" data-country="IM">Isle of Man</li><li tabindex="-1" class="countrylang-country-item" aria-label="Israel" role="menuitem" data-country="IL">Israel</li><li tabindex="-1" class="countrylang-country-item" aria-label="Italy" role="menuitem" data-country="IT">Italy</li><li tabindex="-1" class="countrylang-country-item" aria-label="Ivory Coast" role="menuitem" data-country="CI">Ivory Coast</li><li id="J" class="countrylang-character character-J">J</li><li tabindex="-1" class="countrylang-country-item" aria-label="Jamaica" role="menuitem" data-country="JM">Jamaica</li><li tabindex="-1" class="countrylang-country-item" aria-label="Japan" role="menuitem" data-country="JP">Japan</li><li tabindex="-1" class="countrylang-country-item" aria-label="Jersey" role="menuitem" data-country="JE">Jersey</li><li tabindex="-1" class="countrylang-country-item" aria-label="Jordan" role="menuitem" data-country="JO">Jordan</li><li id="K" class="countrylang-character character-K">K</li><li tabindex="-1" class="countrylang-country-item" aria-label="Kazakhstan" role="menuitem" data-country="KZ">Kazakhstan</li><li tabindex="-1" class="countrylang-country-item" aria-label="Kenya" role="menuitem" data-country="KE">Kenya</li><li tabindex="-1" class="countrylang-country-item" aria-label="Kiribati" role="menuitem" data-country="KI">Kiribati</li><li tabindex="-1" class="countrylang-country-item" aria-label="Kosovo" role="menuitem" data-country="XK">Kosovo</li><li tabindex="-1" class="countrylang-country-item" aria-label="Kuwait" role="menuitem" data-country="KW">Kuwait</li><li tabindex="-1" class="countrylang-country-item" aria-label="Kyrgyzstan" role="menuitem" data-country="KG">Kyrgyzstan</li><li id="L" class="countrylang-character character-L">L</li><li tabindex="-1" class="countrylang-country-item" aria-label="Laos" role="menuitem" data-country="LA">Laos</li><li tabindex="-1" class="countrylang-country-item" aria-label="Latvia" role="menuitem" data-country="LV">Latvia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Lebanon" role="menuitem" data-country="LB">Lebanon</li><li tabindex="-1" class="countrylang-country-item" aria-label="Lesotho" role="menuitem" data-country="LS">Lesotho</li><li tabindex="-1" class="countrylang-country-item" aria-label="Liberia" role="menuitem" data-country="LR">Liberia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Libya" role="menuitem" data-country="LY">Libya</li><li tabindex="-1" class="countrylang-country-item" aria-label="Liechtenstein" role="menuitem" data-country="LI">Liechtenstein</li><li tabindex="-1" class="countrylang-country-item" aria-label="Lithuania" role="menuitem" data-country="LT">Lithuania</li><li tabindex="-1" class="countrylang-country-item" aria-label="Luxembourg" role="menuitem" data-country="LU">Luxembourg</li><li id="M" class="countrylang-character character-M">M</li><li tabindex="-1" class="countrylang-country-item" aria-label="Macao" role="menuitem" data-country="MO">Macao</li><li tabindex="-1" class="countrylang-country-item" aria-label="Macedonia" role="menuitem" data-country="MK">Macedonia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Madagascar" role="menuitem" data-country="MG">Madagascar</li><li tabindex="-1" class="countrylang-country-item" aria-label="Malawi" role="menuitem" data-country="MW">Malawi</li><li tabindex="-1" class="countrylang-country-item" aria-label="Malaysia" role="menuitem" data-country="MY">Malaysia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Maldives" role="menuitem" data-country="MV">Maldives</li><li tabindex="-1" class="countrylang-country-item" aria-label="Mali" role="menuitem" data-country="ML">Mali</li><li tabindex="-1" class="countrylang-country-item" aria-label="Malta" role="menuitem" data-country="MT">Malta</li><li tabindex="-1" class="countrylang-country-item" aria-label="Marshall Islands" role="menuitem" data-country="MH">Marshall Islands</li><li tabindex="-1" class="countrylang-country-item" aria-label="Martinique" role="menuitem" data-country="MQ">Martinique</li><li tabindex="-1" class="countrylang-country-item" aria-label="Mauritania" role="menuitem" data-country="MR">Mauritania</li><li tabindex="-1" class="countrylang-country-item" aria-label="Mauritius" role="menuitem" data-country="MU">Mauritius</li><li tabindex="-1" class="countrylang-country-item" aria-label="Mayotte" role="menuitem" data-country="YT">Mayotte</li><li tabindex="-1" class="countrylang-country-item" aria-label="Mexico" role="menuitem" data-country="MX">Mexico</li><li tabindex="-1" class="countrylang-country-item" aria-label="Micronesia" role="menuitem" data-country="FM">Micronesia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Moldova" role="menuitem" data-country="MD">Moldova</li><li tabindex="-1" class="countrylang-country-item" aria-label="Monaco" role="menuitem" data-country="MC">Monaco</li><li tabindex="-1" class="countrylang-country-item" aria-label="Mongolia" role="menuitem" data-country="MN">Mongolia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Montenegro" role="menuitem" data-country="ME">Montenegro</li><li tabindex="-1" class="countrylang-country-item" aria-label="Montserrat" role="menuitem" data-country="MS">Montserrat</li><li tabindex="-1" class="countrylang-country-item" aria-label="Morocco" role="menuitem" data-country="MA">Morocco</li><li tabindex="-1" class="countrylang-country-item" aria-label="Mozambique" role="menuitem" data-country="MZ">Mozambique</li><li tabindex="-1" class="countrylang-country-item" aria-label="Myanmar" role="menuitem" data-country="MM">Myanmar</li><li id="N" class="countrylang-character character-N">N</li><li tabindex="-1" class="countrylang-country-item" aria-label="Namibia" role="menuitem" data-country="NA">Namibia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Nauru" role="menuitem" data-country="NR">Nauru</li><li tabindex="-1" class="countrylang-country-item" aria-label="Nepal" role="menuitem" data-country="NP">Nepal</li><li tabindex="-1" class="countrylang-country-item" aria-label="Netherlands" role="menuitem" data-country="NL">Netherlands</li><li tabindex="-1" class="countrylang-country-item" aria-label="Netherlands Antilles" role="menuitem" data-country="AN">Netherlands Antilles</li><li tabindex="-1" class="countrylang-country-item" aria-label="New Caledonia" role="menuitem" data-country="NC">New Caledonia</li><li tabindex="-1" class="countrylang-country-item" aria-label="New Zealand" role="menuitem" data-country="NZ">New Zealand</li><li tabindex="-1" class="countrylang-country-item" aria-label="Nicaragua" role="menuitem" data-country="NI">Nicaragua</li><li tabindex="-1" class="countrylang-country-item" aria-label="Niger" role="menuitem" data-country="NE">Niger</li><li tabindex="-1" class="countrylang-country-item" aria-label="Nigeria" role="menuitem" data-country="NG">Nigeria</li><li tabindex="-1" class="countrylang-country-item" aria-label="Niue" role="menuitem" data-country="NU">Niue</li><li tabindex="-1" class="countrylang-country-item" aria-label="Norfolk Island" role="menuitem" data-country="NF">Norfolk Island</li><li tabindex="-1" class="countrylang-country-item" aria-label="Northern Mariana Islands" role="menuitem" data-country="MP">Northern Mariana Islands</li><li tabindex="-1" class="countrylang-country-item" aria-label="North Korea" role="menuitem" data-country="KP">North Korea</li><li tabindex="-1" class="countrylang-country-item" aria-label="Norway" role="menuitem" data-country="NO">Norway</li><li id="O" class="countrylang-character character-O">O</li><li tabindex="-1" class="countrylang-country-item" aria-label="Oman" role="menuitem" data-country="OM">Oman</li><li id="P" class="countrylang-character character-P">P</li><li tabindex="-1" class="countrylang-country-item" aria-label="Pakistan" role="menuitem" data-country="PK">Pakistan</li><li tabindex="-1" class="countrylang-country-item" aria-label="Palau" role="menuitem" data-country="PW">Palau</li><li tabindex="-1" class="countrylang-country-item" aria-label="Palestinian Territory" role="menuitem" data-country="PS">Palestinian Territory</li><li tabindex="-1" class="countrylang-country-item" aria-label="Panama" role="menuitem" data-country="PA">Panama</li><li tabindex="-1" class="countrylang-country-item" aria-label="Papua New Guinea" role="menuitem" data-country="PG">Papua New Guinea</li><li tabindex="-1" class="countrylang-country-item" aria-label="Paraguay" role="menuitem" data-country="PY">Paraguay</li><li tabindex="-1" class="countrylang-country-item" aria-label="Peru" role="menuitem" data-country="PE">Peru</li><li tabindex="-1" class="countrylang-country-item" aria-label="Philippines" role="menuitem" data-country="PH">Philippines</li><li tabindex="-1" class="countrylang-country-item" aria-label="Pitcairn" role="menuitem" data-country="PN">Pitcairn</li><li tabindex="-1" class="countrylang-country-item" aria-label="Poland" role="menuitem" data-country="PL">Poland</li><li tabindex="-1" class="countrylang-country-item" aria-label="Portugal" role="menuitem" data-country="PT">Portugal</li><li tabindex="-1" class="countrylang-country-item" aria-label="Puerto Rico" role="menuitem" data-country="PR">Puerto Rico</li><li id="Q" class="countrylang-character character-Q">Q</li><li tabindex="-1" class="countrylang-country-item" aria-label="Qatar" role="menuitem" data-country="QA">Qatar</li><li id="R" class="countrylang-character character-R">R</li><li tabindex="-1" class="countrylang-country-item" aria-label="Republic of the Congo" role="menuitem" data-country="CG">Republic of the Congo</li><li tabindex="-1" class="countrylang-country-item" aria-label="Reunion" role="menuitem" data-country="RE">Reunion</li><li tabindex="-1" class="countrylang-country-item" aria-label="Romania" role="menuitem" data-country="RO">Romania</li><li tabindex="-1" class="countrylang-country-item" aria-label="Russia" role="menuitem" data-country="RU">Russia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Rwanda" role="menuitem" data-country="RW">Rwanda</li><li id="S" class="countrylang-character character-S">S</li><li tabindex="-1" class="countrylang-country-item" aria-label="Saint Barthelemy" role="menuitem" data-country="BL">Saint Barthelemy</li><li tabindex="-1" class="countrylang-country-item" aria-label="Saint Helena" role="menuitem" data-country="SH">Saint Helena</li><li tabindex="-1" class="countrylang-country-item" aria-label="Saint Kitts and Nevis" role="menuitem" data-country="KN">Saint Kitts and Nevis</li><li tabindex="-1" class="countrylang-country-item" aria-label="Saint Lucia" role="menuitem" data-country="LC">Saint Lucia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Saint Martin" role="menuitem" data-country="MF">Saint Martin</li><li tabindex="-1" class="countrylang-country-item" aria-label="Saint Pierre and Miquelon" role="menuitem" data-country="PM">Saint Pierre and Miquelon</li><li tabindex="-1" class="countrylang-country-item" aria-label="Saint Vincent and the Grenadines" role="menuitem" data-country="VC">Saint Vincent and the Grenadines</li><li tabindex="-1" class="countrylang-country-item" aria-label="Samoa" role="menuitem" data-country="WS">Samoa</li><li tabindex="-1" class="countrylang-country-item" aria-label="San Marino" role="menuitem" data-country="SM">San Marino</li><li tabindex="-1" class="countrylang-country-item" aria-label="Sao Tome and Principe" role="menuitem" data-country="ST">Sao Tome and Principe</li><li tabindex="-1" class="countrylang-country-item" aria-label="Saudi Arabia" role="menuitem" data-country="SA">Saudi Arabia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Senegal" role="menuitem" data-country="SN">Senegal</li><li tabindex="-1" class="countrylang-country-item" aria-label="Serbia" role="menuitem" data-country="RS">Serbia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Serbia and Montenegro" role="menuitem" data-country="CS">Serbia and Montenegro</li><li tabindex="-1" class="countrylang-country-item" aria-label="Seychelles" role="menuitem" data-country="SC">Seychelles</li><li tabindex="-1" class="countrylang-country-item" aria-label="Sierra Leone" role="menuitem" data-country="SL">Sierra Leone</li><li tabindex="-1" class="countrylang-country-item" aria-label="Singapore" role="menuitem" data-country="SG">Singapore</li><li tabindex="-1" class="countrylang-country-item" aria-label="Sint Maarten" role="menuitem" data-country="SX">Sint Maarten</li><li tabindex="-1" class="countrylang-country-item" aria-label="Slovakia" role="menuitem" data-country="SK">Slovakia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Slovenia" role="menuitem" data-country="SI">Slovenia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Solomon Islands" role="menuitem" data-country="SB">Solomon Islands</li><li tabindex="-1" class="countrylang-country-item" aria-label="Somalia" role="menuitem" data-country="SO">Somalia</li><li tabindex="-1" class="countrylang-country-item" aria-label="South Africa" role="menuitem" data-country="ZA">South Africa</li><li tabindex="-1" class="countrylang-country-item" aria-label="South Korea" role="menuitem" data-country="KR">South Korea</li><li tabindex="-1" class="countrylang-country-item" aria-label="South Sudan" role="menuitem" data-country="SS">South Sudan</li><li tabindex="-1" class="countrylang-country-item" aria-label="Spain" role="menuitem" data-country="ES">Spain</li><li tabindex="-1" class="countrylang-country-item" aria-label="Sri Lanka" role="menuitem" data-country="LK">Sri Lanka</li><li tabindex="-1" class="countrylang-country-item" aria-label="Sudan" role="menuitem" data-country="SD">Sudan</li><li tabindex="-1" class="countrylang-country-item" aria-label="Suriname" role="menuitem" data-country="SR">Suriname</li><li tabindex="-1" class="countrylang-country-item" aria-label="Svalbard and Jan Mayen" role="menuitem" data-country="SJ">Svalbard and Jan Mayen</li><li tabindex="-1" class="countrylang-country-item" aria-label="Swaziland" role="menuitem" data-country="SZ">Swaziland</li><li tabindex="-1" class="countrylang-country-item" aria-label="Sweden" role="menuitem" data-country="SE">Sweden</li><li tabindex="-1" class="countrylang-country-item" aria-label="Switzerland" role="menuitem" data-country="CH">Switzerland</li><li tabindex="-1" class="countrylang-country-item" aria-label="Syria" role="menuitem" data-country="SY">Syria</li><li id="T" class="countrylang-character character-T">T</li><li tabindex="-1" class="countrylang-country-item" aria-label="Taiwan" role="menuitem" data-country="TW">Taiwan</li><li tabindex="-1" class="countrylang-country-item" aria-label="Tajikistan" role="menuitem" data-country="TJ">Tajikistan</li><li tabindex="-1" class="countrylang-country-item" aria-label="Tanzania" role="menuitem" data-country="TZ">Tanzania</li><li tabindex="-1" class="countrylang-country-item" aria-label="Thailand" role="menuitem" data-country="TH">Thailand</li><li tabindex="-1" class="countrylang-country-item" aria-label="Togo" role="menuitem" data-country="TG">Togo</li><li tabindex="-1" class="countrylang-country-item" aria-label="Tokelau" role="menuitem" data-country="TK">Tokelau</li><li tabindex="-1" class="countrylang-country-item" aria-label="Tonga" role="menuitem" data-country="TO">Tonga</li><li tabindex="-1" class="countrylang-country-item" aria-label="Trinidad and Tobago" role="menuitem" data-country="TT">Trinidad and Tobago</li><li tabindex="-1" class="countrylang-country-item" aria-label="Tunisia" role="menuitem" data-country="TN">Tunisia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Turkey" role="menuitem" data-country="TR">Turkey</li><li tabindex="-1" class="countrylang-country-item" aria-label="Turkmenistan" role="menuitem" data-country="TM">Turkmenistan</li><li tabindex="-1" class="countrylang-country-item" aria-label="Turks and Caicos Islands" role="menuitem" data-country="TC">Turks and Caicos Islands</li><li tabindex="-1" class="countrylang-country-item" aria-label="Tuvalu" role="menuitem" data-country="TV">Tuvalu</li><li id="U" class="countrylang-character character-U">U</li><li tabindex="-1" class="countrylang-country-item" aria-label="Uganda" role="menuitem" data-country="UG">Uganda</li><li tabindex="-1" class="countrylang-country-item" aria-label="Ukraine" role="menuitem" data-country="UA">Ukraine</li><li tabindex="-1" class="countrylang-country-item" aria-label="United Arab Emirates" role="menuitem" data-country="AE">United Arab Emirates</li><li tabindex="-1" class="countrylang-country-item" aria-label="United Kingdom" role="menuitem" data-country="GB">United Kingdom</li><li tabindex="-1" class="countrylang-country-item" aria-label="United States" role="menuitem" data-country="US">United States</li><li tabindex="-1" class="countrylang-country-item" aria-label="United States Minor Outlying Islands" role="menuitem" data-country="UM">United States Minor Outlying Islands</li><li tabindex="-1" class="countrylang-country-item" aria-label="Uruguay" role="menuitem" data-country="UY">Uruguay</li><li tabindex="-1" class="countrylang-country-item" aria-label="U.S. Virgin Islands" role="menuitem" data-country="VI">U.S. Virgin Islands</li><li tabindex="-1" class="countrylang-country-item" aria-label="Uzbekistan" role="menuitem" data-country="UZ">Uzbekistan</li><li id="V" class="countrylang-character character-V">V</li><li tabindex="-1" class="countrylang-country-item" aria-label="Vanuatu" role="menuitem" data-country="VU">Vanuatu</li><li tabindex="-1" class="countrylang-country-item" aria-label="Vatican" role="menuitem" data-country="VA">Vatican</li><li tabindex="-1" class="countrylang-country-item" aria-label="Venezuela" role="menuitem" data-country="VE">Venezuela</li><li tabindex="-1" class="countrylang-country-item" aria-label="Vietnam" role="menuitem" data-country="VN">Vietnam</li><li id="W" class="countrylang-character character-W">W</li><li tabindex="-1" class="countrylang-country-item" aria-label="Wallis and Futuna" role="menuitem" data-country="WF">Wallis and Futuna</li><li tabindex="-1" class="countrylang-country-item" aria-label="Western Sahara" role="menuitem" data-country="EH">Western Sahara</li><li id="Y" class="countrylang-character character-Y">Y</li><li tabindex="-1" class="countrylang-country-item" aria-label="Yemen" role="menuitem" data-country="YE">Yemen</li><li id="Z" class="countrylang-character character-Z">Z</li><li tabindex="-1" class="countrylang-country-item" aria-label="Zambia" role="menuitem" data-country="ZM">Zambia</li><li tabindex="-1" class="countrylang-country-item" aria-label="Zimbabwe" role="menuitem" data-country="ZW">Zimbabwe</li></ul>
+                                            </div>
+                                        </div>
+                                        <div id="js-countrylang-alphabet" class="dropdown-stop">
+                                            <ul>
+                                                <li class='countrylang-alphabet-item alphabet-item-A'><button class='btn-alphabet alphabet-item-selected' value='A'>A</button></li><li class='countrylang-alphabet-item alphabet-item-B'><button class='btn-alphabet ' value='B'>B</button></li><li class='countrylang-alphabet-item alphabet-item-C'><button class='btn-alphabet ' value='C'>C</button></li><li class='countrylang-alphabet-item alphabet-item-D'><button class='btn-alphabet ' value='D'>D</button></li><li class='countrylang-alphabet-item alphabet-item-E'><button class='btn-alphabet ' value='E'>E</button></li><li class='countrylang-alphabet-item alphabet-item-F'><button class='btn-alphabet ' value='F'>F</button></li><li class='countrylang-alphabet-item alphabet-item-G'><button class='btn-alphabet ' value='G'>G</button></li><li class='countrylang-alphabet-item alphabet-item-H'><button class='btn-alphabet ' value='H'>H</button></li><li class='countrylang-alphabet-item alphabet-item-I'><button class='btn-alphabet ' value='I'>I</button></li><li class='countrylang-alphabet-item alphabet-item-J'><button class='btn-alphabet ' value='J'>J</button></li><li class='countrylang-alphabet-item alphabet-item-K'><button class='btn-alphabet ' value='K'>K</button></li><li class='countrylang-alphabet-item alphabet-item-L'><button class='btn-alphabet ' value='L'>L</button></li><li class='countrylang-alphabet-item alphabet-item-M'><button class='btn-alphabet ' value='M'>M</button></li><li class='countrylang-alphabet-item alphabet-item-N'><button class='btn-alphabet ' value='N'>N</button></li><li class='countrylang-alphabet-item alphabet-item-O'><button class='btn-alphabet ' value='O'>O</button></li><li class='countrylang-alphabet-item alphabet-item-P'><button class='btn-alphabet ' value='P'>P</button></li><li class='countrylang-alphabet-item alphabet-item-Q'><button class='btn-alphabet ' value='Q'>Q</button></li><li class='countrylang-alphabet-item alphabet-item-R'><button class='btn-alphabet ' value='R'>R</button></li><li class='countrylang-alphabet-item alphabet-item-S'><button class='btn-alphabet ' value='S'>S</button></li><li class='countrylang-alphabet-item alphabet-item-T'><button class='btn-alphabet ' value='T'>T</button></li><li class='countrylang-alphabet-item alphabet-item-U'><button class='btn-alphabet ' value='U'>U</button></li><li class='countrylang-alphabet-item alphabet-item-V'><button class='btn-alphabet ' value='V'>V</button></li><li class='countrylang-alphabet-item alphabet-item-W'><button class='btn-alphabet ' value='W'>W</button></li><li class='countrylang-not-existing'><button class='btn-alphabet'>X</button></li><li class='countrylang-alphabet-item alphabet-item-Y'><button class='btn-alphabet ' value='Y'>Y</button></li><li class='countrylang-alphabet-item alphabet-item-Z'><button class='btn-alphabet ' value='Z'>Z</button></li>                                </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="countrylang-language" role="menuitem">
+                                    <strong class="countrylang-language-title" role="heading">Cambiar lenguaje</strong>
+                                    <ul id="js-countrylang-language"></ul>
+                                    <label class="normal" for="remember-language"><input checked="checked" id="remember-language" type="checkbox"> Recordar mi idioma</label>
+                                </div>
+                                <span class="g-hidden g-reveal-dialog__label" id="reveal-dialog-label-0">Seleccione el país y el idioma. País seleccionado actualmente: Kenia, Idioma actualmente seleccionado: Inglés.</span>
+                            </div>
+                        </li>
+                                        <li><a class="log_link" href="#" data-toggle="modal" data-target="#loginModal" data-box="login-box">Registrarse</a></li>
+                            <li><a class="log_link" href="#" data-toggle="modal" data-target="#loginModal" data-box="signup-box">Registro</a></li>
+                                </ul>
+                </div>
+
+                <div href="" id="hmbrg">☰</div>
+            </div>    
+        </nav>
+    </header>
+
+    <div class="main-content home-page">
+    <style>
+        .cat-name p i{
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: inline-block !important;
+        }
+
+        /* rates-table */
+
+        .rates-table{
+
+        }
+
+        .rt-card{
+            margin-bottom: 24px;
+        }
+
+        .rt-grey{
+            color: gray;
+            font-size: 13px;
+            padding-right: 6px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .rt-card-dark{
+            background-color: #334056;
+            color: #fff;
+            padding: 14px;
+        }
+
+        .rt-card-dark p{
+            padding: 0;
+            margin: 0;
+        }
+
+        .rt-card-dark .rt-card-title{
+            padding-bottom: 4px;
+            font-size: 22px;
+        }
+
+        .rt-card-dark .rt-card-info{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .rt-card-dark .rt-info-sub{
+
+        }
+
+        .rt-card-dark .rt-is-title{
+            line-height: 20px;
+        }
+
+
+        .rt-card-dark .rt-is-title .rt-date {
+            font-size: 12px;
+        }
+
+        .rt-card-dark .rt-is-title .cnt-type {
+            font-size: 26px;
+            margin-top: 20px;
+            display: inline-block;
+            font-weight: 300;
+
+        }
+
+
+        .rt-card-light{
+            display: flex;
+            justify-content: space-between;
+            padding: 14px;
+
+
+        }
+
+        .rt-card-light p{
+            margin: 0;
+            padding: 0;
+        }
+
+        .rt-card-light .rt-price {
+            color: #000;
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 600;
+            min-width: 60px;
+        }
+
+        .rt-card-light .ar-price {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .rt-card-light .ar-percents {
+            font-size: 11px;
+            color: #e23132;
+        }
+
+
+        .rt-crits-i {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .rt-crits-i span{
+            display: inline-block;
+        }
+
+
+        @media all and (max-width: 779px){
+            .rates-table {
+                margin-top: 40px;
+            }
+        }
+
+        /* rates-table end*/
+    </style>
+
+    <!-- FIRST BLOCK -->
+    <div class="to-copy">
+        <div class="retro-cool">
+            <div class="rc-head-center">
+                <div class="bg-wrapper">
+                    <canvas id="bubbles-canvas"></canvas>
+                    <div class="ships-bg">
+                        <!-- MAIN TITLE BLOCK-->
+                        <div class="rc-head-title container" >
+                            <h1 class="mast__title js-spanize home-index-title-1" style="min-height: 75px">Encuentre la mejor cotización de carga</h1>
+                            <p class="home-index-subtitle-1">Envío desde y hacia cualquier lugar</p>
+
+                            <h1 class="mast__title js-spanize home-index-title-2" style="min-height: 75px; display: none;">Rastrear un envío</h1>
+                            <p class="home-index-subtitle-2" style="display: none;">Compruebe el estado de la entrega del envío en línea</p>
+                        </div>
+                        <!-- END MAIN TITLE BLOCK-->
+
+                        <!-- MAIN FILTER-->
+                        <div class="main-filter-wrapper">
+                            <div class="container no-padding nav-type-wrapper">
+
+                                <div class="btn-type-nav route-mode">
+                                    <a data-mode="sea" href="javascript:" id="btn-type-sea" class="btn-nav btn-type-active">
+                                        <!--        <i class="ui2-icon ui2-icon-bulk"></i>-->
+                                        Mar                                </a>
+                                    <a data-mode="road" href="javascript:" id="btn-type-road" class="btn-nav">
+                                        <!--         <i class="ui2-icon ui2-icon-truck"></i>-->
+                                        Carretera                                </a>
+                                    <a data-mode="air" href="javascript:" id="btn-type-air" class="btn-nav">
+                                        <!--         <i class="ui2-icon ui2-icon-airplane"></i>-->
+                                        Aire                                </a>
+                                    <a data-mode="rail" href="javascript:" id="btn-type-rail" class="btn-nav">
+                                        <!--         <i class="ui2-icon ui2-icon-train"></i>-->
+                                        Ferrocarril                                </a>
+                                </div>
+
+                                <div class="shipment-btn">
+                                    <a href="#" class="track"><i class="fas fa-map-marker-alt"></i> Rastreo de Contenedores</a>
+                                    <a href="#" class="freight">Cotización de fletes</a>
+                                </div>
+
+                            </div>
+
+                            <div id="filter-index-page" class="container">
+
+                                <form class="filter-shipping" method="get" action="/es/freight" autocomplete="off">
+                                    <div class="col-md-12 col-sm-12 no-padding">
+                                        <div class="clearfix">
+                                            <div class="col-sm-12 col-md-4 padding-sp dir-field">
+                                                <div class="input-icon">
+                                                    <span>ORIGIN OF SHIPMENT</span>
+                                                    <input type="text" placeholder="Country,City,Port" value="" class="form-control input-lg" id="place_a" autocomplete="off">
+                                                    <input type="hidden" name="from" value="" id="pol-input">
+                                                    <i class="icon-map-a point"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-4 padding-sp dir-field">
+                                                <div class="input-icon">
+                                                    <span>DESTINATION OF SHIPMENT</span>
+                                                    <input type="text" placeholder="Country,City,Port" value="" class="form-control input-lg" id="place_k" autocomplete="off">
+                                                    <input type="hidden" name="to" value="" id="pod-input">
+                                                    <i class="icon-map-b point"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="data-block-wrapper">
+                                                <div class="data-block col-sm-1 padding-sp">
+                                                    <span class="tip">Ready to load</span>
+                                                    <input class="data-day" type="text" name="date" data-date-format="d MM, yyyy" value="" autocomplete="off">
+                                                </div>
+                                            </div>
+
+                                            <div id="dropdown-shipment" class="col-sm-12 col-md-2 no-padding">
+                                                <div class="dropdown-shipment">
+                                                    <span class="top-title">Type of delivery</span>
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="ns-icon-fcl-light"></i>FCL <i class="icon-angle-down"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+                                                            <a data-mode="sea" data-type="fcl" href="javascript:;"><i class="ns-icon-fcl-light"></i><span>FCL</span></a>
+                                                            <span class="transcript">FULL CONTAINER LOAD</span>
+                                                        </li>
+                                                        <li>
+                                                            <a data-mode="sea" data-type="lcl" href="javascript:;"><i class="ns-icon-lcl-light"></i><span>LCL</span></a>
+                                                            <span class="transcript">LESS CONTAINER LOAD</span>
+                                                        </li>
+                                                        <li>
+                                                            <a data-mode="sea" data-type="bulk" href="javascript:;"><i class="ns-icon-bulk-light"></i><span>BULK</span></a>
+                                                            <span class="transcript">BULK & BREAK BULK</span>
+                                                        </li>
+                                                        <li>
+                                                            <a data-mode="road" data-type="ftl" href="javascript:;"><i class="ns-icon-truck-light"></i><span>FTL</span></a>
+                                                            <span class="transcript">FULL TRUCK LOAD</span>
+                                                        </li>
+                                                        <li>
+                                                            <a data-mode="road" data-type="ltl" href="javascript:;"><i class="ns-icon-truck-light"></i><span>LTL</span></a>
+                                                            <span class="transcript">LESS THAN TRUCKLOAD</span>
+                                                        </li>
+                                                        <li>
+                                                            <a data-mode="road" data-type="road_fcl" href="javascript:;"><i class="ns-icon-truck-light"></i><span>FCL</span></a>
+                                                            <span class="transcript">FULL CONTAINER LOAD</span>
+                                                        </li>
+                                                        <li>
+                                                            <a data-mode="air" data-type="air" href="javascript:;"><i class="ns-icon-air-light"></i><span>AIR</span></a>
+                                                            <span class="transcript">AIR DELIVERY</span>
+                                                        </li>
+                                                        <li>
+                                                            <a data-mode="rail" data-type="rail" href="javascript:;"><i class="ns-icon-rail-light"></i><span>RAIL</span></a>
+                                                            <span class="transcript">RAIL DELIVERY</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+
+                                            <script>
+                                                $(document).ready(function(){
+
+                                                    // ROUTE CLICK
+
+                                                    $('.btn-nav').on('click', function(){
+                                                        $('.btn-type-active').removeClass('btn-type-active');
+                                                        $(this).addClass('btn-type-active');
+
+                                                        var type = $(this).data('type');
+                                                        $('.type-delivery-active').removeClass('type-delivery-active');
+                                                        $('.type-' + type + '-item').addClass('type-delivery-active');
+                                                    });
+
+                                                    // FILTER
+
+                                                    $('.dropdown-shipment li > a').on('click', function() {
+                                                        // CURRENT_MODE = $(this).data('mode');
+                                                        var type = $(this).data('type');
+                                                        $('.filter-shipping [name="type"]').val(type);
+                                                        $('.dropdown-shipment > a').html($(this).html() + '<i class="icon-angle-down"></i>');
+                                                    });
+
+                                                    $('.route-mode a').click(function(){
+                                                        var mode = $(this).data('mode');
+                                                        $('.dropdown-shipment li').hide();
+                                                        $('.dropdown-shipment li:has([data-mode="' + mode + '"])').show().find('a').first().click();
+                                                    });
+
+                                                    $('.route-mode [data-mode="sea"]').click();
+                                                });
+
+
+                                            </script>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 col-sm-12 no-padding">
+                                        <button type="submit" id="btn-search-shipping" class="btn input-lg" >Buscar</button>
+                                        <i class="pr15 hidden-xs rc-hide"></i>
+                                        <!--            <a href="--><!--/shipping/request" id="btn-request-quote" class="btn input-lg">--><!--</a>-->
+                                    </div>
+
+                                    <input type="hidden" name="type" value="fcl">
+
+                                </form>
+
+                                <div class="filter-tracking-wrapper" style="display: none">
+                                    <form method="POST"  class="filter-tracking" action="/es/container/tracking/" >
+                                        <div class="col-xs-12 col-md-12 no-padding">
+                                            <div class="input-icon">
+                                                <input pattern="[A-Za-z0-9]{5,}" title="Container number or code" type="text" name="container" placeholder="Tipo de contenedor" class="form-control input-lg" autocomplete="off" required>
+
+                                                <div class="select-wrp">
+                                                    <span class="small-upper-text-sealines">Select sealine</span>
+                                                    <select name="sealine" id="select-two" required>
+                                                        <option value="0">Auto Detect</option>
+                                                                                                                <option value="14">APL</option>
+                                                                                                                <option value="15">CMA CGM</option>
+                                                                                                                <option value="5">COSCO</option>
+                                                                                                                <option value="6">EVERGREEN</option>
+                                                                                                                <option value="4">HAMBURG SUD</option>
+                                                                                                                <option value="7">HAPAG-LLOYD</option>
+                                                                                                                <option value="104">HYUNDAI</option>
+                                                                                                                <option value="10">MAERSK</option>
+                                                                                                                <option value="125">MCC</option>
+                                                                                                                <option value="1">MSC</option>
+                                                                                                                <option value="88">ONE</option>
+                                                                                                                <option value="17">OOCL</option>
+                                                                                                                <option value="23">PIL</option>
+                                                                                                                <option value="111">SAFMARINE</option>
+                                                                                                                <option value="109">SEAGOLINE</option>
+                                                                                                                <option value="112">SEALAND</option>
+                                                                                                                <option value="124">SINOKOR</option>
+                                                                                                                <option value="97">WAN HAI</option>
+                                                                                                                <option value="18">YANG MING</option>
+                                                                                                                <option value="13">ZIM</option>
+                                                                                                        </select>
+                                                    <script>
+                                                        $(document).ready(function () {
+                                                            $('#select-two').select2();
+                                                        });
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 no-padding">
+                                            <button class="btn input-lg">
+                                                <span>Buscar</span>
+                                            </button>
+                                        </div>
+
+                                    </form>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- END MAIN FILTER-->
+                    </div>
+
+                    <div class="waves"><img src="/design/images/wave.svg" alt=""></div>
+                </div>
+
+                <!-- SERVICES BLOCK -->
+                <div class="services-block index-section-item">
+                    <div class="container">
+                        <div class="col-sm-3 col-xs-12">
+                            <div class="item">
+                                <a href="/es/services/learn-more/" title="Container Tracking">
+                                    <div class="ico">
+                                        <img src="/design/images/index/mugs/searates-tracking.svg" alt="Container Tracking">
+                                    </div>
+                                    <p>Rastreo de Contenedores</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12">
+                            <div class="item">
+                                <a href="/es/services/pricing/"  title="Logistics Explorer">
+                                    <div class="ico">
+                                        <img src="/design/images/index/mugs/searates-logistics.svg" alt="Logistics Explorer">
+                                    </div>
+                                    <p>Logistics Explorer</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12">
+                            <div class="item">
+                                <a href="/es/reference/load-calc-about/"  title="Load Calculator">
+                                    <div class="ico">
+                                        <img src="/design/images/index/mugs/searates-load-calculator.svg" alt="Load Calculator">
+                                    </div>
+                                    <p>Calculadora de carga</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-12">
+                            <div class="item">
+                                <a href="/es/services/cargo-wizard-about" title="Cargo Wizard">
+                                    <div class="ico">
+                                        <img src="/design/images/index/mugs/searates-cargo-wizard.svg" alt="Cargo Wizard">
+                                    </div>
+                                    <p>Cargo Wizard</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <!--             END SERVICES BLOCK -->
+            </div>
+        </div>
+    </div>
+    <!-- END FIRST BLOCK -->
+
+
+    <!-- WHO ARE YOU TAB SWITCH -->
+    <div class="who-are-you-wrapper">
+        <div class="who-are-you">
+            <div class="container">
+                <ul class="nav nav-tabs who" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#forwarder-tab"  data-tab="1" aria-controls="home" role="tab" data-toggle="tab">
+                            <span> Shipping </span>
+                        </a>
+                    </li>
+
+                    <li role="presentation">
+                        <a href="#importer-tab"  aria-controls="home" role="tab" data-tab="2" data-toggle="tab">
+                            <span> Paperwork </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END WHO ARE YOU TAB SWITCH -->
+
+
+    <!-- WHO ARE YOU TABS CONTENT-->
+    <div class="content-wrapper">
+        <!--  SHIPPING & DELIVERY TAB -->
+        <div class="tab-content fade main-tab in active"  role="tabpanel" id="forwarder-tab">
+            <p class="who-desc">SeaRates - the largest shipping rate search engine. We compare all the available instant rates and options for your request, and then we direct you to the right logistics provider to take care of your cargo.</p>
+
+            <!--  COMPANY COMM  -->
+            <div class="company-comm requests">
+                <div class="container">
+
+                    <!-- LATEST REQUESTS -->
+                    <div class="latest-requests-new" id="latest-request-block">
+                        <div class="sr-requests">
+                            <h2>Ocean Freight Shipping</h2>
+                            <b> Latest shipping requests in processing </b>
+
+                            <div class="filter_controls">
+                                <script>
+
+                                    $(document).ready(function () {
+
+                                        var showTitle = function () {
+
+                                            window.onscroll = function () {
+                                                var showTitleWh = window.pageYOffset;
+                                                var hiddenTitle = true;
+
+                                                if(showTitleWh >= 100 && hiddenTitle === true){
+                                                    $('.filter_controls h2.hps').addClass('active');
+                                                    hiddenTitle = false;
+                                                }
+                                            };
+                                        };
+
+                                        showTitle();
+                                    });
+
+                                </script>
+
+                                <div class="row shipping-box">
+                                    <div class="col-md-4">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body text-center">
+
+                                                <div class="ico">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130"><defs><style>.cls-1{opacity:0;}.cls-2,.cls-3{fill:none;stroke:#000;stroke-width:1.5px;}.cls-2{stroke-miterlimit:10;}.cls-3{stroke-linecap:round;stroke-linejoin:round;}</style></defs><title>i1</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_3" data-name="Layer 3"><rect class="cls-1" width="130" height="130"/><rect class="cls-2" x="47.54" y="32.17" width="34.92" height="28.91" rx="3" ry="3"/><path class="cls-3" d="M62.53,74.21V92.39a2.88,2.88,0,0,1-2.74,3H30.35a2.88,2.88,0,0,1-2.74-3V74.21"/><path class="cls-3" d="M30.35,66.48H99.51a2.87,2.87,0,0,1,2.73,3V92.39a2.87,2.87,0,0,1-2.73,3H86V87.23h2.73L85,81.08l-3.79,6.15h2.73v8.16H77V87.23h2.73L76,81.08l-3.8,6.15h2.73v8.16H70.06a2.87,2.87,0,0,1-2.73-3V74.21"/></g></g></svg>
+                                                </div>
+                                                <h3>Menor carga de contenedor</h3>
+                                                <p>
+                                                    Enviar un formulario de volumen de carga desde 1 metro cúbico hasta 20m³.. LCL es la forma más económica de enviar cargas pequeñas.
+                                                    <a class="blue-main" href="/es/about/lcl-less-container-load-international-freight-shipment">
+                                                        Más información....                                                </a>
+                                                </p>
+
+                                                <div class="pf-buttons">
+                                                    <a href="/es/shipping/request/" class="btn btn-sea btn-blue ">
+                                                        Solicite una Cotización                                                </a>
+                                                </div>
+
+                                            </div>
+                                            <div class="panel-footer br-n no-padding">
+                                                <div class="block__roll">
+                                                    <ul class="leadsCycleContainer_exchange"><li><a class="msidebar" target="_blank" href="/es/shipping/list/vitacurachile_cl/san_antonio_cl_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>6 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">cl</span> <span class="direction-text">VitacuraChile</span></div><div class="second-block-cont"><span class="country">cl</span> <span class="direction-text">San Antonio</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/moscow_russia_ru/erbil_iq_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>10 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">ru</span> <span class="direction-text">Moscow</span></div><div class="second-block-cont"><span class="country">iq</span> <span class="direction-text">Erbil</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/santander_department_colombia_co/cartagena_co_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>16 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">co</span> <span class="direction-text">Santander Department</span></div><div class="second-block-cont"><span class="country">co</span> <span class="direction-text">Cartagena</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/sankt_gangloff_germany_de/23_tuas_south_avenue_6_singapore_637022_sg_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>19 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">de</span> <span class="direction-text">Sankt Gangloff</span></div><div class="second-block-cont"><span class="country">sg</span> <span class="direction-text">23 Tuas South Avenue 6</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/shanghai_china_cn/odessa_odessa_oblast_ukraine_ua_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>19 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">cn</span> <span class="direction-text">Shanghai</span></div><div class="second-block-cont"><span class="country">ua</span> <span class="direction-text">Odessa</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/tandjungperiuk_id/460_alexandra_rd_singapore_119963_sg_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>19 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">id</span> <span class="direction-text">Tandjungperiuk</span></div><div class="second-block-cont"><span class="country">sg</span> <span class="direction-text">460 Alexandra Rd</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/tandjungperiuk_id/460_alexandra_rd_singapore_119963_sg_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>19 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">id</span> <span class="direction-text">Tandjungperiuk</span></div><div class="second-block-cont"><span class="country">sg</span> <span class="direction-text">460 Alexandra Rd</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/sankt_gangloff_germany_de/23_tuas_south_avenue_6_singapore_637022_sg_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>19 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">de</span> <span class="direction-text">Sankt Gangloff</span></div><div class="second-block-cont"><span class="country">sg</span> <span class="direction-text">23 Tuas South Avenue 6</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/hamburg_germany_de/shanghai_china_cn_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>19 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">de</span> <span class="direction-text">Hamburg</span></div><div class="second-block-cont"><span class="country">cn</span> <span class="direction-text">Shanghai</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/guangzhou_cn/odessa_odessa_oblast_ukraine_ua_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>20 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">cn</span> <span class="direction-text">Guangzhou</span></div><div class="second-block-cont"><span class="country">ua</span> <span class="direction-text">Odessa</span></div></div></div></a></li></ul>                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body text-center">
+
+                                                <div class="ico">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130"><defs><style>.cls-1{opacity:0;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>i2</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_3" data-name="Layer 3"><rect class="cls-1" width="130" height="130"/><line class="cls-2" x1="26.77" y1="43.17" x2="26.77" y2="87.01"/><line class="cls-2" x1="37.5" y1="43.17" x2="37.5" y2="87.01"/><line class="cls-2" x1="48.22" y1="43.17" x2="48.22" y2="87.01"/><line class="cls-2" x1="58.95" y1="43.17" x2="58.95" y2="87.01"/><line class="cls-2" x1="69.25" y1="43.17" x2="69.25" y2="87.01"/><line class="cls-2" x1="79.98" y1="43.17" x2="79.98" y2="87.01"/><line class="cls-2" x1="90.71" y1="43.17" x2="90.71" y2="87.01"/><line class="cls-2" x1="101.43" y1="43.17" x2="101.43" y2="87.01"/><path class="cls-2" d="M12.7,33.51H117.3a4.14,4.14,0,0,1,4.14,4.14V89a3,3,0,0,1-3,3H8.56"/><path class="cls-2" d="M117.3,96.24H12.7a4.13,4.13,0,0,1-4.14-4.13V40.76a3,3,0,0,1,3-3H121.44"/></g></g></svg>
+                                                </div>
+                                                <h3>Carga de contenedor lleno</h3>
+                                                <p>
+                                                    Transporte en contenedores marítimos (FCL). El contenedor entero está destinado a un solo destinatario. Envíe el formulario de solicitud de tarifas para un tipo de contenedor.
+                                                    <a class="blue-main" href="/es/about/fcl-full-container-load-international-freight-shipment">
+                                                        Más información....                                                </a>
+                                                </p>
+
+                                                <div class="pf-buttons">
+                                                    <a href="/es/shipping/request/" class="btn btn-sea btn-blue ">
+                                                        Solicite una Cotización                                                </a>
+                                                </div>
+
+                                            </div>
+                                            <div class="panel-footer br-n no-padding">
+                                                <div class="block__roll">
+                                                    <ul class="leadsCycleContainer_exchange"><li><a class="msidebar" target="_blank" href="/es/shipping/list/durban_south_africa_za/abu_dhabi_port_ae_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last1'>1 hour</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">za</span> <span class="direction-text">Durban</span></div><div class="second-block-cont"><span class="country">ae</span> <span class="direction-text">Abu Dhabi</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/hamburg_germany_de/ho_chi_minh_city_vn_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>2 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">de</span> <span class="direction-text">Hamburg</span></div><div class="second-block-cont"><span class="country">vn</span> <span class="direction-text">Ho Chi Minh City</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/hamburg_germany_de/ho_chi_minh_city_vn_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>2 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">de</span> <span class="direction-text">Hamburg</span></div><div class="second-block-cont"><span class="country">vn</span> <span class="direction-text">Ho Chi Minh City</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/hamburg_port_de/ho_chi_minh_city_port_vn_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>2 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">de</span> <span class="direction-text">Hamburg</span></div><div class="second-block-cont"><span class="country">vn</span> <span class="direction-text">Ho Chi Minh City</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/mainhausen_port_de/ho_chi_minh_city_port_vn_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>2 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">de</span> <span class="direction-text">Mainhausen</span></div><div class="second-block-cont"><span class="country">vn</span> <span class="direction-text">Ho Chi Minh City</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/edmonton_ca/ho_chi_minh_city_vn_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>3 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">ca</span> <span class="direction-text">Edmonton</span></div><div class="second-block-cont"><span class="country">vn</span> <span class="direction-text">Ho Chi Minh City</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/edmonton_port_ca/ho_chi_minh_city_port_vn_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>3 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">ca</span> <span class="direction-text">Edmonton</span></div><div class="second-block-cont"><span class="country">vn</span> <span class="direction-text">Ho Chi Minh City</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/southampton_port_gb/cleveland_port_us_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>4 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">gb</span> <span class="direction-text">Southampton</span></div><div class="second-block-cont"><span class="country">us</span> <span class="direction-text">Cleveland</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/gyr_hungary_hu/clermont_ferrand_fr_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>5 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">hu</span> <span class="direction-text">Győr</span></div><div class="second-block-cont"><span class="country">fr</span> <span class="direction-text">Clermont-Ferrand</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/gyr_hungary_hu/clermont_ferrand_fr_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>5 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">hu</span> <span class="direction-text">Győr</span></div><div class="second-block-cont"><span class="country">fr</span> <span class="direction-text">Clermont-Ferrand</span></div></div></div></a></li></ul>                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body text-center">
+
+                                                <div class="ico">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130"><defs><style>.cls-1{opacity:0;}.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><title>ii3</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_3" data-name="Layer 3"><rect class="cls-1" width="130" height="130"/><line class="cls-2" x1="64.8" y1="102.96" x2="64.8" y2="57.69"/><polyline class="cls-2" points="44.16 65.03 44.16 52.55 57.92 52.55 57.92 59.24"/><polyline class="cls-2" points="57.92 59.24 57.92 52.55 71.68 52.55 71.68 60.14"/><polyline class="cls-2" points="71.68 60.14 71.68 52.55 85.44 52.55 85.44 67.06"/><path class="cls-2" d="M30.63,66.55c5.54-4.55,9.24-7.77,9.82-9.29l1.46-9.56a6.58,6.58,0,0,1,6.3-5.42h7.88c0-5.49-3.69-5.28-3.69-5.28H48.91V31.51h11.2V27.62a7.06,7.06,0,0,1,4.69-1.74,7.32,7.32,0,0,1,4.69,1.74v4.15H80.68V36.6H77.47c-4.29,0-4,5.68-4,5.68H83.75a6.18,6.18,0,0,1,6,5.52A42.1,42.1,0,0,0,92.05,58c.58,1.52,6.45,6.52,12,11.08l.07.06h0a3.74,3.74,0,0,1,.46,4.72,2.83,2.83,0,0,1-3.64,1l0,0L68.22,58.4a10.92,10.92,0,0,0-7.58-.08L29.53,71.58a3,3,0,0,0-1.46,4.35L41.59,99.48a7.76,7.76,0,0,0,6,3.48h35a8,8,0,0,0,6.09-3.45L100.9,80.32"/></g></g></svg>
+                                                </div>
+                                                <h3>A granel</h3>
+                                                <p class="text-white">
+                                                    Carga a granel, cargas a granel, cargas de proyecto y cargas pesadas, equipos militares o casi cualquier otra carga sobredimensionada o con sobrepeso.
+                                                    <a class="blue-main" href="/es/about/breakbulk">
+                                                        Más información....                                                </a>
+                                                </p>
+
+                                                <div class="pf-buttons">
+                                                    <a href="/es/shipping/request/" class="btn btn-sea btn-blue ">
+                                                        Solicite una Cotización                                                </a>
+                                                </div>
+
+                                            </div>
+                                            <div class="panel-footer br-n no-padding">
+                                                <div class="block__roll">
+                                                    <ul class="leadsCycleContainer_exchange"><li><a class="msidebar" target="_blank" href="/es/shipping/list/tianjin_port_cn/klaipeda_port_lt_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>18 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">cn</span> <span class="direction-text">Tianjin</span></div><div class="second-block-cont"><span class="country">lt</span> <span class="direction-text">Klaipeda</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/bandar_abbas_hormozgan_province_iran_ir/kuwait_city_kw_1"><div class="media"><div class="media-left media-middle"><span class="date-it"><span class='last2'>23 hours</span></span></div><div class="media-body"><div class="first-block-cont"><span class="country">ir</span> <span class="direction-text">Bandar Abbas</span></div><div class="second-block-cont"><span class="country">kw</span> <span class="direction-text">Kuwait City</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/novorossiysk_port_ru/guanta_port_ve_1"><div class="media"><div class="media-left media-middle"><span class="date-it">2 days</span></div><div class="media-body"><div class="first-block-cont"><span class="country">ru</span> <span class="direction-text">Novorossiysk</span></div><div class="second-block-cont"><span class="country">ve</span> <span class="direction-text">Guanta</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/perth_au/shenzhen_guangdong_china_cn_1"><div class="media"><div class="media-left media-middle"><span class="date-it">3 days</span></div><div class="media-body"><div class="first-block-cont"><span class="country">au</span> <span class="direction-text">Perth</span></div><div class="second-block-cont"><span class="country">cn</span> <span class="direction-text">Shenzhen</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/anchorage_port_us/tokyo_port_jp_1"><div class="media"><div class="media-left media-middle"><span class="date-it">3 days</span></div><div class="media-body"><div class="first-block-cont"><span class="country">us</span> <span class="direction-text">Anchorage</span></div><div class="second-block-cont"><span class="country">jp</span> <span class="direction-text">Tokyo</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/hai_phong_vn/acajutla_sv_1"><div class="media"><div class="media-left media-middle"><span class="date-it">4 days</span></div><div class="media-body"><div class="first-block-cont"><span class="country">vn</span> <span class="direction-text">Hai Phong</span></div><div class="second-block-cont"><span class="country">sv</span> <span class="direction-text">Acajutla</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/hai_phong_vn/acajutla_sv_1"><div class="media"><div class="media-left media-middle"><span class="date-it">4 days</span></div><div class="media-body"><div class="first-block-cont"><span class="country">vn</span> <span class="direction-text">Hai Phong</span></div><div class="second-block-cont"><span class="country">sv</span> <span class="direction-text">Acajutla</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/haiphong_port_vn/thilawa_port_mm_1"><div class="media"><div class="media-left media-middle"><span class="date-it">4 days</span></div><div class="media-body"><div class="first-block-cont"><span class="country">vn</span> <span class="direction-text">Haiphong</span></div><div class="second-block-cont"><span class="country">mm</span> <span class="direction-text">Thilawa</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/bandar_abbas_port_ir/tema_port_gh_1"><div class="media"><div class="media-left media-middle"><span class="date-it">5 days</span></div><div class="media-body"><div class="first-block-cont"><span class="country">ir</span> <span class="direction-text">Bandar Abbas</span></div><div class="second-block-cont"><span class="country">gh</span> <span class="direction-text">Tema</span></div></div></div></a></li><li><a class="msidebar" target="_blank" href="/es/shipping/list/bandar_abbas_port_ir/tema_port_gh_1"><div class="media"><div class="media-left media-middle"><span class="date-it">5 days</span></div><div class="media-body"><div class="first-block-cont"><span class="country">ir</span> <span class="direction-text">Bandar Abbas</span></div><div class="second-block-cont"><span class="country">gh</span> <span class="direction-text">Tema</span></div></div></div></a></li></ul>                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        <div class="flex-line">
+                                            <a href="/es/shipping/list/">
+                                                Todos los cables de envío <i class="ace-icon icon-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END LATEST REQUESTS -->
+                </div>
+            </div>
+            <!--  END COMPANY COMM  -->
+
+            <!--    BENEFITS-BLOCK    -->
+            <div class="benefits-wrapper">
+                <div class="benefits-bubbles">
+                    <div class="container">
+                        <h2>Benefits of SeaRates.com</h2>
+
+                        <div class="benefits">
+                            <div class="item">
+                                <div class="ico">
+                                    <img src="/design/images/index/icons/ben-ico1.svg" alt="">
+                                </div>
+                                <h3>The greatest portfolio of shipping services</h3>
+                                <p>Would you like to ship cargo by ship? FCL or LCL? Bulk or Break Bulk? There is everything you need for shipping on SeaRates.com. We have gathered the shipping services and put them all in one place to facilitate your search. Instantly compare ocean and trucking freight quotes from the most popular logistics providers. Book everything on one site!</p>
+                            </div>
+
+                            <div class="item">
+                                <div class="ico">
+                                    <img src="/design/images/index/icons/ben-ico2.svg" alt="">
+                                </div>
+                                <h3>The first independent rating of the Carriers</h3>
+                                <p>Which shipping company is better? Which is more punctual? Which shipping line has the best transit time? Which has no hidden fees? Which has not odd rules or extra fees, so that you should pay for only what you see? Answers to these questions will be given to you by the first independent LPI rating. It is generated on the basis of shippers' data after every transportation finished.</p>
+                            </div>
+
+                            <div class="item">
+                                <div class="ico">
+                                    <img src="/design/images/index/icons/ben-ico3.svg" alt="">
+                                </div>
+                                <h3>We help you find the cheapest rate</h3>
+                                <p>Affordable pricing of shipping services is what we constantly strive for. At SeaRates.com you will find cheap rates to any country, from world's top Freight Forwarders and Carriers, allowing you to save your time and money. Why do you need to spend a lot of resources and energy on negotiations to get the best shipping rate? Find and book them online! It is much more convenient and  advantageous.</p>
+                            </div>
+
+                            <div class="item">
+                                <div class="ico">
+                                    <img src="/design/images/index/icons/ben-ico4.svg" alt="">
+                                </div>
+                                <h3>Client support at all stages of shipping</h3>
+                                <p>24 hours a day, 7 days a week, 365 days a year! We understand how important it is to support our customers while organizing their cargo movement, delivery and customs clearance. Our Customer Care Service is always ready to support you day and night on all issues relating to freight, weight, routing, rates, inland haulage and documentation.</p>
+                            </div>
+
+                            <div class="item">
+                                <div class="ico">
+                                    <img src="/design/images/index/icons/ben-ico5.svg" alt="">
+                                </div>
+                                <h3>Bonus program for frequent customers</h3>
+                                <p>We value our customers, so they have an opportunity to get shipping rates with discounts. Promos depend on your orders & routes. When you proceed to payment, you will be able to use a promo code, given by your carrier. If you do that, the price will lower. To get a promo code, fill out the quotation request form and get in touch with a preferred logistics provider.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--    END BENEFITS-BLOCK    -->
+
+            <div class="item-block log-exp right-item">
+                <div class="desc-wrapper">
+                    <div class="desc">
+                        <h3>Online Freight marketplace</h3>
+                        <p class="subtitle">Compare prices and select the best shipping options</p>
+                        <p>The price you see on SeaRates provided by the carrier is final on the original shipping dates. We have removed any possibility of hidden surcharges. We compare all the available delivery options for your request, and then we direct you to the carrier, who will do all the work. For the search you owe us nothing.</p>
+                        <p>
+                            <a href="/es/freight" class="btn btn-sea btn-blue">Request a Quote</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="image-block">
+                    <img src="/design/images/index/logistics_image.png" alt="">
+                </div>
+            </div>
+
+            <div class="item-block multi-track blue-bg">
+                <div class="image-block">
+                    <img src="/design/images/index/tracking_image.png" alt="">
+                </div>
+
+                <div class="desc-wrapper">
+                    <div class="desc">
+                        <h3>Container Tracking</h3>
+                        <p>Es la versión avanzada del Sistema de Rastreo de Carga que le permite monitorear y administrar múltiples embarques en un solo lugar. Por ejemplo, usted es un exportador de granos y realiza envíos a varios países - ahora puede ver el estado de todos los envíos a la vez en el mapa, con información detallada sobre cada lote. Para los transportistas, esta aplicación contiene una función integrada de planificación de rutas, que les permite completar la información que falta para sus clientes.</p>
+                        <p>
+                            <a href="/es/container/tracking" class="btn btn-sea btn-blue">Get started</a>
+                            <a href="/es/services/learn-more/">Aprende más <i class="ace-icon icon-angle-right" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OUR APPS  -->
+            <div class="our-apps-block">
+                <div class="container">
+
+                    <h2>Nuestras aplicaciones</h2>
+
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item-wrapper">
+                                <div class="item">
+                                    <div class="ico"><img src="/design/images/index/icons/logistics_icon.svg" alt=""></div>
+                                    <h4>Logistics Explorer</h4>
+                                    <p>A unique online-quotation module for transport and logistics companies who want to increase their sales using own site and get online bookings from customers.</p>
+                                    <a href="/es/services/pricing" class="btn btn-sea btn-blue">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item-wrapper">
+                                <div class="item">
+                                    <div class="ico"><img src="/design/images/index/icons/tracking_icon.svg" alt=""></div>
+                                    <h4>Container Tracking</h4>
+                                    <p>Un sistema de rastreo de carga de última generación, que funciona en cualquier dispositivo de escritorio o móvil. Deje que sus clientes sepan dónde está su carga y véala en el mapa sin llamarle!</p>
+                                    <a href="/es/services/learn-more" class="btn btn-sea btn-blue">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item-wrapper">
+                                <div class="item">
+                                    <div class="ico"><img src="/design/images/index/icons/load_calculator_icon.svg" alt=""></div>
+                                    <h4>Load Calculator</h4>
+                                    <p>La optimización del embutido para envases de diversos tamaños nunca ha sido tan fácil! Cualquier objeto cuadrado o redondo se muestra esquemáticamente en un modelo 3D cargado dentro de un contenedor o camión, en cuestión de segundos.</p>
+                                    <a href="/es/reference/stuffing/" class="btn btn-sea btn-blue">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item-wrapper">
+                                <div class="item">
+                                    <div class="ico"><img src="/design/images/index/icons/b2b_icon.svg" alt=""></div>
+                                    <h4>B2B Online Store</h4>
+                                    <p>SeaRates ofrece soluciones originales para que los importadores y exportadores mejoren sus negocios en línea. Amplíe la geografía de sus ventas y conquiste nuevos mercados!</p>
+                                    <a href="/es/shipping/products/" class="btn btn-sea btn-blue">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item-wrapper">
+                                <div class="item">
+                                    <div class="ico"><img src="/design/images/index/icons/cargo_wizard_icon.svg" alt=""></div>
+                                    <h4>Cargo Wizard</h4>
+                                    <p>Secure export documentation tool, built for modern import and export Business. Our smart autofill lets you complete documents in seconds by using calculators and copying content across from previous documents.</p>
+                                    <a href="/es/services/cargo-wizard-about" class="btn btn-sea btn-blue">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item-wrapper">
+                                <div class="item">
+                                    <div class="ico"><img src="/design/images/index/icons/route_planner_icon.svg" alt=""></div>
+                                    <h4>Route Planner</h4>
+                                    <p>Synchronizing data on the cargo tracking via API, which automatically processes details from your CRM / TMS / ERP and other systems and displays it to the client in a convenient view on the map.</p>
+                                    <a href="/es/route-planner/" class="btn btn-sea btn-blue">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="desc">Aplicaciones únicas y potentes para el envío internacional SeaRates tiene todo lo que necesita para crear una estrategia de envío en su sitio y empezar a vender en línea. Como proveedor de soluciones de comercio electrónico, le ayudaremos a mejorar sus ventas y marketing, ya sea usted importador, exportador o empresa de transporte. Sólo toma unos minutos integrar nuestras aplicaciones en su sitio web y comenzar a implementar el servicio de entrega en todo el mundo. Ofrecemos seis de las aplicaciones diseñadas profesionalmente, que le permiten procesar todos sus asuntos de envío.</p>
+
+                </div>
+            </div>
+            <!-- END OUR APPS  -->
+        </div>
+        <!-- END SHIPPING & DELIVERY TAB -->
+
+        <!--  B2B TRADE TAB -->
+        <div class="tab-content fade in main-tab import-tab " role="tabpanel" id="importer-tab">
+            <p class="who-desc">Generate professional cargo plan, invoices, sales proposals and other documents by using our calculators and easily editable, printable and sharable business document Templates! </p>
+
+            <div class="international-trade-block">
+                <h2>Asistente de carga</h2>
+
+                <div class="item-block templates-block right-item">
+                    <div class="desc-wrapper">
+                        <div class="desc">
+                            <h3>Templates<br/> for International trade</h3>
+                            <p>International export and import market, as B2B, needs to be followed by many different documents, and price offer (sales proposal) - is the first of them. High quality and professional design can be a final cut for a deal with buyer, when all other product parameters fit. SeaRates template system allows you to effectively work with templates and presets of different types of documents, such as invoices, packing lists, shipping instructions, certificates etc.</p>
+                            <p>
+                                <a href="/es/shipping/cargo-wizard" class="btn btn-sea btn-blue">Get started</a>
+                                <a href="/es/services/cargo-wizard-about">Aprende más <i class="ace-icon icon-angle-right" aria-hidden="true"></i></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="image-block">
+                        <img src="/design/images/index/documents-template-img.png" alt="">
+                    </div>
+                </div>
+
+                <div class="item-block b2b-block">
+                    <div class="image-block">
+                        <img src="/design/images/b2b-prod-step.png" class="step-img" alt="">
+                        <img src="/design/images/b2b-prod-img1.png" class="back-img" alt="">
+                    </div>
+
+                    <div class="desc-wrapper">
+                        <div class="desc">
+                            <p class="step">Step 1</p>
+                            <h3>+ Add Products</h3>
+                            <p>The worlds simplest way to generate shipping documents to customers: invoices, packing lists, bills of lading, certificates and so on. Save time, stay organized and look professional! For importers, exporters, traders, freight forwarders, transport and logistics companies.</p>
+                            <p>
+                                <a href="/es/shipping/cargo-wizard" class="btn btn-sea btn-blue">Get started</a>
+                                <a href="/es/shipping/document-list">Document list <i class="ace-icon icon-angle-right" aria-hidden="true"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-block right-item freight">
+                    <div class="desc-wrapper">
+                        <div class="desc">
+                            <p class="step">Step 2</p>
+                            <h3>3D<br/> Load Calculator</h3>
+                            <p>Ayude a sus clientes a determinar la mejor manera de cargar productos de tamaño mixto. Muéstreles una imagen en 3D con el posicionamiento óptimo de las mercancías dentro de un contenedor o camión.</p>
+                            <p>
+                                <a href="/es/shipping/cargo-wizard" class="btn btn-sea btn-blue">Get started</a>
+                                <a href="/es/shipping/document-list">Document list <i class="ace-icon icon-angle-right" aria-hidden="true"></i></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="image-block">
+                        <img src="/design/images/index/load-calcuator-cw.png" alt="">
+                    </div>
+                </div>
+
+                <div class="select-block">
+                    <div class="container">
+                        <p class="step">Step 3</p>
+                        <h3>Select the best shipping option</h3>
+                        <p>SeaRates database counts over 9 million rates by different modes of transport, which allows you to get the best shipping solution among existing in the real time.</p>
+
+                        <img src="/design/images/index/select-block-img.png" alt="">
+
+                        <p class="btns-block">
+                            <a href="/es/shipping/cargo-wizard" class="btn btn-sea btn-red">Get started</a>
+                            <a href="/es/shipping/document-list">Document list <i class="ace-icon icon-angle-right" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- END  B2B TRADE  TAB -->
+    </div>
+    <!-- WHO ARE YOU TABS CONTENT-->
+
+    </div>
+
+    <footer>
+        <div class="sea-footer-top-wrapper">
+            <div class="sea-footer-top"></div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <ul class="list-unstyled footer-nav">
+                                        </ul>
+                    <div class="row">
+                        <div style="min-height: 190px;" class="col-xs-6 col-sm-3">
+                            <ul class="list-unstyled footer-nav">
+                                <li>
+                                    <b>Empresa</b></li>
+                                <li>
+                                    <a href="/es/tos/">Términos de servicio</a>
+                                </li>
+                                <li>
+                                    <a href="/es/blog/">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="/es/contact/careers/">Carreras</a>
+                                </li>
+                                <li>
+                                    <a href="/es/about/searates-copyright/">Copyright</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="min-height: 190px;" class="col-xs-6 col-sm-3">
+                            <ul class="list-unstyled footer-nav">
+                                <li><b>Socios</b></li>
+                                <li>
+                                    <a href="/es/services/plans/">Planes y Precios</a>
+                                </li>
+                                <li>
+                                    <a href="/es/services/partnership/">Colaboración</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="min-height: 190px;" class="col-xs-6 col-sm-3">
+                            <ul class="list-unstyled footer-nav">
+                                <li><b>Soporte</b></li>
+
+                                <li>
+                                    <a href="/es/contact/">Contáctenos y Comentarios</a>
+                                </li>
+                                <li>
+                                    <a href="/es/contact/shippers-help/">Ayuda</a>
+                                </li>
+                                <li>
+                                    <a href="/es/privacy/">Privacidad</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="min-height: 190px;" class="col-xs-6 col-sm-3">
+                            <ul class="list-unstyled footer-nav">
+                                <li><b>Contacto</b></li>
+
+                                <li>
+                                    <a href="mailto:sales@searates.com">sales@searates.com</a>
+                                </li>
+                                <li>
+                                    <a style="letter-spacing: 1px;" href="tel:+442070486438">+442070486438</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container breadcrumbs-box">
+            <div class="row">
+                <div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid social-bg">
+            <div id="#socia-item" class="container social-padding">
+                <div class="row">
+                    <div class="col-md-5 col-xs-12 clearfix">
+                        <div class="socia-left">
+                            <ul class="social-icon-left">
+                                <li><a href="https://www.facebook.com/searates/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path class="cls-1 facebook" d="M26.14,19.37H22.08V33.84h-6V19.37H13.2V14.26h2.87V11c0-2.37,1.12-6.07,6.07-6.07l4.45,0v5H23.36a1.22,1.22,0,0,0-1.28,1.39v3h4.59Zm0,0"/></svg></a></li>
+                                <li><a href="https://twitter.com/wwwSEARATEScom" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path class="cls-1 twitter" d="M34.26,10.49a12.2,12.2,0,0,1-3.56,1A6.2,6.2,0,0,0,33.42,8a12.14,12.14,0,0,1-3.93,1.5,6.21,6.21,0,0,0-10.73,4.25,6,6,0,0,0,.16,1.41A17.63,17.63,0,0,1,6.13,8.72,6.21,6.21,0,0,0,8.05,17a6.13,6.13,0,0,1-2.81-.78v.08a6.2,6.2,0,0,0,5,6.08,5.88,5.88,0,0,1-1.63.22,6.45,6.45,0,0,1-1.17-.11,6.22,6.22,0,0,0,5.79,4.31,12.44,12.44,0,0,1-7.7,2.65A14.36,14.36,0,0,1,4,29.37a17.53,17.53,0,0,0,9.51,2.78c11.4,0,17.64-9.45,17.64-17.64,0-.27,0-.54,0-.81a12.29,12.29,0,0,0,3.1-3.21Zm0,0"/></svg></a></li>
+                                <li><a href="https://www.youtube.com/channel/UC-riN9Wesr6jbxi1DUTjFJQ" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path class="cls-1 youtube" d="M34.08,13.72A4.38,4.38,0,0,0,29.7,9.34H9.18A4.38,4.38,0,0,0,4.8,13.72V25.46a4.38,4.38,0,0,0,4.38,4.38H29.7a4.38,4.38,0,0,0,4.38-4.38ZM16.51,24.54v-11L24.87,19Zm0,0"/></svg></a></li>
+                                <li><a href="https://www.instagram.com/searatesltd/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path class="cls-1 instagram" d="M29.85,7.41H10A2.49,2.49,0,0,0,7.51,9.9V29.75A2.49,2.49,0,0,0,10,32.23H29.85a2.49,2.49,0,0,0,2.49-2.48V9.9a2.49,2.49,0,0,0-2.49-2.49Zm-9.93,7.45a5,5,0,1,1-5,5,5,5,0,0,1,5-5Zm-9.3,14.89a.59.59,0,0,1-.62-.62V18.58h2.6a4.35,4.35,0,0,0-.12,1.24,7.45,7.45,0,1,0,14.89,0,4.35,4.35,0,0,0-.12-1.24h2.6V29.13a.59.59,0,0,1-.62.62ZM29.85,13a.59.59,0,0,1-.62.62H26.75a.59.59,0,0,1-.62-.62V10.51a.58.58,0,0,1,.62-.61h2.48a.58.58,0,0,1,.62.61Zm0,0"/></svg></a></li>
+                                <li><a href="https://t.me/searatesfeed" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -8 40 40"><g id="Layer_21" data-name="Layer 21"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1 telegram" d="M24.49.09.56,9.41a.87.87,0,0,0,.07,1.65l6.08,1.8L9,20.06a1,1,0,0,0,1.74.42l3.14-3.21L20,21.8a1.29,1.29,0,0,0,2-.78L26.14,1.49A1.23,1.23,0,0,0,24.49.09Zm-3,4.33L10.37,14.25a.64.64,0,0,0-.2.38l-.42,3.81a.12.12,0,0,1-.23,0L7.76,12.78A.58.58,0,0,1,8,12.1L21.14,4a.29.29,0,0,1,.35.46Z"/></g></g></svg></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="false" data-reload="true">
+    <div class="modal-dialog">
+    <div class="modal-body">
+    <div class="login-layout  modal-new">
+    <div class="login-container">
+
+    <div class="position-relative">
+    <div id="login-box" class="login-box visible widget-box no-border">
+        <button type="button" class="close close col-xs-1" data-dismiss="modal">&times;</button>
+        <div class="widget-main">
+            <h4 class="blue">
+                Inicie sesión en su cuenta        </h4>
+            <div class="space-6"></div>
+            <form action="/login/" method="post">
+                <fieldset>
+                    <label class="block clearfix">
+                        <span class="input-group">
+                            <span class="input-group-addon"><i class="icon-user w20 block"></i></span>
+                            <input type="text" class="form-control" name="login" placeholder="Login o correo electrónico" />
+                        </span>
+                    </label>
+                    <label class="block clearfix">
+                        <span class="input-group">
+                            <span class="input-group-addon"><i class="icon-lock w20 block"></i></span>
+                            <input type="password" class="form-control" name="password" placeholder="Contraseña" />
+                        </span>
+                    </label>
+                    <div class="clearfix">
+                        <label class="inline">
+                            <input type="checkbox" class="ace" name="rememberme" value="1" checked="checked" />
+                            <span class="lbl smaller-90"> Recuérdame</span>
+                        </label>
+                        <button type="submit" class="width-35 pull-right btn btn-sm btn-primary" data-loading-text="Por favor espera...">
+                            Registrarse                    </button>
+                    </div>
+                </fieldset>
+            </form>
+
+
+            
+            <div class="social-or-login center">
+                <span class="bigger-110">or Login Using</span>
+            </div>
+
+                
+            <div class="social-login center">
+                <a class="btn btn-primary" title="Facebook" onclick="window.open('https://www.facebook.com/dialog/oauth?client_id=558633727535222&redirect_uri=https%3A%2F%2Fwww.searates.com%2Flogin%2Ffacebook&scope=email&display=popup', 'Auth Popup', 'width=400,height=400'); return false;">
+                    Facebook
+                </a>
+                        </div>
+
+            
+        </div>
+
+        <div class="toolbar clearfix">
+            <div>
+                <a href="javascript:" class="btn btn-sm no-shadow" onclick="show_box('forgot-box'); return false;">
+                    Restablecer contraseña            </a>
+            </div>
+            <div>
+                <a href="javascript:" class="btn btn-sm no-shadow blue" onclick="show_box('signup-box'); return false;">
+                    Registro                <i class="icon-chevron-right ml10 smaller-90"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="forgot-box" class="forgot-box widget-box">
+        <div class="widget-main">
+            <h4 class="red">
+                Restablecer contraseña        </h4>
+            <div class="space-6"></div>
+            <p>
+                Ingrese su correo electrónico y para recibir instrucciones        </p>
+            <form method="post" action="/login/reminder/">
+                <fieldset>
+                    <label class="block clearfix">
+                        <span class="input-group">
+                            <span class="input-group-addon"><i class="icon-envelope w20 block"></i></span>
+                            <input type="email" class="form-control" name="mail" placeholder="E-mail" />
+                        </span>
+                    </label>
+                    <div class="clearfix">
+                        <button type="submit" class="width-35 pull-right btn btn-sm btn-danger">
+                            Enviar                    </button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="toolbar center">
+            <a href="javascript:" class="btn btn-sm no-shadow blue" onclick="show_box('login-box'); return false;">
+                Registrarse        </a>
+        </div>
+    </div>
+
+    <div id="signup-box" class="signup-box widget-box no-border">
+        <div class="widget-main">
+            <h4 class="green">
+                Comience ahora        </h4>
+            <div class="space-6"></div>
+            <form method="post" action="/registration/">
+                <fieldset>
+                    <label class="block clearfix">
+                        <span class="input-group">
+                            <input type="email" name="s_email" class="form-control" placeholder="E-mail" value="" />
+                            <span class="input-group-addon"><i class="icon-envelope w20 block"></i></span>
+                        </span>
+                    </label>
+
+                    <input type="hidden" name="inviterId" value="" />
+                    <input type="hidden" name="platform_register" value="0" />
+
+                    <div class="row">
+                        <label class="block clearfix col-sm-6 input-left-fix">
+                            <input class="form-control" type="text" name="s_first"  placeholder="Nombre" value="" />
+                        </label>
+                        <label class="block clearfix col-sm-6 input-right-fix">
+                            <input type="text" name="s_last" class="form-control" placeholder="Apellido" value="" />
+                        </label>
+                    </div>
+
+                    <div class="row">
+                        <div class="block clearfix col-sm-12 acc-type">
+                            Account type
+                            <div class="acc-type-buttons">
+                                <label class="mr10">
+                                    <input name="s_carrier" type="radio" class="ace" value="off" checked />
+                                    <span class="lbl"> Remitente</span>
+                                </label>
+                                <label class="mr10">
+                                    <input name="s_carrier" type="radio" class="ace" value="on" />
+                                    <span class="lbl"> Transportista</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <label class="block clearfix">
+                        <span class="input-group">
+                            <select name="s_country" class="form-control">
+                                <option value="">Selecciona país</option>
+                                <option value="AF">Afghanistan</option><option value="AX">Aland Islands</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BQ">Bonaire, Saint Eustatius and Saba </option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BV">Bouvet Island</option><option value="BR">Brazil</option><option value="IO">British Indian Ocean Territory</option><option value="VG">British Virgin Islands</option><option value="BN">Brunei</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CW">Curacao</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="CD">Democratic Republic of the Congo</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="TL">East Timor</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="GF">French Guiana</option><option value="PF">French Polynesia</option><option value="TF">French Southern Territories</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GG">Guernsey</option><option value="GN">Guinea</option><option value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard Island and McDonald Islands</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IM">Isle of Man</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="CI">Ivory Coast</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JE">Jersey</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="XK">Kosovo</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Laos</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macao</option><option value="MK">Macedonia</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia</option><option value="MD">Moldova</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk Island</option><option value="MP">Northern Mariana Islands</option><option value="KP">North Korea</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PS">Palestinian Territory</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="CG">Republic of the Congo</option><option value="RE">Reunion</option><option value="RO">Romania</option><option value="RU">Russia</option><option value="RW">Rwanda</option><option value="BL">Saint Barthelemy</option><option value="SH">Saint Helena</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="MF">Saint Martin</option><option value="PM">Saint Pierre and Miquelon</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">Sao Tome and Principe</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="CS">Serbia and Montenegro</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SX">Sint Maarten</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="GS">South Georgia and the South Sandwich Islands</option><option value="KR">South Korea</option><option value="SS">South Sudan</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SJ">Svalbard and Jan Mayen</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syria</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom</option><option value="US">United States</option><option value="UM">United States Minor Outlying Islands</option><option value="UY">Uruguay</option><option value="VI">U.S. Virgin Islands</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VA">Vatican</option><option value="VE">Venezuela</option><option value="VN">Vietnam</option><option value="WF">Wallis and Futuna</option><option value="EH">Western Sahara</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option>                        </select>
+                            <span class="input-group-addon"><i class="icon-globe w20 block"></i></span>
+                        </span>
+                    </label>
+                    <label class="block clearfix">
+                        <span class="input-group">
+                            <input type="tel" name="s_phone" class="form-control" placeholder="Teléfono" />
+                            <span class="input-group-addon"><i class="icon-phone icon-flip-horizontal w20 block"></i></span>
+                        </span>
+                    </label>
+                    <label class="block clearfix" style="display: none !important">
+                        <span class="input-group">
+                            <input type="text" name="company_name" class="form-control" placeholder="Nombre de la empresa" />
+                            <span class="input-group-addon"><i class="icon-building icon-flip-horizontal w20 block"></i></span>
+                        </span>
+                    </label>
+
+                    <label class="block clearfix">
+                        <span class="input-group">
+                            <input type="password" name="s_password" id="s_password" class="form-control" placeholder="Contraseña" />
+                            <span class="input-group-addon"><i class="icon-lock w20 block"></i></span>
+                        </span>
+                    </label>
+
+                    <label class="block clearfix">
+                        <span class="input-group">
+                            <input type="password" name="s_repeat" class="form-control" placeholder="Repite la contraseña" />
+                            <span class="input-group-addon"><i class="icon-retweet w20 block"></i></span>
+                        </span>
+                    </label>
+
+                    <div class="space-10"></div>
+
+                    <label class="block">
+                        <input type="checkbox" name="s_agree" checked class="ace" />
+                        <span class="lbl block">
+                            Estoy de acuerdo con los <a target="_blank" href="/tos/">Términos de servicio</a>
+                        </span>
+                    </label>
+
+                    <div class="space-10"></div>
+
+                    <div class="clearfix">
+                        <button type="submit" class="col-sm-12 btn btn-sm btn-success">
+                            Registrarse                    </button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="toolbar center">
+            <a href="javascript:" class="btn btn-sm no-shadow" onclick="show_box('login-box'); return false;">
+                Already have an account?<span class="blue"> Sign in </span>
+            </a>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+    </div>
+
+    <script type="text/javascript">
+
+    $('#loginModal').on('show.bs.modal', function (e) {
+        if($(e.relatedTarget).is("[data-box]")) show_box($(e.relatedTarget).data('box'));
+    });
+
+    function show_box(id) {
+        $('.widget-box.visible').removeClass('visible');
+        $('#'+id).addClass('visible');
+    }
+
+    $('#login-box form').validate({
+        errorElement: 'div',
+        errorClass: 'help-block',
+        focusInvalid: false,
+        rules: {
+            login: {
+                required: true
+            },
+            password: {
+                required: true
+            }
+        },
+        messages: {
+            login: {
+                required: "Correo electrónico es requerido."
+            },
+            password: {
+                required: "Contraseña requerida"
+            }
+        },
+        invalidHandler: function (event, validator) { //display error alert on form submit
+            $('.alert-danger', $('.login-form')).show();
+        },
+        highlight: function (e) {
+            $(e).closest('label').removeClass('has-info').addClass('has-error');
+        },
+        success: function (e) {
+            $(e).closest('label').removeClass('has-error').addClass('has-info');
+            $(e).remove();
+        },
+        errorPlacement: function (error, element) {
+            error.insertAfter(element.parent());
+        },
+        submitHandler: function (form) {
+
+            var box = $('#login-box');
+
+            var btn = box.find('button[type="submit"]');
+            var l = box.find('input[name="login"]');
+            var p = box.find('input[name="password"]');
+
+            btn.button('loading');
+
+            $.ajax({
+                type: 'POST',
+                url: '/login/back/',
+                //dataType: 'json',
+                data: {
+                    login: function(){ return l.val() },
+                    password: function(){ return p.val() },
+                    platform: platform
+                },
+                success : function(resp) {
+
+                    
+                    var reload = $('#loginModal').data('reload');
+
+                    btn.button('reset');
+
+                    if (resp == 'banned') {
+                        l.closest('label').addClass('has-error');
+                        p.val('').closest('label').addClass('has-error');
+
+                        $('<div for="password" class="help-block">Your company account was blocked!</div>')
+                            .insertAfter(p.parent());
+                    } else if (resp == 'false') {
+                        l.closest('label').addClass('has-error');
+                        p.val('').closest('label').addClass('has-error');
+
+                        $('<div for="password" class="help-block">Not correct login or password!</div>')
+                            .insertAfter(p.parent());
+                    } else if(resp == 'platform') {
+                        top.location = '';
+                    } else {
+
+                        if(typeof reload_request_quote !=='undefined' && reload_request_quote){
+                            auth=1;
+                            $('.loginModal').hide();
+                            $('.btn_finish').show();
+                        }
+
+                        if (reload ) location.reload();
+                        else {
+                            $('nav.navbar').html(resp);
+                            $('#loginModal').modal('hide');
+                            $('.not-logged > .btn-next').show();
+                            $('.not-logged > span').hide();
+                            $('.not-logged').removeClass('not-logged');
+                            ajax_message(1);
+
+                            $('#nav-currency').on('show.bs.dropdown', function(){ dropNotifCurrency(G_LANG) });
+                            $('#nav-msg').on('show.bs.dropdown', function(){ dropNotifMsg(G_LANG) });
+                            $('#nav-msg .icon-refresh').on('click', function(){ dropNotifMsg(G_LANG) });
+                            $('#nav-event').on('show.bs.dropdown', function(){ dropNotifEvent(G_LANG) });
+                            $('#nav-event .icon-refresh').on('click', function(){ dropNotifEvent(G_LANG) });
+                        }
+                    }
+
+                                    }
+            });
+
+        }
+    });
+
+    $('#signup-box form').validate({
+        errorElement: 'div',
+        errorClass: 'help-block',
+        focusInvalid: false,
+        rules: {
+            s_email: {
+                required: true,
+                email:true,
+                remote:{url:"/registration/valid-email/"}
+            },
+            s_password: {
+                required: true,
+                minlength: 5
+            },
+            s_repeat: {
+                required: true,
+                equalTo: "#s_password"
+            },
+            s_first: {
+                required: true
+            },
+            s_phone: {
+                required: true
+            },
+            company_name: {
+                required: true
+            },
+            s_country: {
+                required: true
+            },
+            s_agree: 'required'
+        },
+
+        messages: {
+            s_email: {
+                required: "Por favor ingresa un e-mail válido",
+                email: "Por favor ingresa un e-mail válido",
+                remote: "Este e-mail ya está registrado!"
+            },
+            s_first: {
+                required: "Por favor, introduzca su nombre de pila"
+            },
+            s_country: "Seleccione un país",
+            s_phone: {
+                required: "Por favor, introduzca su número de teléfono"
+            },
+            company_name : {
+                required: "Por favor, introduzca el nombre de su empresa"
+            },
+            s_password: {
+                required: "Por favor, especifique una contraseña",
+                minlength: "Por favor, especifique una contraseña segura"
+            },
+            s_repeat: "Esa no es la misma contraseña que la primera.",
+            s_agree: "Por favor, acepte nuestros Términos de servicio"
+        },
+
+        invalidHandler: function (event, validator) { //display error alert on form submit
+            $('.alert-danger', $('.login-form')).show();
+        },
+
+        highlight: function (e) {
+            $(e).closest('label').removeClass('has-info').addClass('has-error');
+        },
+
+        success: function (e) {
+            $(e).closest('label').removeClass('has-error').addClass('has-info');
+            $(e).remove();
+
+            $('#signup-box form').append('<input type="hidden" name="w" value="valid">');
+        },
+
+        errorPlacement: function (error, element) {
+            if(element.is('[name="s_first"]')) error.insertAfter(element.closest('.row')).addClass('red');
+            else if(element.is(':checkbox') || element.is(':radio')) error.insertAfter(element.nextAll('.lbl:eq(0)').eq(0));
+            else error.insertAfter(element.parent());
+        },
+        submitHandler: function (form) {
+
+            var box = $('#signup-box');
+
+            var btn = box.find('button[type="submit"]');
+            var reload = $('#loginModal').data('reload');
+
+            btn.button('loading');
+
+            $.ajax({
+                type: 'POST',
+                url: '/registration/',
+                //dataType: 'json',
+                data: box.find('form').serialize() + '&reload=' + reload + '&platform=' + platform,
+                success : function(resp) {
+
+                    
+                    btn.button('reset');
+                    if (resp == 'error') {
+                        $('#loginModal').modal('hide');
+                        ajax_message(1);
+                    } else if (resp == 'platform') {
+                        top.location = '';
+                    } else {
+                        if (reload) location.reload();
+                        else {
+                            $('nav.navbar').html(resp);
+                            $('#loginModal').modal('hide');
+                            $('.not-logged > .btn-next').show();
+                            $('.not-logged > span').hide();
+                            $('.not-logged').removeClass('not-logged');
+                            ajax_message(1);
+
+                            $('#nav-currency').on('show.bs.dropdown', function(){ dropNotifCurrency(G_LANG) });
+                            $('#nav-msg').on('show.bs.dropdown', function(){ dropNotifMsg(G_LANG) });
+                            $('#nav-msg .icon-refresh').on('click', function(){ dropNotifMsg(G_LANG) });
+                            $('#nav-event').on('show.bs.dropdown', function(){ dropNotifEvent(G_LANG) });
+                            $('#nav-event .icon-refresh').on('click', function(){ dropNotifEvent(G_LANG) });
+                        }
+                    }
+
+                                    }
+            });
+
+        }
+    });
+
+    $('#forgot-box form').validate({
+        errorElement: 'div',
+        errorClass: 'help-block',
+        focusInvalid: false,
+        rules: {
+            mail: {
+                required: true,
+                email:true
+            }
+        },
+        messages: {
+            mail: "Por favor ingresa un e-mail válido"
+        },
+        invalidHandler: function () {
+            $('.alert-danger', $('.login-form')).show();
+        },
+        highlight: function (e) {
+            $(e).closest('label').removeClass('has-info').addClass('has-error');
+        },
+        success: function (e) {
+            $(e).closest('label').removeClass('has-error').addClass('has-info');
+            $(e).remove();
+        },
+        errorPlacement: function (error, element) {
+            error.insertAfter(element.parent());
+        },
+        submitHandler: function (form) {
+
+            var box = $('#forgot-box');
+
+            var btn = box.find('button[type="submit"]');
+            var reload = $('#loginModal').data('reload');
+
+            btn.button('loading');
+
+            $.ajax({
+                type: 'POST',
+                url: '/login/reminder',
+                //dataType: 'json',
+                data: box.find('form').serialize() + '&reload=' + reload + '&platform=' + platform,
+                success : function(resp) {
+
+                    
+                    btn.button('reset');
+                    if (resp == 'error') {
+                        $('#loginModal').modal('hide');
+                        ajax_message(1);
+                    } else if (resp == 'platform') {
+                        top.location = '';
+                    } else {
+                        if (reload) location.reload();
+                        else {
+                            $('#loginModal').modal('hide');
+                            ajax_message(1);
+                        }
+                    }
+
+                                    }
+            });
+
+        }
+    });
+
+    $.validator.addMethod('nofreeemail', function (value) {
+        return /^([\w-.]+@(?!gmail\.com)(?!yahoo\.com)(?!hotmail\.com)(?!mail\.ru)(?!yandex\.ru)(?!mail\.com)([\w-]+.)+[\w-]{2,4})?$/.test(value);
+    }, 'Only corporate e-mail accepted for a Carrier Account!');
+
+    $('[name="s_carrier"]').on('change', function () {
+        if($(this).val() === 'off'){
+            $('[name="s_email"]').rules("remove", "nofreeemail");
+
+            $('[name="s_phone"]').closest('.block').attr("style", "display: none !important");
+            $('[name="company_name"]').closest('.block').attr("style", "display: none !important");
+        }else{
+            $('[name="s_email"]').rules("add", { nofreeemail: true });
+
+            $('[name="s_phone"]').closest('.block').attr("style", "display: block !important");
+            $('[name="company_name"]').closest('.block').attr("style", "display: block !important");
+        }
+    });
+    </script>
+    <div class="modal fade" id="who-are-you-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="border-bottom: none;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="font-size: 21px;">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="modal_title">Are you...</p>
+                    <div class="row">
+                        <div class="col-md-6 who_are_you-item who_are_you-1">
+                            <div class="who_are_you-content">
+                                <a href="#" data-item="shippers"><span>Carrier?</span></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 who_are_you-item who_are_you-2">
+                            <div class="who_are_you-content">
+                                <a href="#" data-item="suppliers"><span>Supplier?</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    .spinner {
+        margin: 30px auto 0;
+        width: 70px;
+        text-align: center;
+    }
+
+    .spinner > div {
+        width: 18px;
+        height: 18px;
+        background-color: #007ee5;
+
+        border-radius: 100%;
+        display: inline-block;
+        -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    }
+
+    .spinner .bounce1 {
+        -webkit-animation-delay: -0.32s;
+        animation-delay: -0.32s;
+    }
+
+    .spinner .bounce2 {
+        -webkit-animation-delay: -0.16s;
+        animation-delay: -0.16s;
+    }
+
+    @-webkit-keyframes sk-bouncedelay {
+        0%, 80%, 100% { -webkit-transform: scale(0) }
+        40% { -webkit-transform: scale(1) }
+    }
+
+    @keyframes sk-bouncedelay {
+        0%, 80%, 100% {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        } 40% {
+              -webkit-transform: scale(1);
+              transform: scale(1);
+          }
+    }
+</style>
+
+</html>
+

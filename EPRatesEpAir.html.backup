@@ -1,0 +1,392 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+<script src="/rates/static/111213/js/perf/stub.js" type="text/javascript"></script><script src="/rates/faces/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.AjaxScript?rel=1562614401000" type="text/javascript"></script><script src="/rates/jslibrary/1548902828220/ui-sfdc-javascript-impl/SfdcCore.js" type="text/javascript"></script><script src="/rates/resource/1540508435000/bootstrap337/js/jquery.min.js" type="text/javascript"></script><script src="/rates/resource/1540508436000/serviceCot/js/jquery-ui.js" type="text/javascript"></script><script src="/rates/resource/1540508435000/bootstrap337/js/bootstrap.min.js" type="text/javascript"></script><script src="/rates/static/111213/js/picklist4.js" type="text/javascript"></script><script src="/rates/jslibrary/1553583056220/sfdc/VFState.js" type="text/javascript"></script><link class="user" href="/rates/resource/1540508435000/bootstrap337/css/bootstrap.min.css" rel="stylesheet" type="text/css" /><link class="user" href="/rates/resource/1540508435000/bootstrap337/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" /><link class="user" href="/rates/resource/1540508436000/serviceCot/css/ionicons.css" rel="stylesheet" type="text/css" /><link class="user" href="/rates/resource/1540508436000/serviceCot/css/loading.css" rel="stylesheet" type="text/css" /><link class="user" href="/rates/resource/1540508436000/serviceCot/css/jquery-ui.css" rel="stylesheet" type="text/css" /><link class="user" href="/rates/resource/1540508435000/EPServiceStyle" rel="stylesheet" type="text/css" /><script>(function(UITheme) {
+    UITheme.getUITheme = function() { 
+        return UserContext.uiTheme;
+    };
+}(window.UITheme = window.UITheme || {}));</script><meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+<meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link href="//fonts.googleapis.com/css?family=PT+Sans%3A200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRaleway%3A200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7C&amp;#038;subset=latin%2Cgreek-ext%2Ccyrillic%2Clatin-ext%2Cgreek%2Ccyrillic-ext%2Cvietnamese&amp;#038;ver=4.7.3" id="autolog-google-fonts-css" media="all" rel="stylesheet" type="text/css" />
+        <style type="text/css">
+            body{background-color: #FFF;}
+            .fondoInferior{
+            text-align: center;
+            background: #182e3c url("/rates/resource/1540508436000/serviceCot/image/AEREO.jpg") no-repeat fixed;
+            width: 100%;
+            opacity: 0.5;
+            overflow: hidden;
+            background-position: center center;
+            background-size: cover;
+            height: 570px;
+            }
+            .baseFondo{
+            position: absolute;
+            margin-top: 40px;
+            background: #182e3c;
+            height: 570px;
+            width: 100%;
+            }
+            .ui-autocomplete-loading{
+            background: white url("/rates/resource/1540508436000/serviceCot/image/seat_spinner.gif") right 10px center no-repeat;
+            background-size: 24px;
+            }
+            .panel-body div{
+            padding-bottom: 8px;
+            }
+            .form-signin .mb-4{display: none;}
+            @media screen and (min-width: 768px) {
+            .logo-header,.contPrincpal .row{width: 690px;display: block;}
+            .form-signin .mb-4{display: block;}
+            .noImportant{display: none !important;}
+            .logo-navbar{display: none;}
+            .page-title-header h1 {font-size: 56px;}
+            h6.section-sub-title{font-size: 15px;}
+            h4.section-sub-title{font-size: 24px;}
+            }
+            @media screen and (min-width: 992px) {
+            .logo-header,.contPrincpal .row{width: 912px;}
+            .noImportant{display: block !important;}
+            }
+            @media screen and (min-width: 1200px) {
+            .logo-header,.contPrincpal .row{width: 1112px;}
+            }
+            .form-signin {
+            width: 100%;
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+            color: #FFF;
+            }
+            .form-signin a:hover{
+            color: #71D8EF;
+            }
+        </style>
+        <script type="text/javascript">
+        var ContainerValues = [];
+        var banNotReset = false;
+        var inputPickId;
+        $(document).ready(function() {
+            initJs();
+        });
+        
+        function initJs(){
+            cargaAutoComplete($('.ESTOYCtrl'),$("[id$='ESTOYLocation']"));
+            cargaAutoComplete($('.VOYCtrl'),$("[id$='VOYLocation']"));
+        }
+        
+        function cargaAutoComplete(inpt,IDinpt){
+            $(inpt).autocomplete({
+                source: function( request, response ) {
+                    $.ajax( {
+                        url: "https://europartners.secure.force.com/rates/services/apexrest/airlocationsearch",
+                        dataType: "json",
+                        type: 'GET',
+                        data: {term: request.term},
+                        success: function( data ) {response( data );},
+                        error:function(exception,status,et){console.log(exception);}
+                    });
+                },
+                minLength: 2,
+                select: function( event, ui ) {
+                    $(IDinpt).val(ui.item.id);
+                    /*$(inptPICK).val('');
+                        calculaLocations();
+                        calculaArrastres(ui.item.id);
+                        inputPickId = inptPICK;*/
+                }
+            });
+        }
+        
+        function showLoading(valorT){
+            $('.loadingBlock').css('display', ((valorT)?'block':'none'));
+        }
+        
+        /* function doChange(selectedOption)
+        {
+            document.getElementById("sip2").style.display="none";
+            document.getElementById("sip1").style.display="none";
+            $("[id$='zip1']").val('');
+            $("[id$='zip2']").val('');
+            
+            if(selectedOption.value == 'DAP'){
+                //document.getElementById("sip1").style.visibility="visible";
+                document.getElementById("sip1").style.display="block";
+                
+                document.getElementById("sip2").style.display="block";
+            }
+            else if(selectedOption.value == 'EXW'){
+                
+                var origenValue = $('[id$=origenID]').val();
+                var destinoValue =$('[id$=destinoID]').val();
+                
+                if(origenValue.includes("[MEX]"))
+                {
+                    document.getElementById("sip1").style.display="block";
+                }
+                else if(destinoValue.includes("[MEX]"))
+                {
+                    document.getElementById("sip2").style.display="block";
+                }
+                    else  if(origenValue.includes("[MEX]") && destinoValue.includes("[MEX]"))
+                    {
+                        document.getElementById("sip1").style.display="block";
+                        document.getElementById("sip2").style.display="block";
+                    }
+            }
+            
+        }*/
+        </script>
+    </head>
+    <body><span id="j_id0:esperaBLK"><span id="j_id0:esperaBLK.start" style="display: none"></span><script type="text/javascript">
+window.document.getElementById('j_id0:esperaBLK.start').onstart=function(){showLoading(true);;};
+</script><span id="j_id0:esperaBLK.stop"></span><script type="text/javascript">
+window.document.getElementById('j_id0:esperaBLK.stop').onstop=function(){showLoading(false);;};
+</script></span>
+        <div class="loadingBlock"><div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div></div><span id="j_id0:j_id16">
+	    <nav class="navbar navbar-inverse navbar-fixed-top" style="background: #0c528a;font-size: 90%;">
+      <div class="container">
+        <div class="navbar-header" style="text-align: center;"><a href="/rates/EpRatesHome">
+          <img class="logo-navbar" height="40px" src="/rates/resource/1540508436000/serviceCot/image/EP_groupBCO.png" style="margin: 10px 0px;" /></a>
+          <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" style="background: #0c528a;margin-top: 11px;" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+			<ul class="nav navbar-nav">
+				<li><a href="http://www.europartners.com.mx/carga-critica-lp/">
+					<img src="/rates/resource/1540508436000/serviceCot/image/cargo.png" />
+				</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="tel:018008883876">
+					<span class="topicon ionicons ion-ios-telephone"></span>
+					01 800 888 EURO
+				</a></li>
+				<li><a href="mailto:info.mexico@europartners.com.mx" target="_blank">
+					<span class="topicon ionicons ion-android-mail"></span>
+					info.mexico@europartners.com.mx
+				</a></li>
+				<li class="noImportant">
+					<p>
+					<a href="https://www.facebook.com/EuropartnersLogistics/" target="_blank">
+						<span class="ionicons ion-social-facebook"></span>
+					</a>
+					<a href="https://twitter.com/logisticsep?lang=es" target="_blank">
+						<span class="ionicons ion-social-twitter"></span>
+					</a>
+					<a href="https://www.linkedin.com/company/europartners" target="_blank">
+						<span class="ionicons ion-social-linkedin"></span>
+					</a>
+					<a href="https://www.youtube.com/user/Europartnersofficial" target="_blank">
+						<span class="ionicons ion-social-youtube"></span>
+					</a>
+					</p>
+				</li>
+				<li class="dropdown" style="display: ;">
+					<p class="navbar-text" style="margin: 0px;">Signed in as:&nbsp;<a href="/rates/EPRegisterUser" class="navbar-link">test1, Test1</a></p>
+				</li>
+				<li class="dropdown" style="display: none;"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          				<b>Login</b><span class="caret"></span></a>
+					<ul class="dropdown-menu" id="login-dp" style="background-color: #FFF;">
+						<li><div id="j_id0:j_id16:j_id17:j_id28" class="row">
+								<div class="col-md-12">
+<form id="j_id0:j_id16:j_id17:j_id30" name="j_id0:j_id16:j_id17:j_id30" method="post" action="/rates/EPRatesEpAir" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id0:j_id16:j_id17:j_id30" value="j_id0:j_id16:j_id17:j_id30" />
+
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputEmail2">E-Mail</label><input type="text" name="j_id0:j_id16:j_id17:j_id30:j_id32" value="test1@hotmail.com" class="form-control" placeholder="E-Mail" />
+										</div>
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputPassword2">Password</label><input type="password" name="j_id0:j_id16:j_id17:j_id30:j_id34" value="" class="form-control" placeholder="Password" />
+                                             <div class="help-block text-right"><a>Forget the password?</a></div>
+										</div>
+										<div class="form-group"><input type="submit" name="j_id0:j_id16:j_id17:j_id30:j_id36" value="Sign in" class="btn btn-primary btn-block" />
+										</div>
+										<div class="checkbox">
+											 <label style="color: #000;"><input type="checkbox" name="j_id0:j_id16:j_id17:j_id30:j_id38" />keep me logged-in
+											 </label>
+										</div><div id="j_id0:j_id16:j_id17:j_id30:j_id126"></div>
+</form><span id="ajax-view-state-page-container" style="display: none"><span id="ajax-view-state" style="display: none"><input type="hidden"  id="com.salesforce.visualforce.ViewState" name="com.salesforce.visualforce.ViewState" value="i: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" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateVersion" name="com.salesforce.visualforce.ViewStateVersion" value="201907081933210485" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateMAC" name="com.salesforce.visualforce.ViewStateMAC" value="AGV5SnViMjVqWlNJNklrOW9PSFF0V21wcU1XMUpaWEJpVEhFeGJsWjRNMFJqWlRZdFNtNW5RbEIzTW1SUVh6SnRZWGRIV2pSY2RUQXdNMlFpTENKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUlzSW10cFpDSTZJbnRjSW5SY0lqcGNJakF3UkRCWk1EQXdNREF3VEdaM1pGd2lMRndpZGx3aU9sd2lNREpITUZrd01EQXdNREJuY2poVlhDSXNYQ0poWENJNlhDSjJabk5wWjI1cGJtZHJaWGxjSWl4Y0luVmNJanBjSWpBd05URjJNREF3TURBMFpYSTFVbHdpZlNJc0ltTnlhWFFpT2xzaWFXRjBJbDBzSW1saGRDSTZNVFUyTWpjek1qRXhNalkyTkN3aVpYaHdJam93ZlE9PS4uckV0SGQ2U2Z5MVhVTTlIYkdXLTJJN1U0ek9ESTdoNy1JNmxPSVUxMFJzdz0=" /></span></span>
+								</div>
+								<div class="bottom text-center" style="color: #000;">
+									New here?&nbsp;<a href="/rates/EPRegisterUser"><b>Join Us</b></a>
+								</div></div>
+						</li>
+					</ul>
+        		</li>
+			</ul>
+        </div>
+      </div>
+    </nav></span>
+        <div style="position: relative;">
+            <div class="baseFondo"><div class="fondoInferior"></div></div>
+        </div>
+<form id="j_id0:j_id46" name="j_id0:j_id46" method="post" action="/rates/EPRatesEpAir" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id0:j_id46" value="j_id0:j_id46" />
+
+            <div class="container" style="text-align: center;padding-top: 40px;padding-bottom: 30px;">
+                <div style="position: relative;">
+                    <div class="logo-header"><a href="/rates/EpRatesHome">
+                            <img height="50px" src="/rates/resource/1540508436000/serviceCot/image/EP_groupBCO.png" /></a>
+                    </div>
+                    <div class="page-title-header text-center" style="padding-top: 10px;">
+                        <h1 class="entry-title">EP Air Freight</h1>           
+                    </div>
+                    <div class="section-heading">
+                        <h6 class="section-sub-title">OUR CHALLENGE?</h6>
+                        <h4 class="section-sub-title">HELP YOU IN THE LOGISTIC SITUATION YOU FACE</h4>
+                    </div>
+                    <br />
+                    <div class="row">
+                        
+                        
+                        <div class="col-md-6 bloquePrimPreguntas"><span class="labelcampo">Where is the cargo?</span>
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-addon">
+                                    <span aria-hidden="true" class="glyphicon glyphicon-globe"></span>
+                                </span><input id="j_id0:j_id46:origenID" type="text" name="j_id0:j_id46:origenID" class="form-control ESTOYCtrl" placeholder="City or Country" /><input id="j_id0:j_id46:ESTOYLocation" type="hidden" name="j_id0:j_id46:ESTOYLocation" />
+                            </div>
+                        </div>
+                        <div class="col-md-6 bloquePrimPreguntas"><span class="labelcampo">Where do you want to take it?</span>
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-addon">
+                                    <span aria-hidden="true" class="glyphicon glyphicon-globe"></span>
+                                </span><input id="j_id0:j_id46:destinoID" type="text" name="j_id0:j_id46:destinoID" class="form-control VOYCtrl" placeholder="City or Country" /><input id="j_id0:j_id46:VOYLocation" type="hidden" name="j_id0:j_id46:VOYLocation" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                      
+                               
+                        <div class="col-md-3 bloquePrimPreguntas" id="sip1"><span class="labelcampo">Origin ZIP Code (for Drayage)</span>
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-addon">
+                                    <span aria-hidden="true" class="glyphicon glyphicon-home"></span>
+                                </span><input id="j_id0:j_id46:zip1" type="text" name="j_id0:j_id46:zip1" value="" class="form-control" placeholder="Zip code" />
+                            </div>
+                        </div>
+                        <div class="col-md-3"></div><div class="col-md-3"></div>
+                        <div class="col-md-3  bloquePrimPreguntas" id="sip2"><span class="labelcampo">Delivery ZIP Code (for Drayage)</span>
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-addon">
+                                    <span aria-hidden="true" class="glyphicon glyphicon-home"></span>
+                                </span><input id="j_id0:j_id46:zip2" type="text" name="j_id0:j_id46:zip2" value="" class="form-control" placeholder="Zip code" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        
+                        <div class="col-md-3 bloquePrimPreguntas"><span class="labelcampo">How much does the load weigh?</span>
+                            <div class="input-group input-group-lg" style="width: 100%">
+                                <button class="btn btn-warning btn-lg" data-target="#modalBoxes" data-toggle="modal" style="width: 100%" type="button">Add boxes</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 bloquePrimPreguntas"><span class="labelcampo">Chargeable weight</span><div id="j_id0:j_id46:pesoCargDat" class="input-group input-group-lg">
+                                <span class="input-group-addon">
+                                    <span aria-hidden="true" class="glyphicon glyphicon-log-in"></span>
+                                </span><span style="text-align: right;background-color: #EEE;" class="form-control"></span></div>
+                        </div>   
+                    <div class="col-md-6 bloquePrimPreguntas"><span class="labelcampo">&#160;</span>
+                        <div class="input-group input-group-lg" style="width: 100%"><input type="submit" name="j_id0:j_id46:j_id80" value="Show me" style="width: 100%" class="btn btn-primary btn-lg" />
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div aria-labelledby="myModalLabel" class="modal fade" id="modalBoxes" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Add boxes</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6 form-group"><span class="control-label">Calculate weight in</span>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <span aria-hidden="true" class="glyphicon glyphicon-scale"></span>
+                                        </span><select name="j_id0:j_id46:j_id84" class="form-control" size="1" onchange="A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id87','parameters':{'j_id0:j_id46:j_id87':'j_id0:j_id46:j_id87'} ,'status':'j_id0:esperaBLK'} )">	<option value="KGS" selected="selected">Kgs</option>
+	<option value="LBS">Lbs</option>
+</select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 form-group"><span class="control-label">Calculate dimensions in</span>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <span aria-hidden="true" class="glyphicon glyphicon-fullscreen"></span>
+                                        </span><select name="j_id0:j_id46:j_id91" class="form-control" size="1" onchange="A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id94','parameters':{'j_id0:j_id46:j_id94':'j_id0:j_id46:j_id94'} ,'status':'j_id0:esperaBLK'} )">	<option value="CM" selected="selected">Centimeters</option>
+	<option value="IN">Inches</option>
+</select>
+                                    </div>
+                                </div><div id="j_id0:j_id46:listaCajas" class="table-responsive col-md-12">
+                                    <table class="table">
+                                        <tr>
+                                            <th></th>
+                                            <th>Packaging Units</th>
+                                            <th>Length</th>
+                                            <th>Width</th>
+                                            <th>Height</th>
+                                            <th>Packaging Unit Weight</th>
+                                        </tr>
+                                            <tr>
+                                                <th><a class="btn btn-success btn-sm" href="#" id="j_id0:j_id46:j_id98:0:j_id100" name="j_id0:j_id46:j_id98:0:j_id100" onclick="A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id98:0:j_id100','parameters':{'j_id0:j_id46:j_id98:0:j_id100':'j_id0:j_id46:j_id98:0:j_id100'} ,'status':'j_id0:esperaBLK'} );return false;">+</a>
+                                                </th>
+                                                <th><input type="number" name="j_id0:j_id46:j_id98:0:j_id104" class="form-control" placeholder="Quantity" />
+                                                </th>
+                                                <th><input type="number" name="j_id0:j_id46:j_id98:0:j_id106" class="form-control" placeholder="In Centimeters" />
+                                                </th>
+                                                <th><input type="number" name="j_id0:j_id46:j_id98:0:j_id108" class="form-control" placeholder="In Centimeters" />
+                                                </th>
+                                                <th><input type="number" name="j_id0:j_id46:j_id98:0:j_id110" class="form-control" placeholder="In Centimeters" />
+                                                </th>
+                                                <th><input type="number" name="j_id0:j_id46:j_id98:0:j_id112" class="form-control" placeholder="Weight in Kgs" />
+                                                </th>
+                                            </tr>
+                                    </table></div>
+                            </div>
+                        </div>
+                        <div class="modal-footer"><input class="btn btn-success" id="j_id0:j_id46:j_id117" name="j_id0:j_id46:j_id117" onclick="return A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id117','html5Validate':true,'oncomplete':function(request,event,data){$('#modalBoxes').modal('hide');},'parameters':{'j_id0:j_id46:j_id117':'j_id0:j_id46:j_id117'} ,'status':'j_id0:esperaBLK'} );" value="Apply" type="submit" />
+                            <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div><div id="j_id0:j_id46:j_id127"></div>
+</form><span id="j_id0:j_id119">
+
+<div aria-labelledby="myModalLabel" class="modal fade" id="ModalTerminos" role="dialog" tabindex="-1">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Terms and Conditions</h4>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <img height="30px" src="/rates/resource/1540508436000/serviceCot/image/EP_groupBCO.png" />
+        &nbsp;Av. Revoluci&oacute;n #649-3 Col. Jard&iacute;n Espa&ntilde;ol, Monterrey, N.L. M&eacute;xico.&nbsp;|&nbsp;<a href="#" onclick="$('#ModalTerminos').modal('show');return false">Terms and Conditions</a>
+    </div>
+</footer></span>
+    </body><script type="text/javascript">Sfdc.onReady(function(){
+	SfdcApp && SfdcApp.Visualforce && SfdcApp.Visualforce.VSManager && SfdcApp.Visualforce.VSManager.vfPrepareForms(["j_id0:j_id16:j_id17:j_id30","j_id0:j_id46"]);
+
+});</script></html>

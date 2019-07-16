@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <!--<script src="/rates/static/111213/js/perf/stub.js" type="text/javascript"></script>
+        <script src="/rates/jslibrary/1548902828220/ui-sfdc-javascript-impl/SfdcCore.js" type="text/javascript"></script>
+        <script src="/rates/resource/1540508435000/bootstrap337/js/jquery.min.js" type="text/javascript"></script>
+        <script src="/rates/resource/1540508436000/serviceCot/js/jquery-ui.js" type="text/javascript"></script>
+        <script src="/rates/resource/1540508435000/bootstrap337/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="/rates/static/111213/js/picklist4.js" type="text/javascript"></script>
+        <script src="/rates/jslibrary/1553583056220/sfdc/VFState.js" type="text/javascript"></script>-->
+    <link class="user" href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link class="user" href="./css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link class="user" href="./css/ionicons.css" rel="stylesheet" type="text/css" />
+    <link class="user" href="./css/loading.css" rel="stylesheet" type="text/css" />
+    <link class="user" href="./css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link class="user" href="./css/EPServiceStyle.css" rel="stylesheet" type="text/css" />
+    <meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+    <meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="//fonts.googleapis.com/css?family=PT+Sans%3A200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRaleway%3A200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7C&amp;#038;subset=latin%2Cgreek-ext%2Ccyrillic%2Clatin-ext%2Cgreek%2Ccyrillic-ext%2Cvietnamese&amp;#038;ver=4.7.3" id="autolog-google-fonts-css" media="all" rel="stylesheet" type="text/css" />
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/cards.css" rel="stylesheet">
+</head>
+
+<body>
+    <span id="j_id0:esperaBLK">
+        <span id="j_id0:esperaBLK.start" style="display: none">
+        </span>
+        <script type="text/javascript">
+            window.document.getElementById('j_id0:esperaBLK.start').onstart = function () { showLoading(true);; };
+        </script><span id="j_id0:esperaBLK.stop"></span>
+        <script type="text/javascript">
+            window.document.getElementById('j_id0:esperaBLK.stop').onstop = function () { showLoading(false);; };
+        </script>
+    </span>
+    <div class="loadingBlock">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <span id="j_id0:j_id16">
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="background: #2196f3;font-size: 90%;">
+            <div class="container">
+                <div class="navbar-header" style="text-align: center;"><a href="/rates/EpRatesHome">
+                        <img class="logo-navbar" height="40px" src="./img/EP_groupBCO.png"
+                            style="margin: 10px 0px;" /></a>
+                    <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed"
+                        data-target="#navbar" data-toggle="collapse" style="background: #0c528a;margin-top: 11px;"
+                        type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="http://www.europartners.com.mx/carga-critica-lp/">
+                                <img
+                                    src="https://europartners.secure.force.com/rates/resource/1540508436000/serviceCot/image/cargo.png" />
+                            </a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="tel:018008883876">
+                                <span class="topicon ionicons ion-ios-telephone"></span>
+                                01 800 888 EURO
+                            </a></li>
+                        <li><a href="mailto:info.mexico@europartners.com.mx" target="_blank">
+                                <span class="topicon ionicons ion-android-mail"></span>
+                                info.mexico@europartners.com.mx
+                            </a></li>
+                        <li class="noImportant">
+                            <p>
+                                <a href="https://www.facebook.com/EuropartnersLogistics/" target="_blank">
+                                    <span class="ionicons ion-social-facebook"></span>
+                                </a>
+                                <a href="https://twitter.com/logisticsep?lang=es" target="_blank">
+                                    <span class="ionicons ion-social-twitter"></span>
+                                </a>
+                                <a href="https://www.linkedin.com/company/europartners" target="_blank">
+                                    <span class="ionicons ion-social-linkedin"></span>
+                                </a>
+                                <a href="https://www.youtube.com/user/Europartnersofficial" target="_blank">
+                                    <span class="ionicons ion-social-youtube"></span>
+                                </a>
+                            </p>
+                        </li>
+                        <li class="dropdown" style="display: none;">
+                            <p class="navbar-text" style="margin: 0px;">Signed in as:&nbsp;<a
+                                    href="/rates/EPRegisterUser" class="navbar-link"></a></p>
+                        </li>
+                        <li class="dropdown" style="display: ;"><a href="#" class="dropdown-toggle"
+                                data-toggle="dropdown">
+                                <b>Login</b><span class="caret"></span></a>
+                            <ul class="dropdown-menu" id="login-dp" style="background-color: #FFF;">
+                                <li>
+                                    <div id="j_id0:j_id16:j_id17:j_id28" class="row">
+                                        <div class="col-md-12">
+                                            <form id="j_id0:j_id16:j_id17:j_id30" name="j_id0:j_id16:j_id17:j_id30"
+                                                method="post" action="/rates/EpRatesHome"
+                                                enctype="application/x-www-form-urlencoded">
+                                                <input type="hidden" name="j_id0:j_id16:j_id17:j_id30"
+                                                    value="j_id0:j_id16:j_id17:j_id30" />
+
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="exampleInputEmail2">E-Mail</label><input
+                                                        type="text" name="j_id0:j_id16:j_id17:j_id30:j_id32"
+                                                        class="form-control" placeholder="E-Mail" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="sr-only"
+                                                        for="exampleInputPassword2">Password</label><input
+                                                        type="password" name="j_id0:j_id16:j_id17:j_id30:j_id34"
+                                                        value="" class="form-control" placeholder="Password" />
+                                                    <div class="help-block text-right"><a>Forget the password?</a></div>
+                                                </div>
+                                                <div class="form-group"><input type="submit"
+                                                        name="j_id0:j_id16:j_id17:j_id30:j_id36" value="Sign in"
+                                                        class="btn btn-primary btn-block" />
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label style="color: #000;"><input type="checkbox"
+                                                            name="j_id0:j_id16:j_id17:j_id30:j_id38" />keep me logged-in
+                                                    </label>
+                                                </div>
+                                                <div id="j_id0:j_id16:j_id17:j_id30:j_id74"></div>
+                                            </form><span id="ajax-view-state-page-container" style="display: none"><span
+                                                    id="ajax-view-state" style="display: none"><input type="hidden"
+                                                        id="com.salesforce.visualforce.ViewState"
+                                                        name="com.salesforce.visualforce.ViewState"
+                                                        value="i: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" /><input
+                                                        type="hidden" id="com.salesforce.visualforce.ViewStateVersion"
+                                                        name="com.salesforce.visualforce.ViewStateVersion"
+                                                        value="201907081933210485" /><input type="hidden"
+                                                        id="com.salesforce.visualforce.ViewStateMAC"
+                                                        name="com.salesforce.visualforce.ViewStateMAC"
+                                                        value="AGV5SnViMjVqWlNJNklrWkRWRk5UT0RWc1dEQlZhSFZ6T0VKWFlVVXlRalpJUVVFNFEwcHdWRFZVTlVwb1IyTXhZbEY0U2pSY2RUQXdNMlFpTENKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUlzSW10cFpDSTZJbnRjSW5SY0lqcGNJakF3UkRCWk1EQXdNREF3VEdaM1pGd2lMRndpZGx3aU9sd2lNREpITUZrd01EQXdNREJuY2poVlhDSXNYQ0poWENJNlhDSjJabk5wWjI1cGJtZHJaWGxjSWl4Y0luVmNJanBjSWpBd05URjJNREF3TURBMFpYSTFVbHdpZlNJc0ltTnlhWFFpT2xzaWFXRjBJbDBzSW1saGRDSTZNVFUyTWpZME5qSXpPVEExT0N3aVpYaHdJam93ZlE9PS4uWHk5UTcyZ2N2Wk5RaW05VEdCcmJXcUJkSVJ6LWhhNEpYU2dTblJyRmRNST0=" /></span></span>
+                                        </div>
+                                        <div class="bottom text-center" style="color: #000;">
+                                            New here?&nbsp;<a
+                                                href="https://europartners.secure.force.com/rates/EPRegisterUser"><b>Join
+                                                    Us</b></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </span>
+    <div style="position: relative;">
+        <div class="baseFondo">
+            <div class="fondoInferior"></div>
+        </div>
+    </div>
+    <div class="container" style="padding-top: 40px;padding-bottom: 30px;">
+        <div class="row">
+            <div style="position: relative;">
+                <div class="logo-header"><a href="/rates/EpRatesHome">
+                        <img height="50px" src="./img/EP_groupBCO.png" /></a>
+                </div>
+                <br /><br />
+            </div>
+        </div>
+    </div><span id="j_id0:j_id67">
+        <div aria-labelledby="myModalLabel" class="modal fade" id="ModalTerminos" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Terms and Conditions</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                            dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+                            exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                            consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+                            molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
+                            est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
+                            libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+                            maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                            Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut
+                            et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a
+                            sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
+                            doloribus asperiores repellat.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <img height="30px" src="./img/EP_groupBCO.png" />
+                &nbsp;Av. Revoluci&oacute;n #649-3 Col. Jard&iacute;n Espa&ntilde;ol, Monterrey, N.L.
+                M&eacute;xico.&nbsp;|&nbsp;<a href="#" onclick="$('#ModalTerminos').modal('show');return false">Terms
+                    and Conditions</a>
+            </div>
+        </footer>
+    </span>
+</body>
+<script type="text/javascript">Sfdc.onReady(function () {
+        SfdcApp && SfdcApp.Visualforce && SfdcApp.Visualforce.VSManager && SfdcApp.Visualforce.VSManager.vfPrepareForms(["j_id0:j_id16:j_id17:j_id30"]);
+
+    });</script>
+
+</html>

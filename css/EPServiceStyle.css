@@ -1,0 +1,222 @@
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+    text-shadow: none !important;
+}
+
+a span.topicon{
+	padding-right: 5px;
+
+}
+
+/* NAVBAR CSS */
+
+#navbar.navbar-collapse{
+    max-height: 424px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+}
+.navbar-inverse .container{
+	height: 100%;
+}
+
+.navbar-nav li p a{
+	text-shadow: none !important;
+	color: #ffffff;
+	text-decoration: none;
+	padding-right: 5px;
+}
+.navbar-nav li p a:hover {
+	color: #fff;
+	background-color: transparent;
+}
+.navbar-nav li p{
+	line-height: 20px;
+	padding-left: 16px;
+}
+.navbar{
+	min-height: 40px;
+}
+.navbar-nav li a{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.navbar-right li a,.navbar-right li p{
+	padding-top: 10px;
+}
+.navbar-toggle{
+	margin-top: 3px; margin-bottom: 3px;
+}
+
+.nav>li>a>img {
+	height: 35px;
+}
+
+/* NAVBAR CSS */
+
+.ui-autocomplete {
+	max-height: 250px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-right: 5px;
+}
+.logo-header{
+	margin-right: auto;
+	margin-left: auto;
+	width: 214px;
+	text-align: left;
+	padding-top: 10px;
+	display: none;
+}
+.page-title-header h1 {
+	color: #FFF;
+	font-size: 40px;
+	font-weight: 900;
+	margin-bottom: 5px;
+	position: relative;
+	text-transform: uppercase;
+	font-family: Raleway;
+	font-style: normal;
+}
+.section-sub-title{
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 900;
+}
+h6.section-sub-title{
+	line-height: 1.3em;
+	color: #FFF;
+	font-size: 12px;
+	position: relative;
+	margin: 0;
+}
+h4.section-sub-title{
+	font-size: 15px;
+	margin-bottom: 10px;
+	margin-top: 0;
+	position: relative;
+	color: #FFF;
+}
+h4,h6{font-family: Raleway;font-size: 18px;}
+.contPrincpal .row{
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 35px;
+}
+.labelcampo{
+	color: #FFF;
+	text-align: left;
+	font-weight: 900;
+	font-size: 13px;
+}
+.labelDetalle{
+	text-align: left;
+	color: #FFF;
+	font-size: 16px;
+	margin-top: 3px;
+}
+.bloquePrimPreguntas{padding-top: 10px;}
+.logo-navbar{display: inline-block;}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #142738;;
+  color: #FFF;
+}
+.footer .container{
+	padding-top: 20px;
+}
+
+.input-group .requiredBlock {
+	display:none;
+}
+ul.alert {
+	list-style-type: none;
+}
+
+
+/*LOGIN CSS*/
+#login-dp{
+    min-width: 360px;
+    /*padding: 14px 14px 0;*/
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+
+.container-title-home{
+	color: #ffffff;
+	text-align: center;
+	position: relative;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.container-title-home h1{
+	font-size: 50px;
+	font-weight: 800;
+	font-family: 'AvenirNextLTProDemi';
+    margin-bottom: 10px;
+    /*color: #43637C;*/
+}
+
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+@media screen and (min-width: 768px){
+	li.dropdown,li.dropdown a{
+		height: 39px;
+	}
+
+}
+/*END LOGIN CSS*/
