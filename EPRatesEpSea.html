@@ -1,389 +1,486 @@
-
+﻿
 <!DOCTYPE HTML>
 <html>
 <head>
-<script src="/rates/static/111213/js/perf/stub.js" type="text/javascript"></script><script src="/rates/faces/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.AjaxScript?rel=1562614401000" type="text/javascript"></script><script src="/rates/jslibrary/1548902828220/ui-sfdc-javascript-impl/SfdcCore.js" type="text/javascript"></script><script src="/rates/resource/1540508435000/bootstrap337/js/jquery.min.js" type="text/javascript"></script><script src="/rates/resource/1540508436000/serviceCot/js/jquery-ui.js" type="text/javascript"></script><script src="/rates/resource/1540508435000/bootstrap337/js/bootstrap.min.js" type="text/javascript"></script><script src="/rates/static/111213/js/picklist4.js" type="text/javascript"></script><script src="/rates/jslibrary/1553583056220/sfdc/VFState.js" type="text/javascript"></script><link class="user" href="/rates/resource/1540508435000/bootstrap337/css/bootstrap.min.css" rel="stylesheet" type="text/css" /><link class="user" href="/rates/resource/1540508435000/bootstrap337/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" /><link class="user" href="/rates/resource/1540508436000/serviceCot/css/ionicons.css" rel="stylesheet" type="text/css" /><link class="user" href="/rates/resource/1540508436000/serviceCot/css/loading.css" rel="stylesheet" type="text/css" /><link class="user" href="/rates/resource/1540508436000/serviceCot/css/jquery-ui.css" rel="stylesheet" type="text/css" /><link class="user" href="/rates/resource/1540508435000/EPServiceStyle" rel="stylesheet" type="text/css" /><script>(function(UITheme) {
-    UITheme.getUITheme = function() { 
-        return UserContext.uiTheme;
-    };
-}(window.UITheme = window.UITheme || {}));</script><meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
-<meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
 
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <link href="//fonts.googleapis.com/css?family=PT+Sans%3A200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRaleway%3A200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7C&amp;#038;subset=latin%2Cgreek-ext%2Ccyrillic%2Clatin-ext%2Cgreek%2Ccyrillic-ext%2Cvietnamese&amp;#038;ver=4.7.3" id="autolog-google-fonts-css" media="all" rel="stylesheet" type="text/css" />
-        <style type="text/css">
-            body{background-color: #FFF;}
-            .fondoInferior{
-                text-align: center;
-                background: #182e3c url("/rates/resource/1540508436000/serviceCot/image/slide2hd.jpg") no-repeat fixed;
-                width: 100%;
-                opacity: 0.8;
-                overflow: hidden;
-                background-position: center center;
-                background-size: cover;
-                height: 570px;
-            }
-            .baseFondo{
-                position: absolute;
-                margin-top: 40px;
-                background: #182e3c;
-                height: 570px;
-                width: 100%;
-            }
-            .ui-autocomplete-loading{
-                background: white url("/rates/resource/1540508436000/serviceCot/image/seat_spinner.gif") right 10px center no-repeat;
-                background-size: 24px;
-            }
-            .panel-body div{
-                padding-bottom: 8px;
-            }
-            .form-signin .mb-4{display: none;}
-            @media screen and (min-width: 768px) {
-                .logo-header,.contPrincpal .row{width: 690px;display: block;}
-                .form-signin .mb-4{display: block;}
-                .noImportant{display: none !important;}
-                .logo-navbar{display: none;}
-                .page-title-header h1 {font-size: 56px;}
-                h6.section-sub-title{font-size: 15px;}
-                h4.section-sub-title{font-size: 24px;}
-            }
-            @media screen and (min-width: 992px) {
-                .logo-header,.contPrincpal .row{width: 912px;}
-                .noImportant{display: block !important;}
-            }
-            @media screen and (min-width: 1200px) {
-                .logo-header,.contPrincpal .row{width: 1112px;}
-            }
-            .form-signin {
-                width: 100%;
-                max-width: 330px;
-                padding: 15px;
-                margin: 0 auto;
-                color: #FFF;
-            }
-            .form-signin a:hover{
-                color: #71D8EF;
-            }
-            .thumbnail {background: #DDD;}
-        </style>
-        <script type="text/javascript">
-            var ContainerValues = [];
-            var banNotReset = false;
-            var inputPickId;
-            var isPICKUP = false;
-            $(document).ready(function() {
-                initJs();
-            });
+    <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 
-            function initJs(){
-                cargaAutoComplete($('.ESTOYCtrl'),$("[id$='ESTOYLocation']"),$("[id$='ESTOYPickup']"),true);
-                cargaAutoComplete($('.VOYCtrl'),$("[id$='VOYLocation']"),$("[id$='VOYPickup']"),false);
-            }
+    <script src="/rates/static/111213/js/perf/stub.js" type="text/javascript"></script>
+    <script src="/rates/faces/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.AjaxScript?rel=1562614401000" type="text/javascript"></script>
+    <script src="/rates/jslibrary/1548902828220/ui-sfdc-javascript-impl/SfdcCore.js" type="text/javascript"></script>
+    <script src="/rates/resource/1540508436000/serviceCot/js/jquery-ui.js" type="text/javascript"></script>
+    <script src="/rates/static/111213/js/picklist4.js" type="text/javascript"></script>
+    <script src="/rates/jslibrary/1553583056220/sfdc/VFState.js" type="text/javascript"></script>
 
-            function cargaAutoComplete(inpt,IDinpt,inptPICK,pickup){
-                $(inpt).autocomplete({
-                    source: function( request, response ) {
-                    $.ajax( {
+    <link href="css/index-home-searates.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/select2.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/fonts.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/jquery-ui-1.10.3.full.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/ui.jqgrid.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/buttons.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/ace.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/themify-icons.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/common.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/flag-icon.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-slider.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/bulk-ico.css" media="screen" rel="stylesheet" type="text/css">
+
+    <link href="./css/form-controls.css" media="screen" rel="stylesheet" type="text/css">
+
+    <script>
+        (function (UITheme) {
+            UITheme.getUITheme = function () {
+                return UserContext.uiTheme;
+            };
+        }(window.UITheme = window.UITheme || {}));
+    </script>
+    <meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+    <meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="//fonts.googleapis.com/css?family=PT+Sans%3A200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRaleway%3A200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7C&amp;#038;subset=latin%2Cgreek-ext%2Ccyrillic%2Clatin-ext%2Cgreek%2Ccyrillic-ext%2Cvietnamese&amp;#038;ver=4.7.3" id="autolog-google-fonts-css" media="all" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+        var ContainerValues = [];
+        var banNotReset = false;
+        var inputPickId;
+        var isPICKUP = false;
+        $(document).ready(function () {
+            initJs();
+        });
+
+        function initJs() {
+            cargaAutoComplete($('.ESTOYCtrl'), $("[id$='ESTOYLocation']"), $("[id$='ESTOYPickup']"), true);
+            cargaAutoComplete($('.VOYCtrl'), $("[id$='VOYLocation']"), $("[id$='VOYPickup']"), false);
+        }
+
+        function cargaAutoComplete(inpt, IDinpt, inptPICK, pickup) {
+            $(inpt).autocomplete({
+                source: function (request, response) {
+                    $.ajax({
                         url: "https://europartners.secure.force.com/rates/services/apexrest/locationsearch",
                         dataType: "json",
                         type: 'GET',
-                        data: {term: request.term},
-                        success: function( data ) {response( data );},
-                        error:function(exception,status,et){console.log(exception);}
+                        data: { term: request.term },
+                        success: function (data) { response(data); },
+                        error: function (exception, status, et) { console.log(exception); }
                     });
-                    },
-                    minLength: 2,
-                    select: function( event, ui ) {
-                        $(IDinpt).val(ui.item.id);
-                        $(inptPICK).val('');
-                        //calculaLocations();
-                        calculaArrastres(ui.item.id);
-                        inputPickId = inptPICK;
-                        isPICKUP = pickup;
-                    }
-                });
-            }
+                },
+                minLength: 2,
+                select: function (event, ui) {
+                    $(IDinpt).val(ui.item.id);
+                    $(inptPICK).val('');
+                    //calculaLocations();
+                    calculaArrastres(ui.item.id);
+                    inputPickId = inptPICK;
+                    isPICKUP = pickup;
+                }
+            });
+        }
 
-            function showLoading(valorT){
-                $('.loadingBlock').css('display', ((valorT)?'block':'none'));
-            }
-            function abremiArrastre(){
-                var res = $("#hayArrastres").val();
-                if('true'=='true')
-                    $('#miArrastre').modal('show');
-                //alert();
-                $(((isPICKUP)?'.deliverySec':'.pickupSec')).hide();
-                $(((!isPICKUP)?'.deliverySec':'.pickupSec')).show();
-            }
-            function seleccionaArrastre(){
-                var res = $("[id$='arrastreSel']").val();
-                $(inputPickId).val(res);
-                calculaLocations();
-                $('#miArrastre').modal('hide');
-            }
+        function showLoading(valorT) {
+            $('.loadingBlock').css('display', ((valorT) ? 'block' : 'none'));
+        }
+        function abremiArrastre() {
+            var res = $("#hayArrastres").val();
+            if ('true' == 'true')
+                $('#miArrastre').modal('show');
+            //alert();
+            $(((isPICKUP) ? '.deliverySec' : '.pickupSec')).hide();
+            $(((!isPICKUP) ? '.deliverySec' : '.pickupSec')).show();
+        }
+        function seleccionaArrastre() {
+            var res = $("[id$='arrastreSel']").val();
+            $(inputPickId).val(res);
+            calculaLocations();
+            $('#miArrastre').modal('hide');
+        }
+    </script>
+</head>
+<body>
+    <span id="j_id0:esperaBLK">
+        <span id="j_id0:esperaBLK.start" style="display: none"></span>
+        <script type="text/javascript">
+            window.document.getElementById('j_id0:esperaBLK.start').onstart = function () { showLoading(true);; };
+        </script><span id="j_id0:esperaBLK.stop"></span>
+        <script type="text/javascript">
+            window.document.getElementById('j_id0:esperaBLK.stop').onstop = function () { showLoading(false);; };
         </script>
-    </head>
-    <body><span id="j_id0:esperaBLK"><span id="j_id0:esperaBLK.start" style="display: none"></span><script type="text/javascript">
-window.document.getElementById('j_id0:esperaBLK.start').onstart=function(){showLoading(true);;};
-</script><span id="j_id0:esperaBLK.stop"></span><script type="text/javascript">
-window.document.getElementById('j_id0:esperaBLK.stop').onstop=function(){showLoading(false);;};
-</script></span>
-        <div class="loadingBlock"><div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div></div><span id="j_id0:j_id16">
-	    <nav class="navbar navbar-inverse navbar-fixed-top" style="background: #0c528a;font-size: 90%;">
-      <div class="container">
-        <div class="navbar-header" style="text-align: center;"><a href="/rates/EpRatesHome">
-          <img class="logo-navbar" height="40px" src="/rates/resource/1540508436000/serviceCot/image/EP_groupBCO.png" style="margin: 10px 0px;" /></a>
-          <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" style="background: #0c528a;margin-top: 11px;" type="button">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar">
-			<ul class="nav navbar-nav">
-				<li><a href="http://www.europartners.com.mx/carga-critica-lp/">
-					<img src="/rates/resource/1540508436000/serviceCot/image/cargo.png" />
-				</a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="tel:018008883876">
-					<span class="topicon ionicons ion-ios-telephone"></span>
-					01 800 888 EURO
-				</a></li>
-				<li><a href="mailto:info.mexico@europartners.com.mx" target="_blank">
-					<span class="topicon ionicons ion-android-mail"></span>
-					info.mexico@europartners.com.mx
-				</a></li>
-				<li class="noImportant">
-					<p>
-					<a href="https://www.facebook.com/EuropartnersLogistics/" target="_blank">
-						<span class="ionicons ion-social-facebook"></span>
-					</a>
-					<a href="https://twitter.com/logisticsep?lang=es" target="_blank">
-						<span class="ionicons ion-social-twitter"></span>
-					</a>
-					<a href="https://www.linkedin.com/company/europartners" target="_blank">
-						<span class="ionicons ion-social-linkedin"></span>
-					</a>
-					<a href="https://www.youtube.com/user/Europartnersofficial" target="_blank">
-						<span class="ionicons ion-social-youtube"></span>
-					</a>
-					</p>
-				</li>
-				<li class="dropdown" style="display: ;">
-					<p class="navbar-text" style="margin: 0px;">Signed in as:&nbsp;<a href="/rates/EPRegisterUser" class="navbar-link">test1, Test1</a></p>
-				</li>
-				<li class="dropdown" style="display: none;"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          				<b>Login</b><span class="caret"></span></a>
-					<ul class="dropdown-menu" id="login-dp" style="background-color: #FFF;">
-						<li><div id="j_id0:j_id16:j_id17:j_id28" class="row">
-								<div class="col-md-12">
-<form id="j_id0:j_id16:j_id17:j_id30" name="j_id0:j_id16:j_id17:j_id30" method="post" action="/rates/EPRatesEpSea" enctype="application/x-www-form-urlencoded">
-<input type="hidden" name="j_id0:j_id16:j_id17:j_id30" value="j_id0:j_id16:j_id17:j_id30" />
+    </span>
 
-										<div class="form-group">
-											 <label class="sr-only" for="exampleInputEmail2">E-Mail</label><input type="text" name="j_id0:j_id16:j_id17:j_id30:j_id32" value="test1@hotmail.com" class="form-control" placeholder="E-Mail" />
-										</div>
-										<div class="form-group">
-											 <label class="sr-only" for="exampleInputPassword2">Password</label><input type="password" name="j_id0:j_id16:j_id17:j_id30:j_id34" value="" class="form-control" placeholder="Password" />
-                                             <div class="help-block text-right"><a>Forget the password?</a></div>
-										</div>
-										<div class="form-group"><input type="submit" name="j_id0:j_id16:j_id17:j_id30:j_id36" value="Sign in" class="btn btn-primary btn-block" />
-										</div>
-										<div class="checkbox">
-											 <label style="color: #000;"><input type="checkbox" name="j_id0:j_id16:j_id17:j_id30:j_id38" />keep me logged-in
-											 </label>
-										</div><div id="j_id0:j_id16:j_id17:j_id30:j_id174"></div>
-</form><span id="ajax-view-state-page-container" style="display: none"><span id="ajax-view-state" style="display: none"><input type="hidden"  id="com.salesforce.visualforce.ViewState" name="com.salesforce.visualforce.ViewState" value="i:AAAAWXsidCI6IjAwRDBZMDAwMDAwTGZ3ZCIsInYiOiIwMkcwWTAwMDAwMGdyOFUiLCJhIjoidmZlbmNyeXB0aW9ua2V5IiwidSI6IjAwNTF2MDAwMDA0ZXI1UiJ9/eOCMbzLzVY9hEBRqKqzUJsobuGNGK/B1K2xiAAAAWvaGAEhYBWI4l45CntYuRaEWozKXOQ7zgLBCi/Jszj/INiao93qoX3DKsczT20jrQ9wCpbHfgcY8gFBlwlj23mEtqV+sEA5b46gqf2G4HSr2XRwpp/yQQ2MgX6DWhypIXrpDLj2fKEcmj4TC57TtDRLkpWVBWDeO9BswDlVwkjlAA8oabxfrIGfsTINjZ8NEwLF0pKJamuMiazcDZ1PLb4SbrqmKEw9nQ5xdnwvOsykTrb40oRDOjF239y/APcL3Tiyx9vTvqZLw/fOOD/r7J75WQOTeNyN1sE4DVKAgoM3379b6WsA0WDSeMRCWOdATKXjTzR9qi6TjnJ3QAewKLz149xNu2/8TQEtnsYOmEBJcxCYwRBlJ7H1sukal3uLShdOTxKFsfSprVcUVJpaRH75iCX+63OHsd/3MjJfKGxOeneHkBzbZbPrBxcnLANLf1nvSxgQKCTbhur+COvehGVkbeS1tHptvf5CIqry1sye1pn4EgNUS4/6W1utrKgmSFaNewK8DbaKoiQ2dfxKMb17BXDg7XJ9o4pBBI6z/IDEC9jlANIuo/8PCVLlqiBTe7gk1HwKUbVqUvMB0YifP6M+A6e5MQDdVFR7Of9qHhJOqzO1o3TM090LyuUh81cnwciIVYka1A7yJ5IDrEFvKvBlxnGaFN51JAxGULKd+RJZ7QX8v7hal3hEMYi55pLSfjrpkrgA1uGtb3lzySR5y9C/iwjBiGc2JD1loB1pYCBS48IAgokuJL7NsFljjJThsuJsNfePWz3sVCJ6de4qyksJwE+03fRa5UH93rZsvZa8dboER4rJUFmK8Q3i3cDwJYKuOaSwWrs/y0D5mjalupOkzNvNX1XAG6k7E3sTBO75+cj8P/37PujUG4Wgai1XEAwopneWN8g8KYgaclLpvhxj4Zpbl3UmBZi4/lZByHQN9AHU34wEBIX+hZhYpWgOrNDsb2rnMYOfKU+h0Eie38Dcru6xO0bzdThjR8BHYS9gbNc9paE7Dxx5DeIiYI9ygpXDHzsM6i9uFrIvkJzJGBtyqLCD04N0HJDcypIBOrIRjr8RDfVpzhKz6XoLgVpFWe/Lh4K8E2PADB7I6JPqlhPtosM/mnglBKVp2Z8D3i2XIz/XAaQdE2/Xh8/sLvTob8XJ7zUYK509TdceY0nREW2o31JVBgLYSM2h4vz0eHf1KxB3scR0mOBWyEXLlEfdaBO7T74wCwodPOJCVwGsyjb4QfRCkbFEtHzg4z31RVAOMDY26l+pqFnF1zoXdz6W9fW3ZUP+kINxlFO4CIM46X1ETti8emsxec8xAG5s3LqEjoyzYnXSc6Sr055YbyeO1e5y3aIqeAtpxniS7dCRj3vTwRpxzjxCdQSW+prekvoqa1elM3sErpKFxjAgNpOJv17D37a5LAkQVpDOVujLlnhWOQS2/6HPBN9cUhZsqcwRT3R7XdVPajRSrlChwBxgWg7EgieRU324Zek7KEF8Vp9Oow5eJCr9G7F/HbCdzrIfbmcWpPV3STtOSI5aBvThkabm+3avLY7t38GAqrheKug/xY3ex2IhjMxOnV7gwNJNt5KJtc+SX6zZ4r5GpmWF7dcvrow3lJ1P0wsHjrQ02GoBQsaNC1gf66ylpXYsFz0qEkAn+/20AdORLGbMsNQvLfwp9pCWgHq7uc2orbwWF76LBa7JA0UPgJDnV0YWigY6R8FOoKbO5nzzh3iINaXXBStbforJOuCNp67Q3ateO9upPQCUw9amtCEGrCModhaNE6iIYE+uKADXDhHI4IPgLI+xA/rLoDnSFCMeF22jBtaaN5buDqvmM29kcIq/wHMpDbZ4O/CrNIPdUZjdx50sJvx62Ju8cwIVkYhoDtj2C0gPZeG5ITz05kPNRPhgfSQ4Uz2s9ZM1pKOLNeLKy8uDroPEwZrMBm6dus3zlm5wCxt/8l4HTfGFVxAUm1k+BVBU4MFv+O5SB/dio8+f+fFofv34dFNnUNOcQ1DAZz40TCTDf5of2o0I/Jdj92o9PhbowIHKIqUYTSBU1Ze5mdICBaBBr/kOJ2emJtLzIGsaNXJwZPHT+BCePMXgZXWPUh+nKMRYXxOcRgp9PvS8SevqRPbnAhItvaDU6pRMlj5lOat6yvxfvRrFuA3PVpLsPIISd5ssIUSEzo2sLMJeAzakjIDSq1uKD0cvPZ4jAJTI11xcfRwaizJbulCdMlv5naiRiU7t/asrIsBlqOPGPA3ip11XUyrLp1Kppbg6QC5PBACJgHKeVK8SQ2Jv0ck6kdjZnYW59/CwnfZwi4dCOEhPhNxVevCbNZLTXpt7dL9mpqKHg3dpaJ4SIicZQzApLNIaibIB3dNxUNpzZte3GNLohBNEMJMdQ24iUQa0e4jTYFsHGx5ITXI9gIAsMLIwsVjFKm6HgwKjtwTA9OwR9SaECworqsDKnZEBFizFu5Br8GIuJY3+WaKjy2ed3Pz9kgoiirzGYS03N5p+p9Z9EwmKxNLuIMdSKcfrdxOBj8mPvT/A797HlBuzHxyua9/nJCcdByBLICILkO/VowgSu4AZqDYpyIbSnXG21IKKLEcm5mhDe3M+zC0z3XhJImmgI5oSzhyrUgh+JTpbrQvvPmUNCTAhkLTxetvaiyr69b+loRlfrMTZrXrv9RUYNci3TFmjh2Ubko3JXsYMOsEU1tCa9ZwVcOJg+DJqSIe6Xt/a/mhyFQ1sK4FcfYCVxxTrsa6iNiOE+dSLcY+93BncKPN72NzOxQ2dpK5GmNfpicsE9o/9vffj2gYYXVav6prjBw3nu0ZaeCYY+enTCr/oFM45laXO934LXtBU3CYSLkUga4TB2XnvOehPWSXj7p9SCtbNYvE6W4tdwW9AcoX70Gm7FzHpwfEOSe4FOOX+OIJm2YSqN/i7F/xbgnxdZnFqxN6MeSW96ft0GpXx1MkHhk6ghjrInL2bxNT8/JiMxlDTqNePcjPzHg5GtZDwSvAclWH33/8oG2feQIEXdH4Q9qewrdS4x937jSGJBah8c3vENCXJkIdko5viknrMD1okKLMn4BJup8kdkDPng/bb1qdr4ZE3+WhMlyTQvNnHe9GoZm5GdXFOFRt6/fdEceluF/UQIkm3qagVwkkugMQTGqcy//yA3a66GCzoB2UK8njOIVEjnmoFfJs5Dg35CvRoi+s21C8i2C1ZVaqaTWFjdZ+nf+CDLEmulbl6Kg43E0WYsjXqGCTo7Yt4opcrQYlli1GY7uy94XBsCUaFOpdmDBmcnkPGefDExdlXHD2T6L7NMKUeRG4HGU5B33f6hB5+c/kF0Vm3JellS5EepGhJYgU9ZsRARV79p97LF0gLVXtQV1qlPYzOtjYQGASsKHjOK+arPcSox/rEbJh/Mfg+BM4jhm85R0dWb4Cw9h8QGnxEtaVCgJWxIJSlWscIfmx7jxqobf8YaaNVKc3sn9ikC7hVf4RcfINOtLz2b1IuhvDjsGIS95Bls2ZR8FTRw6iBlM9rkUMp1dgTVHy+hXUDdfE8+WqBi1c6Y7F9lwnfsmayKXRCpa26JrD7+Nwxg7cYzyIgZi6Ty6S8r62Lj05oIEFNs408UxxWXnThHsqI6IiKpCUT6T9/gJrBiK81ZmIZTqHT790MkJnqkhlUHaW4Ax5t5J3llz6BSb7BYyMin8YsZsqDVxxFoct7y1Y3lsaAnjNSCFVJxpyhtpvX2W0c28sSw24n9jCSCFvQX2/mIj7aBGwC1/Mj1feqL6og5tXZ15pjwvX1d0qzo5zEvkl/nK6kjQ09enPMerpwnW6gG3koqwC4M8Nf7v8CDxwpJIKTmZQYbFWs4gABG1cqTXHTLlnWhP59/V4WS4PKLxq3+9Gn2u0eK7MdH1qVFpP+CEXXe0UQsl9oNX3FNL42lUcRYOHodsdDzvNGWFJFuyCp58OoVaGAEJlm+CWq6CAu1fVFMe4L1Fbp+xp47pCoTi+od4oamwKH44KBP2FGhN1yXtfet+CT+2kIp87inrFa8OPmHgo8eh8E4m7XtRltniNdDDAdhX/w6faWoa2ESa4gRrSB1eM2KVJa2JKnkM8+a/tk2dmvpEvLWFIBCJSHh5kynJbdawaYgq9WR28tc2dyMp2m0TZSwB2dEesACa2BUrivFlu1hlVnt+tte5NAwD0NH8CpFiO30dWd57xuGp3JB+UJW3OCQtH8fwYb/VUCBSXY3Y265Xr0UNBM5zvSlBROLAsut8Hcn0BTo3KO6ZObdD/4JQ3NUYfn/YzQvzWb5RSULbLu8xUzOxbMwSydH4bOptwARmHdsI+jkgZCpgprWzU1sQbuiJRutoPWUldht/HcsW9Qt/Aa2G0hwJ3v5PoxIEYCM+rCYPOJYZi1hReCHYlrpi0yLhmlNtfNFv5Es8z2Xi78dQ25i0FKN/3LpZLvN8Tfek/TSS/WvUWUfHZv8shwxH5hayJE8vabF0sLKARenkPNgvdcDCUxI/8JDa3t04rVsZjhTsJTd4/k3Q5Pxvjiqr2a/E2hkoKGqtoSpjXV2KRWeTwtGO7olMXIjSt3saem60YhTARbd12W0neAY+JPoPTDvzUdw5WJucTo2+6KOtItuossN+RCEa+kV4Ldy+FtSO1lDZgUppND3F/LMmRQd+t2fl6Hgvan9EgnB+8uNOJvHbFelAqo3G+vNNfuPtV6Qy0VOeYvPlis2z5STjYfNBDII6JLim8809c4tFqR8WgVetDWhhq9jp/qrDsFA879aN8pEHh4vpC01H2PhfzEUwinZqn+gNqELQ+DLzkQ6IXPhhGRde45J40K5xwDRuZCz+CetMlWhBgR6FYGhxY/Mpn77DoShNKl/+TfvzaDXt5McrER0k1fqbtekYl6Y/6mnAj5ZAlN+MgXadpWQWQEWJjisNHWMu0phX67in4qStTnLaJnfLABLZMhG+rEVslSG91ikRC9LYppbQcfx5JlXODS8i3nR+a+LSxOfe99oT9IVpJYEuHLshZ+A9cwG6f7HQhot9rfjvlzMx8BPPdnEpes4OMISRjSh8iYl3cPt4GLNCq+dCCi6tnsWPwrpBiWwEb2pAbVsXb6Lowwyv6uRcUNXiSMa16Kmrs65P6A9lNNwun1K3muefZQu/fqdCrE4wRvdnYYOAdmSBS5hqJtAngq/tEDiBazbrLwXfD2mrMk0gHBsj6fQRpWb4lxdwaiSSs4S/P9WCcUjKzQz1XvKHDmRaiGRdNC8MSMovH4dzWFOdyUwDviohIiXkeEhrDJtHanF3QDDNGI/jgZejktteDkLspG3+EdYtirefpasrwUux0cB7iI1SB3MglCwRgQhZAtp/2h9FQ00oYu/T1D124lrvZGj2osYy4WOUmaLp1T7n9P9qWv+uAbffxDqAO2bUrL6RNdxEI4ITh0HRa69/blCfPQ1wvwbe3GNZwcFsjeps2y3vNdC0Zv6Dvv9TKzwcaWFo7xtM845LPnk2IH8kfr35SUc0nWv3fiByy+zwPGf/52a74GJUc56wP6OSUWXujX+cAmFQwyVjB0iIauFwtKvw9SaBnWbxLH23ocmvOcTb2reErxSSjBgvWMSNwBzzD/ShYWoNcets+oWJBQC0QA0gpUO4rsLfBz+FVYQPxTbvjvJMp1P1Td2s7Wfvyn7RuoiljnhkyJauZLHBnmxSQfNFCzlsaj78e0eU65FOlX/vR4RWOMu6lh0NS9DTidaKlFz2ik9xuogwfwHscVke/hMGCNOW3LDAfDKJVJJqi4WvqFqi9VabqPqtUkZqDkiVktyAPgdzSAa0mXOoY0KdnOZSByOm6UsxAiD7+6Oz7FICMjZSEM+obYuv97+p/zgCd9bUBnH79CNuwr7JVXfhdCfAAByoZXHar57TR/44gGWgHTBrIRGHJbcxHo1AtlKNf6erKQ+m5Kdeyux4dKmUVH06gXq+dgIRRhwz+K9fajZB8FEt1ZNiaOsaX63RigpvBfw7l5cLYdXRyaZm+PQTnOYkZTMJ7YkS1FGOU8wLF3tZJbk1MCOI98EPNKVE8pBHpM6qhucXQpBq/P8Sa6vqj6c8LZKbGSngxghrzb0pn5CALDzNZtR/08OENMVaESFCHZ+YFVlHiJSWrRD1E7Puyde5dRdFL1bSq+kdXJgbxPWgE9k+8uGJULHrEuo/USSg3zcUiOfWd1sXRBFMoIt5272jmNxTv9hDTmZL2s48syoWbTynRr9FXc9zLlq5AIRZjmOP+Pitc3uR2ZLAivdJkCcve8ko1SKhuDejeuZCwNVh2pYfcPXEXy9LIqqndemHET+L2mnd9l/pBG5+XNhsKOVQWqgvX00H9WAVBbNwLmjlyxvynh7Nw1AcmCq5UuKdg3dFi+AyZMUbklblUriqx8SA2u+Q2oNPpAr102l7LG/MfnqwxlKnCAjn+Rn+11eYzpiocer6S2BwzzOzwM+GBe6e0wVyr3VouDqvhZRG3Cmme849dipxiasS8cM8BpUBx0KqVt2ZxijkaPSqocCt1+nrWjHOu0l/TvpJjosJHGdMgOVhP49XWPew8yAbNKbkvF6CDc4K8WCYFO3iWpLBAMae47j/NUhwvZvVmpD+AQds8mSukJ1AnPYR9kj/y88mqFKcBofai69kodedoN97Pw3Ty3cuSSyLvQB9m5D5SOLx+ZHKaduTcMgL2kdttrNOQYm1mxxadOyAdAz9dj0pU0RJ67rnhzaD/vboYl9oyQG7pWSRlNY+XIqJmqZnNuYvl4B2dSJDX4ns8DLDFdFVs/UPHSd3el+SzfxWMZ3k7FoEk+X/Vx00A9MKJxmC46m8a7Gioi9j9eAviAkyWA9aVX3A2iChJ4KJtQ6i5FZmL+tqz/MLPoLd/3I1WCAbbzpbfmIhpbvQa48jDyWPIr3cPBaXxx5sIYR44Ra7tHcrAZzIlVXog3EEWZ7yC7WSsDdMIG3CqsZikrTZLxUqUN67EctMY0kLNGHPDjQesR80pCIV/xTE0HuIfBpVmkDg7JcDBC7OPjHAZKdAe6+2HWokvY68my3MwO0TcQLC8hD0g4OLwUWAO6cZctRVJzMVKjpHLsbQaajG1CYz+DFc9qWXMqGA0HHyCtJKUC6vPL3bOsArCPGg8KJ/GWWpEfdnwWUxJikQ1WnIjPFWGFF7HpkVmoR1a0vgvlDR9xIvCc/b6Q2fiHVNJBnUjLSDSgep3Nntf4YXl5wSk+bz4mc7aXXBOADVCB9FHwRMmHF3TxdxP/GHRpRXIgK5iylcuHeh1rWpVmR/mCwuyr4dcv1V2i2ErLk6ejmOHptn46Q3dMy2Y0UYuUSfE8OJ7rhpjrK3/kLP1jq/ZEP9tnW4AevnBHLaNHYgn4mXuZSFi0U1tFwPMZGHfmgqtDWU0qQXDHW4570+AFYnhU8ddW6iIJ+3Ess/+R0tRlk4NoWSLJYeTNkzdc/Dqw2yA0HW7OzrmCm0FHL3tNa+X/5zoYtPJfz9nKJbJt3ETe25aml8yo4yfJHBqLR+zVC7IJE9l3YbtOkRXbcLVA6H/0SRADfXDTlRtPypbG02ZcFdPAcMGPXZ3OGMz7CbQALdxL2aTGzVYA/t0cqTookAnYqwI+rbjEu8ddcXqrt/dJre0FwuXHIKBp2jBPnVcwnZpQASjShBnVTe5lKCTkEGkhhNxM+uMWsi8ri4+tYT0gLdi1fb4mBAWKASkAUSQg1hDQ1583Y1vtdZ/9mbymtM4QODifVLLCalfovV+Zvj5oQ4Zft9g5lC94y3FeKTZyPyjLmGpjVOnXXUoPJmE2vSTYaCeqU+p+ZObAOZR3ph2/BsvODfCJpg/K/GvKobl8bQ+iHtMQay8OTNJCbdvyHw1klgeCuhs3HiATafD1lZFrlLvcG7H6KAjl01QR0VAbxkTdUYDRu8bbJGavScTAKkvGP7U1KI0100sr5EcR6C7nutNAdRSdkbTw0jy8ENkK5GhX/+NurQPpXR+3M5Td7eH0zks7nj9KoJf3N6W+Rjm4ADY3lULEe/WS8U4dryj03Voyzwc+PyvqwAd9BlMNqBhv/Lo/+lANuHJEbq04Zi5+F/mF6YR/82BSNAQemBG+Ub9k2N0iesnP5nmXHlfK0rGsMxkeXeUsBTf3QETqeShdEYTnBpERmQAGE8PzJhoXIeGG1sZN7SW5tQNvYjHqrY1PeA1MRSRuvOjIDQZc2QGyDm4NO3IxOPZGIBcVcVA0bGeC7fJqhqAAScl6PZzSzvLCJte7B3T8Ihs4yf3QSasTCFVPIrQ7KElsByDHANcDKtgToy2jwVSknoviIsWblrTs0grMHqBSW5IGFJwTPCr+gTqa6M4EldMYtV3sjH2AMQ5b+eJ741Y4bHk712XtY5PSzlTi9kdb/tPxG7E1YAopbc3vCrAnuv1o+KiPAqhOot7+L8zBv6W6qPMvovzrwbh5OfeNytjddN6lk2I1DCJ+JLJ7/KMhSkVDC3ydX4lNITtr96FkCK914wnU+a5Rqix6ULA8zSzSYGQAGyGbjeXqwsV38ss0i15iC3/kIloCc2d6gAYcpLma2yDEVHR5A5kTwcn1id1GoziwoYAso6+yqYFMFED/1al8ZFxfRRsLzSNGodi6fyRMomC0bjeYMHqUKdX4k0Z8TVrH5EBYHPJ9YddmTKOXi5Z95Ps5JmDl7A/1MqhQip/KF+KzPEgMpzSlXDdfa0hYBw9p1N+aM1BnYY6KcSr0UkI64ECazePwOTRv60wftcuCDe5o5eIAY6GfYPYlwO7OKsknqwse2u7b5fWxBAKsGPiTL2tQYjgTQ8F7Kn4frDVGFo5OHr/iBeqUsAe488sh63/o27z4YxHkzXkuARkz/xWfQr/420J7miHbMtrvwGHF/unkSeyJ7QwsH8V2uXDON1Tk8q9sf/6Di9l5+9mJcCe9oVDJiJlp/V7r19lar/cMER5Te+ccKn3acDtqlRpMX4xkRmXlU47/uZ/DGcVBGbPzJnh/B08RmYq9ek0CoicXX+0ke3Nc0gKMnAhVuEFNMqeb+F1tvzSIAHc5+JvjozuQ+k9e9+Ka+mO71MIzeqiaRB2ZtE8hPqo3TjLClJ0BGbL3KJOc66tZtsZkNh0MKGnvwbpnNJg0icfO59kuLv3NTbb6rLUqrGvP1EL/haexdG8WRwYzWgHhuRJdaj7izG99l/pjp7JVW154m1svXo/eaOuyEPJ8MeqWosucywhrJploskjP/FEiT9zt2pvhBn9Of2pWj8wcWzxe+NX5U+FRwT9PQIZ/YrhPoPQXZVw2JMSG3EAQ9x1paT50neo0HS45DB7D+M1vAbpfv9rOjgvk8p3s0Zj/eSnxm/c013aIKaa0A2V1SC/Is3sXyucqBmBcQHrjIvWnnvEyw65o2wqSeV/gkZQen6fF+0Dqjz4mw98qP4smpuX9Zj96EPIxTkAJehYevSoWdaksqPRl5BLZudNz4oxuA56EXYNZvMWIih7VJWBVObSnY4g0EgcX2bGSMaxwIUvo8Ywjz5BsGLmfBDiJ4AZHiZ02RbIRvSoHPEbZ2yDa4gz+immdt+tMOxFzG4nKi2sQYcm73exVUxq0PfSjLBqarXCaIhC27TjNSWfkoiEL6q9qn9IYihbcCxsMCSGQLA1LP/9v+VlFEyx1HLhTASv5akBNm17XgFj9aL5iM7vJAY4LYBsx64Rqc6ikXfNGQeCBb0HwgRKPFOdjB7lSmrX3RALwxWuowOi00Fqsrh010oqw0CCdoNoTG+WfSmLn11wuNnuXLIMnGfwYsTvR7xVjzn8qmz5l6mjMrR9iAjLLjHBT3h5qdvOiQid/zob9m/oqjPvew/ppYUf1EBLTfCorsGfQoTvg6Cz7kccYCzOE2Xa3un95EF8gNKDwvcTyGdvKraD2TM9UbVgCDRiKMjf+HDWugNj5n5+E4MAZEF4jhMMfzlJ+hLJDm6hnmxEnw5sSbr7DWYJT3sOYVBNjMUZtMAccB36UPVOHjbd0AnBRRI14Ey1LXYnbW+dYiSIrDgVcseZzQUzGftPRUn9AsWf8eASjmsoGZcMw6TOP8tcVbTSmRL/qbz8zOl7PNaVnH/ZS92eA+DYH9faEUDKUEXnvyNrNIu7lHLo9nuWVh5lHauDOPKpcuzsN56cvJ3gMLqZYVz9WIquohMdnGstKybTlJ7rK3hlLHlS4sVoCcQ4OgzB7NAvcSqF9N7Uc4WF7uTYeumncWR/b7NIV6cNa0QF3md0WuA1B14QUpjbDqNNi9ubkmnTY4VZeZN7WMHcg+M2ggFP65d94g62mi2F/XU63bfaNA6ep67K9LHEoPvNIzmoXaaOOmmfRCqg48WsXKNMP+iS/tH0po+ezl2l9tURnB27W/3GCWw0uRMsiAj2MyL86gXvSGtj9Iuc3igAgwq48SLR7kS2DwBJIvAIBO7VkLJMHA9gRK1OVjzeimQIz3Czp6W2oy9LrofjC7tKS+cykT1N/jcZ3S8d3Z6SkfFFCAW6A8pkrFlZ6GovR2aRNu5qm8Syt8XSqFTEDRMlpr1Jk1DSICD+AyM6SP99A9SxUYwud/A3MpeDDUh+USkzrWY4mBlOX1TOsAnszAymYk1iKDLozD6Q4pzftNCdyDd9bIbWZNw/M5IdtBZI9YETRzgPRcKSkSrARhj1bVq0ghdEML5hV3LrFXtptySwUHEyccT8aUZx5DIWqxQbJizrMxAZsrWvqMiI0c09qdpD0iKQ1KbeICYGj5cmTpqeA4HmnJPeqeDT3r83gaT9CrBuy3erxvKXZWFHashmyPPQGg0iw1tGpNvdmyW+Mr+ju6MUGcFcu7RzXVBVECa9hW/Hq12qyyT4O9RXusa4x0DL5zrpAiSND0yf6kPEltofuWjRZorSdvdffcMP0P8AF3QUj4u4lcLcnGXyDq/EpCOsLEpJx9urNFUl2BkZidAKJX9Hq+x2Fp5358MeFMX9YxwsKVs8fK4YGmqFSYSRS4SxnuImaM2U1M5+NVSsd1AZwOObcjnExgQHBKwuuZURET3FMPfxyeHQ8wlk/Cn1m9Q6mjpcSAIil9xtkq+yBz7fkIeqn2TnSjGajh4iuEY44TdUeyyWzBXCcn14GvnO6qDdO0+uGNM1hJY9n4foc878XffMozZzhQWXZwH2SXNyE/ngNmpUFQe/LRhfftnZ4GdC9gS0aCFr3ysyQtNPenb9uyPA7m2MSrsvl2Yyk6U+WblSA4tWN2PAdoaOt6+iEZdDK9pRSKlXiS6MbtwzP7NYaR/qMutR2ac9aUDYPWJeOAp613/Jr12M4cVPrTlKWsql6fwibhkyBYIxWhkdUMDZiakhZr4nG0XxoLcRLE9sl50+9pArC621VrCsP7CD8MaW2pk737gCy6nPBjytPj9hzSMALWKCf2ycFVI2/M0kzZf3gzZeQAM/q2YTqbNjN50i/WxIP6mcpApoRuTwYW/TTqGLQbSgYbv2SKMqsx6B9CtBHzKPHeOeWAv7vJzMmo1Tee8x0wpA7QUWP6TNqa8Tx8Z514hpgFchilrHLWOELr+jb+JEbMwY7kFL3ByNjduS10ZLa/nR4msx0rbEF7JkW7dBEKlp1pkxrJSez6gaJf55vjNlLK5xecsD637oBBgpdCPm4rCJxxt9lGOWlWbSNOumjR/Pafj4EA3jvs+VJNSa1sj2Gz6/px8MjNqiwyYIbzI66r1qHFwkggGvH0bB5Bk9zfx8VOE+NkPDzhMgfuzlNj1DKQ2wwCtGUwUA05HJ563YI+JtKOKi1ilaNH9XK1O25yO3YYzqVEfiwhUIMak7ehuR38+dujdAnG1qqRBdoOXF9Eu+zKrfk/wDYMl0KzWSkpTSX1rWVjJwUbU/8qEgqo9/XT4DGg1QzedwJYNKPLDtOJtHWgIQmqTqGYj0TPPnpsYCLKBfUx7B45mbFrG8kJunjpMGHHi6GmqzNRtHUYKrXXTsbGGShLuqBbO/vtb1fAWpys2UWoihpKbSsxiB59X2jJnkrvh7LV7PgwIye5OH7XF6KChdDhbr0Vq/zjKCrK9slerzRJP69pjLc9Z1HYdxl/71JPl13vs1HCNHD3BVlInS6T+m25Ik73zRcZsBK6WCsDO4HJ5vpdTJlR+eTJiu3vXFjAT1uGHIajoR7fKc1OOYg6jaYsR7BMjHnYQDiMhTLVJP4DNmiUKCPHM5KkTEhvMOWF0vebUpF+lXmxQdwfxVdseAZBIsdAO8UbcWw+vHoWr6TXy84h2nzwHdB+tnZyCxRxgqO00lnqf8JYKwk42nrwjkqEoYg7Sy8Cm91X/aA7TsrRYdYeQAe4AF00J6o4Ar0pnu/VgDV7qWOPkYwIRFTJz2wyy058Vmr1Ke+yGGfh/CfvradXFaQzvTWEYE5hv5EMEjrrZXtXmZAj4Em9r4fPDORBOekb7JN7Ntbw1JhsVe5MLPiTXF+KLaDe33NTaFHJP2lOyE5Pr4Xbr9iSDkn4ClA0t0xxBGOULZMH5V+OBxfdPASe+A3LnjZ10Y=" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateVersion" name="com.salesforce.visualforce.ViewStateVersion" value="201907081933210485" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateMAC" name="com.salesforce.visualforce.ViewStateMAC" value="AGV5SnViMjVqWlNJNkluaEdWbVJaTkRWTGNXdHhVa3ByZG5ST1VVbHFOak5DTWtNd01IQlVVSFp0WTI1a09FbGxabE5WVUZWY2RUQXdNMlFpTENKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUlzSW10cFpDSTZJbnRjSW5SY0lqcGNJakF3UkRCWk1EQXdNREF3VEdaM1pGd2lMRndpZGx3aU9sd2lNREpITUZrd01EQXdNREJuY2poVlhDSXNYQ0poWENJNlhDSjJabk5wWjI1cGJtZHJaWGxjSWl4Y0luVmNJanBjSWpBd05URjJNREF3TURBMFpYSTFVbHdpZlNJc0ltTnlhWFFpT2xzaWFXRjBJbDBzSW1saGRDSTZNVFUyTWpjek1qRXpORFk1TlN3aVpYaHdJam93ZlE9PS4uVGY0eC11T2hjZ2xGcXJyLXdyOFFncFlFaWlJZGdoZmlmNVJZSzc2RFNVcz0=" /></span></span>
-								</div>
-								<div class="bottom text-center" style="color: #000;">
-									New here?&nbsp;<a href="/rates/EPRegisterUser"><b>Join Us</b></a>
-								</div></div>
-						</li>
-					</ul>
-        		</li>
-			</ul>
+    <div class="loadingBlock">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
         </div>
-      </div>
-    </nav></span>
-        <div style="position: relative;">
-            <div class="baseFondo"><div class="fondoInferior"></div></div>
-        </div>
-<form id="j_id0:j_id46" name="j_id0:j_id46" method="post" action="/rates/EPRatesEpSea" enctype="application/x-www-form-urlencoded">
-<input type="hidden" name="j_id0:j_id46" value="j_id0:j_id46" />
-<script id="j_id0:j_id46:j_id47" type="text/javascript">calculaArrastres=function(firstParam){A4J.AJAX.Submit('j_id0:j_id46',null,{'similarityGroupingId':'j_id0:j_id46:j_id47','oncomplete':function(request,event,data){abremiArrastre();},'parameters':{'j_id0:j_id46:j_id47':'j_id0:j_id46:j_id47','firstParam':(typeof firstParam!='undefined'&&firstParam!=null)?firstParam:''} ,'status':'j_id0:esperaBLK'} )};
-</script><script id="j_id0:j_id46:j_id49" type="text/javascript">calculaLocations=function(){A4J.AJAX.Submit('j_id0:j_id46',null,{'similarityGroupingId':'j_id0:j_id46:j_id49','parameters':{'j_id0:j_id46:j_id49':'j_id0:j_id46:j_id49'} ,'status':'j_id0:esperaBLK'} )};
-</script><span id="j_id0:j_id46:hayArrastresPNL">
-                <input id="hayArrastres" type="hidden" value="false" /></span>
-            <div class="container" style="text-align: center;padding-top: 40px;padding-bottom: 30px;">
-                <div style="position: relative;">
-                    <div class="logo-header"><a href="/rates/EpRatesHome">
-                            <img height="50px" src="/rates/resource/1540508436000/serviceCot/image/EP_groupBCO.png" /></a>
-                    </div>
-                    <div class="page-title-header text-center" style="padding-top: 10px;">
-                        <h1 class="entry-title">EP Marine transport</h1>          
-                    </div>
-                    <div class="section-heading">
-                        <h6 class="section-sub-title">OUR CHALLENGE?</h6>
-                        <h4 class="section-sub-title">HELP YOU IN THE LOGISTIC SITUATION YOU FACE</h4>
-                    </div>
-                    <br />
-                    <div class="col-md-6 bloquePrimPreguntas"><span class="labelcampo">Where is the cargo?</span>
-                        <div class="input-group input-group-lg">
-                            <span class="input-group-addon">
-                                <span aria-hidden="true" class="glyphicon glyphicon-globe"></span>
-                            </span><input type="text" name="j_id0:j_id46:j_id65" class="form-control ESTOYCtrl" placeholder="City or Country" /><input id="j_id0:j_id46:ESTOYLocation" type="hidden" name="j_id0:j_id46:ESTOYLocation" /><input id="j_id0:j_id46:ESTOYPickup" type="hidden" name="j_id0:j_id46:ESTOYPickup" />
-                        </div><div id="j_id0:j_id46:detalleLocDESDE" class="labelDetalle"><span style="margin-left: 6px"></span></div>
-                    </div>
-                    <div class="col-md-6 bloquePrimPreguntas"><span class="labelcampo">Where do you want to take it?</span>
-                        <div class="input-group input-group-lg">
-                            <span class="input-group-addon">
-                                <span aria-hidden="true" class="glyphicon glyphicon-globe"></span>
-                            </span><input type="text" name="j_id0:j_id46:j_id73" class="form-control VOYCtrl" placeholder="City or Country" /><input id="j_id0:j_id46:VOYLocation" type="hidden" name="j_id0:j_id46:VOYLocation" /><input id="j_id0:j_id46:VOYPickup" type="hidden" name="j_id0:j_id46:VOYPickup" />
-                        </div><div id="j_id0:j_id46:detalleLocHASTA" class="labelDetalle"><span style="margin-left: 6px"></span></div>
-                    </div>
-                    <div class="col-md-3 bloquePrimPreguntas"><span class="labelcampo">Package Type</span>
-                        <div class="input-group input-group-lg">
-                            <span class="input-group-addon">
-                                <span aria-hidden="true" class="ionicons ion-cube"></span>
-                            </span><select name="j_id0:j_id46:j_id81" class="form-control" size="1" onchange="A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id84','parameters':{'j_id0:j_id46:j_id84':'j_id0:j_id46:j_id84'} ,'status':'j_id0:esperaBLK'} )">	<option value="LCL" selected="selected">LCL</option>
-	<option value="FCL">FCL</option>
-</select>
-                        </div>
-                    </div>
-                    <div class="col-md-3 bloquePrimPreguntas"><span class="labelcampo">How much does the load weigh?</span><div id="j_id0:j_id46:blockbotonanadir" style="width: 100%" class="input-group input-group-lg">
-                            <button class="btn btn-warning btn-lg" data-target="#modalBoxes" data-toggle="modal" style="width: 100%" type="button">Add boxes</button></div>
-                    </div><div id="j_id0:j_id46:pesoCargDat" class="col-md-3 bloquePrimPreguntas"><span class="labelcampo">What size is it?</span>
-                        <div class="input-group input-group-lg">
-                            <span class="input-group-addon">
-                                <span aria-hidden="true" class="ionicons ion-cube"></span>
-                            </span><span style="text-align: right;background-color: #EEE;" class="form-control"></span>
-                        </div></div>
-                    
-                    <div class="col-md-3 bloquePrimPreguntas"><span class="labelcampo">&#160;</span>
-                        <div class="input-group input-group-lg" style="width: 100%"><input type="submit" name="j_id0:j_id46:j_id98" value="Show me" style="width: 100%" class="btn btn-primary btn-lg" />
-                        </div>
-                    </div>
+    </div>
+
+    <header>
+        <div id="message_conteiner" style="position:absolute"></div>
+        <nav class="navbar home-page">
+            <div class="container navbar-container ">
+                <button style="display: none !important;" type="button" class="navbar-toggle navbar-toggler-right" data-toggle="collapse" aria-expanded="false" data-target="#cbp-hrmenu">
+                    <span class="sr-only">Cambiar modo de Navegación</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="/es/" class="navbar-brand"></a>
+                <div id="main-menu">
+                    <p class="close-menu">
+                        <i class="icon icon-times" aria-hidden="true"></i>
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="tel:018008883876">
+                                <span class="fa fa-phone"></span>
+                                01 800 888 EURO
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info.mexico@europartners.com.mx" target="_blank">
+                                <span class="fa fa-envelope-open"></span>
+                                info.mexico@europartners.com.mx
+                            </a>
+                        </li>
+                        <li class="noImportant">
+                            <p>
+                                <a href="https://www.facebook.com/EuropartnersLogistics/" target="_blank">
+                                    <span class="fa fa-facebook-official"></span>
+                                </a>
+                                <a href="https://twitter.com/logisticsep?lang=es" target="_blank">
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+                                <a href="https://www.linkedin.com/company/europartners" target="_blank">
+                                    <span class="fa fa-linkedin-square"></span>
+                                </a>
+                                <a href="https://www.youtube.com/user/Europartnersofficial" target="_blank">
+                                    <span class="fa fa-youtube-play"></span>
+                                </a>
+                            </p>
+                        </li>
+                        <li class="log-prov-li">
+                            <a href="http://www.europartners.com.mx/carga-critica-lp/">
+                                <img src="https://europartners.secure.force.com/rates/resource/1540508436000/serviceCot/image/cargo.png" />
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            
-            <div aria-labelledby="myModalLabel" class="modal fade" id="modalBoxes" role="dialog" tabindex="-1">
-                <div class="modal-dialog modal-lg" role="document"><div id="j_id0:j_id46:tipocajas" class="modal-content">
-                        <div class="modal-header">
-                            <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Add boxes</h4>
-                        </div><div id="j_id0:j_id46:j_id101" class="modal-body">
-                            <div class="row">
-                                <div class="col-md-6 form-group"><span class="control-label">Calculate weight in</span>
-                                    <div class="input-group">
-                                        <span class="input-group-addon">
-                                            <span aria-hidden="true" class="glyphicon glyphicon-scale"></span>
-                                        </span><select name="j_id0:j_id46:j_id105" class="form-control" size="1" onchange="A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id108','parameters':{'j_id0:j_id46:j_id108':'j_id0:j_id46:j_id108'} ,'status':'j_id0:esperaBLK'} )">	<option value="KGS" selected="selected">Kgs</option>
-	<option value="LBS">Lbs</option>
-</select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 form-group"><span class="control-label">Calculate dimensions in</span>
-                                    <div class="input-group">
-                                        <span class="input-group-addon">
-                                            <span aria-hidden="true" class="glyphicon glyphicon-fullscreen"></span>
-                                        </span><select name="j_id0:j_id46:j_id112" class="form-control" size="1" onchange="A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id115','parameters':{'j_id0:j_id46:j_id115':'j_id0:j_id46:j_id115'} ,'status':'j_id0:esperaBLK'} )">	<option value="CM" selected="selected">Centimeters</option>
-	<option value="IN">Inches</option>
-</select>
-                                    </div>
-                                </div><div id="j_id0:j_id46:listaCajas" style="overflow-x: auto; width: 100%;" class="table-responsive-md">
-                                  <table class="table" style="min-width: 490px;">
-                                    <tr>
-                                        <th></th>
-                                        <th>Packaging Units</th>
-                                        <th>Length</th>
-                                        <th>Width</th>
-                                        <th>Height</th>
-                                        <th>Packaging Unit Weight</th>
-                                    </tr>
-                                        <tr>
-                                            <th><a class="btn btn-success btn-sm" href="#" id="j_id0:j_id46:j_id119:0:j_id121" name="j_id0:j_id46:j_id119:0:j_id121" onclick="A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id119:0:j_id121','parameters':{'j_id0:j_id46:j_id119:0:j_id121':'j_id0:j_id46:j_id119:0:j_id121'} ,'status':'j_id0:esperaBLK'} );return false;">+</a>
-                                            </th>
-                                            <th><input type="number" name="j_id0:j_id46:j_id119:0:j_id125" class="form-control" placeholder="Quantity" />
-                                            </th>
-                                            <th><input type="number" name="j_id0:j_id46:j_id119:0:j_id127" class="form-control" placeholder="In Centimeters" />
-                                            </th>
-                                            <th><input type="number" name="j_id0:j_id46:j_id119:0:j_id129" class="form-control" placeholder="In Centimeters" />
-                                            </th>
-                                            <th><input type="number" name="j_id0:j_id46:j_id119:0:j_id131" class="form-control" placeholder="In Centimeters" />
-                                            </th>
-                                            <th><input type="number" name="j_id0:j_id46:j_id119:0:j_id133" class="form-control" placeholder="Weight in Kgs" />
-                                            </th>
-                                        </tr>
-                                  </table></div>
-                            </div></div>
-                        <div class="modal-footer"><input class="btn btn-success" id="j_id0:j_id46:j_id150" name="j_id0:j_id46:j_id150" onclick="return A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id150','html5Validate':true,'oncomplete':function(request,event,data){$('#modalBoxes').modal('hide');},'parameters':{'j_id0:j_id46:j_id150':'j_id0:j_id46:j_id150'} ,'status':'j_id0:esperaBLK'} );" value="Apply" type="submit" />
-                            <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
-                        </div></div>
+
+                <div class="navbar-buttons pull-right">
+                    <ul class="nav ace-nav">
+                        <li>
+                            <a class="log_link" href="#" data-toggle="modal" data-target="#loginModal" data-box="login-box">Login</a>
+                        </li>
+                    </ul>
                 </div>
+                <div href="" id="hmbrg">☰</div>
             </div>
-            
-            <div class="modal fade" id="miArrastre" role="dialog" tabindex="-1">
-                <div class="modal-dialog" role="document"><div id="j_id0:j_id46:modalArrastrePNL" class="modal-content">
-                        <div class="modal-header" style="border:none;">
-                            <h4 class="modal-title">Select a pickup or delivery drayage</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-md-5 deliverySec">
-                                    <h3 style="margin-top: 13px;"></h3>
-                                </div>
-                                <div class="col-md-1 deliverySec">
-                                    <h3 style="margin-top: 13px;">To</h3>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="input-group input-group-lg" style="width: 100%;"><select id="j_id0:j_id46:arrastreSel" name="j_id0:j_id46:arrastreSel" class="form-control form-control-lg" size="1"></select>
+        </nav>
+    </header>
+
+    <form>
+        <input type="hidden" name="j_id0:j_id46" value="j_id0:j_id46" />
+        <script id="j_id0:j_id46:j_id47" type="text/javascript">
+            calculaArrastres = function (firstParam) { A4J.AJAX.Submit('j_id0:j_id46', null, { 'similarityGroupingId': 'j_id0:j_id46:j_id47', 'oncomplete': function (request, event, data) { abremiArrastre(); }, 'parameters': { 'j_id0:j_id46:j_id47': 'j_id0:j_id46:j_id47', 'firstParam': (typeof firstParam != 'undefined' && firstParam != null) ? firstParam : '' }, 'status': 'j_id0:esperaBLK' }) };
+        </script>
+
+        <script id="j_id0:j_id46:j_id49" type="text/javascript">
+            calculaLocations = function () { A4J.AJAX.Submit('j_id0:j_id46', null, { 'similarityGroupingId': 'j_id0:j_id46:j_id49', 'parameters': { 'j_id0:j_id46:j_id49': 'j_id0:j_id46:j_id49' }, 'status': 'j_id0:esperaBLK' }) };
+        </script>
+
+        <span id="j_id0:j_id46:hayArrastresPNL">
+            <input id="hayArrastres" type="hidden" value="false" />
+        </span>
+
+        <div class="main-content home-page">
+            <div class="content-wrapper">
+                <div class="container">
+                    <div class="latest-requests-new" id="latest-request-block">
+                        <div class="sr-requests">
+                            <h2>EP Air Freight</h2>
+                            <b>HELP YOU IN THE LOGISTIC SITUATION YOU FACE</b>
+                            <div class="filter_controls">
+                                <div class="row shipping-box">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body text-center">
+                                                <div class="modal-new">
+                                                    <div class="modal-container1">
+                                                        <div id="login-box" class="login-box visible widget-box no-border">
+                                                            <div class="widget-main">
+                                                                <div id="filter-index-page" class="container">
+                                                                    <form class="filter-shipping" method="get" action="/es/freight" autocomplete="off">
+                                                                        <div class="col-md-12 col-sm-12 no-padding">
+                                                                            <div class="clearfix">
+                                                                                <div class="col-md-6 padding-sp dir-field-lg">
+                                                                                    <div class="input-icon">
+                                                                                        <span>ORIGIN OF SHIPMENT</span>
+                                                                                        <input type="text" placeholder="Country,City,Port" value="" class="form-control input-lg ui-autocomplete-input" id="place_a" autocomplete="off">
+                                                                                        <input type="hidden" name="from" value="" id="pol-input">
+                                                                                        <i class="icon-map-a point"></i>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-6 padding-sp dir-field-lg">
+                                                                                    <div class="input-icon">
+                                                                                        <span>DESTINATION OF SHIPMENT</span>
+                                                                                        <input type="text" placeholder="Country,City,Port" value="" class="form-control input-lg ui-autocomplete-input" id="place_k" autocomplete="off">
+                                                                                        <input type="hidden" name="to" value="" id="pod-input">
+                                                                                        <i class="icon-map-b point"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="clearfix">
+                                                                                <div class="col-md-4 col-sm-12 col-xs-12 padding-sp dir-field-lg">
+                                                                                    <div class="input-icon">
+                                                                                        <div class="select-shipment">
+                                                                                            <span class="top-title">Package Type</span>
+                                                                                            <div class="input-group">
+                                                                                                <select name="j_id0:j_id27:j_id35" class="form-control" size="1" onchange="A4J.AJAX.Submit('j_id0:j_id27',event,{'similarityGroupingId':'j_id0:j_id27:j_id38','parameters':{'j_id0:j_id27:j_id38':'j_id0:j_id27:j_id38'} ,'status':'j_id0:esperaBLK'} )">
+                                                                                                    <option value="LCL" selected="selected">LCL</option>
+                                                                                                    <option value="FCL">FCL</option>
+                                                                                                </select>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                
+                                                                                <div class="col-md-4 col-sm-12 col-xs-12 padding-sp dir-field-lg">
+                                                                                    <div class="input-icon">
+                                                                                        <span>Chargeable weight</span>
+                                                                                        <input type="text" placeholder="Country,City,Port" value="" class="form-control input-lg ui-autocomplete-input" id="place_k" autocomplete="off">
+                                                                                        <input type="hidden" name="to" value="" id="pod-input">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="clearfix">
+
+                                                                            </div>
+
+                                                                            <div class="clearfix">
+                                                                                <div class="col-md-4 padding-sp dir-field">
+
+                                                                                </div>
+                                                                                <div class="col-md-4">
+                                                                                    <div class="clearfix help-block text-left">
+                                                                                        <span class="lbl-title-button">How much does the load weigh?</span>
+                                                                                        <button class="btn btn-warning btn-lg" style="width: 100% !important;" data-target="#modalBoxes" data-toggle="modal" type="button">Add boxes</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-4">
+                                                                                    <div class="clearfix help-block text-left">
+                                                                                        <span class="lbl-title-button">&nbsp;</span>
+                                                                                        <input class="btn input-lg btn-search-shipping" style="width: 100% !important;" id="j_id0:j_id46:j_id117" name="j_id0:j_id46:j_id117" onclick="return A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id117','html5Validate':true,'oncomplete':function(request,event,data){$('#modalBoxes').modal('hide');},'parameters':{'j_id0:j_id46:j_id117':'j_id0:j_id46:j_id117'} ,'status':'j_id0:esperaBLK'} );" value="Show me" type="submit" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-1 pickupSec">
-                                    <h3 style="margin-top: 13px;">To</h3>
-                                </div>
-                                <div class="col-md-5 pickupSec">
-                                    <h3 style="margin-top: 13px;"></h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer" style="border: none;">
-                            <button class="btn btn-default" data-dismiss="modal" type="button">
-                            No Thanks
-                            </button>
-                            <button class="btn btn-primary" onclick="seleccionaArrastre();" type="button">Apply</button>
-                        </div></div>
+                    </div>
                 </div>
-            </div><div id="j_id0:j_id46:j_id175"></div>
-</form><span id="j_id0:j_id167">
+            </div>
+        </div>
 
-<div aria-labelledby="myModalLabel" class="modal fade" id="ModalTerminos" role="dialog" tabindex="-1">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Terms and Conditions</h4>
-      </div>
-      <div class="modal-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<footer class="footer">
-    <div class="container">
-        <img height="30px" src="/rates/resource/1540508436000/serviceCot/image/EP_groupBCO.png" />
-        &nbsp;Av. Revoluci&oacute;n #649-3 Col. Jard&iacute;n Espa&ntilde;ol, Monterrey, N.L. M&eacute;xico.&nbsp;|&nbsp;<a href="#" onclick="$('#ModalTerminos').modal('show');return false">Terms and Conditions</a>
-    </div>
-</footer></span>
-    </body><script type="text/javascript">Sfdc.onReady(function(){
-	SfdcApp && SfdcApp.Visualforce && SfdcApp.Visualforce.VSManager && SfdcApp.Visualforce.VSManager.vfPrepareForms(["j_id0:j_id16:j_id17:j_id30","j_id0:j_id46"]);
+        <div class="modal fade" id="modalBoxes" role="dialog" tabindex="-1" aria-hidden="false" data-reload="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-body">
+                    <div class="login-layout  modal-new">
+                        <div class="login-container">
+                            <div class="modal-content">
+                                <div class="position-relative">
+                                    <div id="login-box" class="login-box visible widget-box no-border">
+                                        <button type="button" class="close close col-xs-1" data-dismiss="modal">&times;</button>
 
-});</script></html>
+                                        <div class="widget-main">
+                                            <h4 class="blue">
+                                                Login in your account
+                                            </h4>
+                                            <div class="space-6"></div>
+                                            <div class="row">
+                                                <div class="col-md-6 form-group">
+                                                    <div class="select-shipment">
+                                                        <span class="top-title">Calculate weight in</span>
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">
+                                                                <span aria-hidden="true" class="glyphicon glyphicon-scale"></span>
+                                                            </span>
+                                                            <select name="j_id0:j_id27:j_id35" class="form-control" size="1" onchange="A4J.AJAX.Submit('j_id0:j_id27',event,{'similarityGroupingId':'j_id0:j_id27:j_id38','parameters':{'j_id0:j_id27:j_id38':'j_id0:j_id27:j_id38'} ,'status':'j_id0:esperaBLK'} )">
+                                                                <option value="KGS" selected="selected">Kgs</option>
+                                                                <option value="LBS">Lbs</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 form-group">
+                                                    <div class="select-shipment">
+                                                        <span class="top-title">Calculate dimensions in</span>
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon">
+                                                                <span aria-hidden="true" class="glyphicon glyphicon-fullscreen"></span>
+                                                            </span>
+                                                            <select name="j_id0:j_id46:j_id91" class="form-control" size="1" onchange="A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id94','parameters':{'j_id0:j_id46:j_id94':'j_id0:j_id46:j_id94'} ,'status':'j_id0:esperaBLK'} )">
+                                                                <option value="CM" selected="selected">Centimeters</option>
+                                                                <option value="IN">Inches</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div id="j_id0:j_id46:listaCajas" class="table-responsive col-md-12">
+                                                    <table class="table">
+                                                        <tr>
+                                                            <th></th>
+                                                            <th>Packaging Units</th>
+                                                            <th>Length</th>
+                                                            <th>Width</th>
+                                                            <th>Height</th>
+                                                            <th>Packaging Unit Weight</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                <a class="btn btn-success btn-sm" href="#" id="j_id0:j_id46:j_id98:0:j_id100" name="j_id0:j_id46:j_id98:0:j_id100" onclick="A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id98:0:j_id100','parameters':{'j_id0:j_id46:j_id98:0:j_id100':'j_id0:j_id46:j_id98:0:j_id100'} ,'status':'j_id0:esperaBLK'} );return false;">+</a>
+                                                            </th>
+                                                            <th>
+                                                                <input type="number" name="j_id0:j_id46:j_id98:0:j_id104" class="form-control" placeholder="Quantity" />
+                                                            </th>
+                                                            <th>
+                                                                <input type="number" name="j_id0:j_id46:j_id98:0:j_id106" class="form-control" placeholder="In Centimeters" />
+                                                            </th>
+                                                            <th>
+                                                                <input type="number" name="j_id0:j_id46:j_id98:0:j_id108" class="form-control" placeholder="In Centimeters" />
+                                                            </th>
+                                                            <th>
+                                                                <input type="number" name="j_id0:j_id46:j_id98:0:j_id110" class="form-control" placeholder="In Centimeters" />
+                                                            </th>
+                                                            <th>
+                                                                <input type="number" name="j_id0:j_id46:j_id98:0:j_id112" class="form-control" placeholder="Weight in Kgs" />
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix">
+                                            <div class="clearfix help-block text-right">
+                                                <input class="btn input-lg btn-search-shipping-small" id="j_id0:j_id46:j_id117" name="j_id0:j_id46:j_id117" onclick="return A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id117','html5Validate':true,'oncomplete':function(request,event,data){$('#modalBoxes').modal('hide');},'parameters':{'j_id0:j_id46:j_id117':'j_id0:j_id46:j_id117'} ,'status':'j_id0:esperaBLK'} );" value="Apply" type="submit" />
+                                                <button class="btn btn-lg btn-control-default-close" data-dismiss="modal" type="button">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="miArrastre" role="dialog" tabindex="-1">
+            <div class="modal-dialog" role="document">
+                <div id="j_id0:j_id46:modalArrastrePNL" class="modal-content">
+                    <div class="modal-header" style="border:none;">
+                        <h4 class="modal-title">Select a pickup or delivery drayage</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-5 deliverySec">
+                                <h3 style="margin-top: 13px;"></h3>
+                            </div>
+                            <div class="col-md-1 deliverySec">
+                                <h3 style="margin-top: 13px;">To</h3>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="input-group input-group-lg" style="width: 100%;">
+                                    <select id="j_id0:j_id46:arrastreSel" name="j_id0:j_id46:arrastreSel" class="form-control form-control-lg" size="1"></select>
+                                </div>
+                            </div>
+                            <div class="col-md-1 pickupSec">
+                                <h3 style="margin-top: 13px;">To</h3>
+                            </div>
+                            <div class="col-md-5 pickupSec">
+                                <h3 style="margin-top: 13px;"></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="border: none;">
+                        <button class="btn btn-default" data-dismiss="modal" type="button">
+                            No Thanks
+                        </button>
+                        <button class="btn btn-primary" onclick="seleccionaArrastre();" type="button">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="j_id0:j_id46:j_id175"></div>
+    </form>
+
+    <div aria-labelledby="myModalLabel" class="modal fade" id="ModalTerminos" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Terms and Conditions</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="sea-footer-top-wrapper">
+            <div class="sea-footer-top"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img height="30" src="./img/EP_groupBCO.png" />
+                    &nbsp;Av. Revoluci&oacute;n #649-3 Col. Jard&iacute;n Espa&ntilde;ol, Monterrey, N.L.
+                    M&eacute;xico.&nbsp;|&nbsp;
+                    <a href="#" onclick="$('#ModalTerminos').modal('show');return false">
+                        Terms
+                        and Conditions
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container breadcrumbs-box">
+            <div class="row">
+                <div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        Sfdc.onReady(function () {
+            SfdcApp && SfdcApp.Visualforce && SfdcApp.Visualforce.VSManager && SfdcApp.Visualforce.VSManager.vfPrepareForms(["j_id0:j_id16:j_id17:j_id30", "j_id0:j_id46"]);
+
+        });
+    </script>
+</body>
+</html>

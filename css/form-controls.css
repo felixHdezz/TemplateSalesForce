@@ -1,5 +1,5 @@
 .select-shipment{
-    height: 60px;
+    height: 64px;
     background-color: #fff;
     position: relative;
     border-radius: 0 5px 5px 0;
@@ -54,7 +54,7 @@
 .input-icon .input-group-lg{
     position: initial !important;
     height: 100%;
-    padding-top: 5%;
+    padding-top: 6%;
 }
 
 .input-icon .input-group-lg .form-control{
@@ -66,4 +66,17 @@
     width: 92%;
 }
 
+
+.my-2 .nav-tabs.nav {
+    padding: 0px !important;
+    border-bottom: 1px solid #ccc;
+}
+
+.my-2 .nav-tabs.nav nav-item a{
+    font-size: 14px !important;
+}
+
+.my-2 .nav-tabs > li > a {
+    /*border-color: #ccc;*/
+}
 

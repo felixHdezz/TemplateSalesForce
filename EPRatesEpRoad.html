@@ -1,76 +1,77 @@
 
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
-        <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="https://europartners.secure.force.com/rates/resource/1540508436000/serviceCot/js/jquery-ui.js"></script>
- 
-        <link href="css/index-home-searates.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="css/select2.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="css/bootstrap/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="css/fonts.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="css/jquery-ui-1.10.3.full.min.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="css/ui.jqgrid.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="css/buttons.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="css/ace.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="css/themify-icons.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="css/common.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="css/flag-icon.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="css/bootstrap-slider.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="css/bulk-ico.css" media="screen" rel="stylesheet" type="text/css">
-    
-        <link href="./css/form-controls.css" media="screen" rel="stylesheet" type="text/css">
+<head>
+    <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://europartners.secure.force.com/rates/resource/1540508436000/serviceCot/js/jquery-ui.js"></script>
 
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <link href="//fonts.googleapis.com/css?family=PT+Sans%3A200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRaleway%3A200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7C&amp;#038;subset=latin%2Cgreek-ext%2Ccyrillic%2Clatin-ext%2Cgreek%2Ccyrillic-ext%2Cvietnamese&amp;#038;ver=4.7.3" id="autolog-google-fonts-css" media="all" rel="stylesheet" type="text/css" />
-    
-        <script type="text/javascript">
+    <link href="css/index-home-searates.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/select2.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/fonts.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/jquery-ui-1.10.3.full.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/ui.jqgrid.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/buttons.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/ace.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/themify-icons.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/common.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/flag-icon.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-slider.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/bulk-ico.css" media="screen" rel="stylesheet" type="text/css">
+
+    <link href="./css/form-controls.css" media="screen" rel="stylesheet" type="text/css">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="//fonts.googleapis.com/css?family=PT+Sans%3A200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRaleway%3A200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7C&amp;#038;subset=latin%2Cgreek-ext%2Ccyrillic%2Clatin-ext%2Cgreek%2Ccyrillic-ext%2Cvietnamese&amp;#038;ver=4.7.3" id="autolog-google-fonts-css" media="all" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
         var ContainerValues = [];
         var banNotReset = false;
-        $(document).ready(function() {
+        $(document).ready(function () {
             initJs();
         });
-        
-        function initJs(){
-            cargaAutoComplete($('.ESTOYCtrl'),$("[id$='ESTOYLocation']"));
-            cargaAutoComplete($('.VOYCtrl'),$("[id$='VOYLocation']"));
+
+        function initJs() {
+            cargaAutoComplete($('.ESTOYCtrl'), $("[id$='ESTOYLocation']"));
+            cargaAutoComplete($('.VOYCtrl'), $("[id$='VOYLocation']"));
         }
-        
-        function cargaAutoComplete(inpt,IDinpt){
+
+        function cargaAutoComplete(inpt, IDinpt) {
             $(inpt).autocomplete({
-                source: function( request, response ) {
-                    $.ajax( {
+                source: function (request, response) {
+                    $.ajax({
                         url: "https://europartners.secure.force.com/rates/services/apexrest/roadlocationsearch",
                         dataType: "json",
                         type: 'GET',
-                        data: {term: request.term},
-                        success: function( data ) {response( data );},
-                        error:function(exception,status,et){console.log(exception);}
+                        data: { term: request.term },
+                        success: function (data) { response(data); },
+                        error: function (exception, status, et) { console.log(exception); }
                     });
                 },
                 minLength: 2,
-                select: function( event, ui ) {
+                select: function (event, ui) {
                     $(IDinpt).val(ui.item.id);
                 }
             });
         }
-        
-        function showLoading(valorT){
-            $('.loadingBlock').css('display', ((valorT)?'block':'none'));
+
+        function showLoading(valorT) {
+            $('.loadingBlock').css('display', ((valorT) ? 'block' : 'none'));
         }
-        </script>
-    </head>
+    </script>
+</head>
 <body>
-    
+
     <span id="j_id0:esperaBLK.start" style="display: none"></span>
     <script type="text/javascript">
         window.document.getElementById('j_id0:esperaBLK.start').onstart = function () { showLoading(true);; };
-    </script><span id="j_id0:esperaBLK.stop"></span>
+    </script>
+    <span id="j_id0:esperaBLK.stop">
+    </span>
     <script type="text/javascript">
         window.document.getElementById('j_id0:esperaBLK.stop').onstop = function () { showLoading(false);; };
-
-        /**/</script>
+    </script>
 
     <header>
         <div id="message_conteiner" style="position:absolute"></div>
@@ -136,6 +137,7 @@
             </div>
         </nav>
     </header>
+
     <div class="main-content home-page">
         <div class="content-wrapper">
             <div class="container">
@@ -159,7 +161,7 @@
                                                                             <div class="col-md-6 padding-sp dir-field-lg">
                                                                                 <div class="input-icon">
                                                                                     <span>ORIGIN OF SHIPMENT</span>
-                                                                                    <input type="text" placeholder="Country,City,Port" value="" class="form-control input-lg ui-autocomplete-input" id="place_a" autocomplete="off" /> 
+                                                                                    <input type="text" placeholder="Country,City,Port" value="" class="form-control input-lg ui-autocomplete-input" id="place_a" autocomplete="off" />
                                                                                     <input type="hidden" name="from" value="" id="pol-input" />
                                                                                     <i class="icon-map-a point"></i>
                                                                                 </div>
@@ -180,14 +182,15 @@
                                                                                     <div class="select-shipment">
                                                                                         <span class="top-title">Calculate dimensions in</span>
                                                                                         <div class="input-group">
-                                                                                            <select name="j_id0:j_id27:j_id35" class="form-control" size="1" onchange="A4J.AJAX.Submit('j_id0:j_id27',event,{'similarityGroupingId':'j_id0:j_id27:j_id38','parameters':{'j_id0:j_id27:j_id38':'j_id0:j_id27:j_id38'} ,'status':'j_id0:esperaBLK'} )">	<option value="KGS" selected="selected">Kgs</option>
+                                                                                            <select name="j_id0:j_id27:j_id35" class="form-control" size="1" onchange="A4J.AJAX.Submit('j_id0:j_id27',event,{'similarityGroupingId':'j_id0:j_id27:j_id38','parameters':{'j_id0:j_id27:j_id38':'j_id0:j_id27:j_id38'} ,'status':'j_id0:esperaBLK'} )">
+                                                                                                <option value="KGS" selected="selected">Kgs</option>
                                                                                                 <option value="LBS">Lbs</option>
                                                                                             </select>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            
+
                                                                             <div class="col-md-4 col-sm-12 col-xs-12 padding-sp dir-field-lg">
                                                                                 <div class="input-icon">
                                                                                     <span>What size is it?</span>
@@ -198,17 +201,17 @@
                                                                                         </span>
                                                                                     </div>
                                                                                 </div>
-                                                                                
+
                                                                             </div>
                                                                         </div>
 
                                                                         <div class="clearfix">
-                                                                            
+
                                                                         </div>
-                                                                        
+
                                                                         <div class="clearfix">
                                                                             <div class="col-md-4 padding-sp dir-field">
-                                                                                    
+
                                                                             </div>
                                                                             <div class="col-md-4">
                                                                                 <div class="clearfix help-block text-left">
@@ -234,6 +237,7 @@
             </div>
         </div>
     </div>
+    
     <footer>
         <div class="sea-footer-top-wrapper">
             <div class="sea-footer-top"></div>
@@ -258,9 +262,12 @@
             </div>
         </div>
     </footer>
-</body>
-<script type="text/javascript">Sfdc.onReady(function(){
-	SfdcApp && SfdcApp.Visualforce && SfdcApp.Visualforce.VSManager && SfdcApp.Visualforce.VSManager.vfPrepareForms(["j_id0:j_id16:j_id17:j_id30","j_id0:j_id46"]);
+    
+    <script type="text/javascript">
+        Sfdc.onReady(function () {
+            SfdcApp && SfdcApp.Visualforce && SfdcApp.Visualforce.VSManager && SfdcApp.Visualforce.VSManager.vfPrepareForms(["j_id0:j_id16:j_id17:j_id30", "j_id0:j_id46"]);
 
-});</script>
+        });
+    </script>
+</body>
 </html>
