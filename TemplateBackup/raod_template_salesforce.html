@@ -1,0 +1,261 @@
+<apex:page docType="html-5.0" showHeader="false" standardStylesheets="false" language="es" applyBodyTag="false"  cache="false" controller="EPPublicRatesPortal">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <apex:includeScript value="{!URLFOR($Resource.bootstrap337,'js/jquery.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.serviceCot,'js/jquery-ui.js')}"/>
+        <apex:stylesheet value="{!URLFOR($Resource.bootstrap337, 'css/bootstrap.min.css')}"/>
+        <apex:stylesheet value="{!URLFOR($Resource.bootstrap337,'css/bootstrap.min.css')}"/>
+        <apex:stylesheet value="{!URLFOR($Resource.bootstrap337,'css/bootstrap-theme.min.css')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.bootstrap337,'js/bootstrap.min.js')}"/>
+        
+        <apex:stylesheet value="{!URLFOR($Resource.serviceCot,'css/ionicons.css')}"/>
+        <apex:stylesheet value="{!URLFOR($Resource.serviceCot,'css/loading.css')}"/>
+        <apex:stylesheet value="{!URLFOR($Resource.serviceCot,'css/jquery-ui.css')}"/>
+        
+        <apex:includeScript value="{!URLFOR($Resource.bootstrap337,'js/jquery.min.js')}"/>
+        <link rel='stylesheet' id='autolog-google-fonts-css'  href='//fonts.googleapis.com/css?family=PT+Sans%3A200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRaleway%3A200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7C&#038;subset=latin%2Cgreek-ext%2Ccyrillic%2Clatin-ext%2Cgreek%2Ccyrillic-ext%2Cvietnamese&#038;ver=4.7.3' type='text/css' media='all' />
+        <apex:stylesheet value="{!URLFOR($Resource.EPStyleIndexHome)}"/>
+        <apex:stylesheet value="{!URLFOR($Resource.EPStyleSelect2)}"/>
+        <apex:stylesheet value="{!URLFOR($Resource.EPStyleFonts)}"/>
+        <apex:stylesheet value="{!URLFOR($Resource.EPStyleButtons)}"/>
+        <apex:stylesheet value="{!URLFOR($Resource.EPStyleAce)}"/>
+        <apex:stylesheet value="{!URLFOR($Resource.EPStyleCommon)}"/>
+        <apex:stylesheet value="{!URLFOR($Resource.EPStyleBootstrapSlider)}"/>
+        
+        <script type="text/javascript">
+        var ContainerValues = [];
+        var banNotReset = false;
+        $(document).ready(function() {
+            initJs();
+        });
+        
+        function initJs(){
+            cargaAutoComplete($('.ESTOYCtrl'),$("[id$='ESTOYLocation']"));
+            cargaAutoComplete($('.VOYCtrl'),$("[id$='VOYLocation']"));
+        }
+        
+        function cargaAutoComplete(inpt,IDinpt){
+            $(inpt).autocomplete({
+                source: function( request, response ) {
+                    $.ajax( {
+                        url: "https://europartners.secure.force.com/rates/services/apexrest/roadlocationsearch",
+                        dataType: "json",
+                        type: 'GET',
+                        data: {term: request.term},
+                        success: function( data ) {response( data );},
+                        error:function(exception,status,et){console.log(exception);}
+                    });
+                },
+                minLength: 2,
+                select: function( event, ui ) {
+                    $(IDinpt).val(ui.item.id);
+                }
+            });
+        }
+        
+        function showLoading(valorT){
+            $('.loadingBlock').css('display', ((valorT)?'block':'none'));
+        }
+        </script>
+    </head>
+    <body>
+        <!-- loading block -->
+        <apex:actionStatus onstart="showLoading(true);" onstop="showLoading(false);" id="esperaBLK"/>
+        <div class="loadingBlock"><div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div></div>
+        <!-- END loading block -->
+        <c:EPnavBar Control="{!LoginCTRL}" />
+        <div style="position: relative;">
+            <div class="baseFondo"><div class="fondoInferior"></div></div>
+        </div>
+        <apex:form >
+            <div class="container" style="text-align: center;padding-top: 40px;padding-bottom: 30px;">
+                <div style="position: relative;">
+                    <div class="logo-header">
+                        <apex:outputLink value="{!$Page.EpRatesHome}">
+                            <img height="50px" src="{!URLFOR($Resource.serviceCot,'image/EP_groupBCO.png')}" /></apex:outputLink>
+                    </div>
+                    <div style="padding-top: 10px;" class="page-title-header text-center">
+                        <h1 class="entry-title"><apex:outputText value="{!$Label.EPC_Road}" /></h1>         
+                    </div>
+                    <div class="section-heading">
+                        <h6 class="section-sub-title"><apex:outputText value="{!$Label.EPC_OurChallenge}" /></h6>
+                        <h4 class="section-sub-title"><apex:outputText value="{!$Label.EP_LegendChallenge}" /></h4>
+                    </div>
+                    <br />
+                    <apex:messages styleClass="alert alert-danger" />
+                    <div class="col-md-6 bloquePrimPreguntas">
+                        <apex:outputText styleClass="labelcampo" value="{!$Label.EPC_WhereIsTheCargo}" />
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                            </span>
+                            <apex:inputText html-placeholder="{!$Label.EPC_CityOrCountry}" styleclass="form-control ESTOYCtrl"/>
+                            <apex:inputHidden value="{!routeDef.Port_Airport_of_Load__c}" id="ESTOYLocation" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 bloquePrimPreguntas">
+                        <apex:outputText styleClass="labelcampo" value="{!$Label.EPC_WheredoYoWantGo}" />
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                            </span>
+                            <apex:inputText html-placeholder="{!$Label.EPC_CityOrCountry}" styleclass="form-control VOYCtrl"/>
+                            <apex:inputHidden value="{!routeDef.Port_Airport_of_Discharge__c}" id="VOYLocation" />
+                        </div>
+                    </div>
+                    <div class="col-md-2 bloquePrimPreguntas">
+                        <apex:outputText styleClass="labelcampo" value="{!$Label.EPC_TipoUnidad}" />
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">
+                                <span class="ionicons ion-cube" aria-hidden="true"></span>
+                            </span>
+                            <apex:selectList styleclass="form-control" value="{!packControl.packageType}" size="1">
+                                <!--  <apex:selectOption itemValue="LTL" itemLabel="LTL"/>-->
+                                <apex:selectOption itemValue="" itemLabel=""/>
+                                <apex:selectOption itemValue="FTB" itemLabel="FTB"/>
+                                <apex:selectOption itemValue="FTL" itemLabel="FTL"/>                               
+                                <apex:actionSupport action="{!packControl.refresh}" event="onchange" reRender="tamanioCarga,tipocajas,pesoCargDat" status="esperaBLK">
+                                    <apex:param name="firstParam" assignTo="{!packControl.typeFCL}" value="ROAD" />
+                                </apex:actionSupport>
+                            </apex:selectList>
+                        </div>
+                    </div>
+                    <apex:outputPanel layout="block" id="pesoCargDat" styleclass="col-md-4 bloquePrimPreguntas">
+                        <apex:outputText styleClass="labelcampo" value="{!$Label.EPC_WhatSize}" />
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">
+                                <span class="ionicons ion-cube" aria-hidden="true"></span>
+                            </span>
+                            <apex:outputText rendered="{!packControl.packageType == 'LTL'}" value="{0, number, ###,###,##0.00 {!packControl.tipoPeso}}" styleclass="form-control" style="text-align: right;background-color: #CECECE;">
+                                <apex:param value="{!packControl.ChargeableWeight}" />
+                            </apex:outputText>
+                            <!-- <apex:outputText rendered="{!IF(AND(packControl.packageType != 'FTL',packControl.tipoPeso == 'KGS'), TRUE, FALSE)}" value="{0, number, ###,###,##0.00 Kgs}" styleclass="form-control" style="text-align: right;background-color: #CECECE;">
+<apex:param value="{!packControl.ChargeableWeight}" />
+</apex:outputText>-->
+                            <apex:outputText rendered="{!packControl.packageType != 'LTL'}" value="{!TEXT(packControl.totalUnitsPack) + ' ' + $Label.EPC_Boxes}" styleclass="form-control" style="text-align: right;background-color: #CECECE;" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#modalBoxes">{!$label.EPC_Edit}</button>
+                            </span>
+                        </div>
+                    </apex:outputPanel>
+                    <div class="col-md-6 bloquePrimPreguntas">
+                        <apex:outputText styleClass="labelcampo" value="&nbsp;" escape="false" />
+                        <div class="input-group input-group-lg" style="width: 100%">
+                            <apex:commandButton style="width: 100%" value="{!$Label.EPC_Showme}" styleclass="btn btn-primary btn-lg" action="{!muestaTarifaTierra}" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL CARGA -->
+            <div class="modal fade" id="modalBoxes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <apex:outputPanel id="tipocajas" layout="block" styleClass="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="{!$label.EPC_Cerrar}"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">{!$label.EPC_AddBoxes}</h4>
+                        </div>
+                        <apex:outputPanel rendered="{!packControl.packageType == 'LTL'}" layout="block" styleClass="modal-body">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <apex:outputText styleClass="control-label" value="{!$Label.EPC_CalculateWeightIn}" />
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-scale" aria-hidden="true"></span>
+                                        </span>
+                                        <apex:selectList value="{!packControl.tipoPeso}" multiselect="false" size="1" styleclass="form-control">
+                                            <apex:selectOption itemValue="KGS" itemLabel="Kgs"/>
+                                            <apex:selectOption itemValue="LBS" itemLabel="Lbs"/>
+                                            <apex:actionSupport action="{!packControl.refresh}" event="onchange"
+                                                                rerender="listaCajas,pesoCargDat" status="esperaBLK"/>
+                                        </apex:selectList>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <apex:outputText styleClass="control-label" value="{!$Label.EPC_CalculateDimensionsIN}" />
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                                        </span>
+                                        <apex:selectList value="{!packControl.tipoLong}" multiselect="false" size="1" styleclass="form-control">
+                                            <apex:selectOption itemValue="CM" itemLabel="{!$Label.EPC_Centimeters}"/>
+                                            <apex:selectOption itemValue="IN" itemLabel="{!$Label.EPC_Inches}"/>
+                                            <apex:actionSupport action="{!packControl.refresh}" event="onchange"
+                                                                rerender="listaCajas,pesoCargDat" status="esperaBLK"/>
+                                        </apex:selectList>
+                                    </div>
+                                </div>
+                                <apex:outputPanel layout="block" styleClass="table-responsive-md" id="listaCajas" style="overflow-x: auto; width: 100%;">
+                                    <table class="table" style="min-width: 490px;">
+                                        <tr>
+                                            <th></th>
+                                            <th>{!$label.EPC_PackagingUnits}</th>
+                                            <th>{!$label.EPC_Length}</th>
+                                            <th>{!$label.EPC_Width}</th>
+                                            <th>{!$label.EPC_Height}</th>
+                                            <th>{!$label.EPC_PackagingUnitWeight}</th>
+                                        </tr>
+                                        <apex:variable value="{!1}" var="tamCajas" />
+                                        <apex:repeat value="{!packControl.lineasDetalle}" var="pckc">
+                                            <tr>
+                                                <th>
+                                                    <apex:commandLink styleClass="btn btn-success btn-sm" action="{!packControl.addLine}" rendered="{!tamCajas == packControl.lineasDetalle.size}" value="+" reRender="listaCajas" status="esperaBLK"/>
+                                                    <apex:commandLink immediate="true" styleClass="btn btn-danger btn-sm" action="{!packControl.removeLine}" rendered="{!tamCajas != packControl.lineasDetalle.size}" value="-" reRender="listaCajas" status="esperaBLK">
+                                                        <apex:param name="firstParam" assignTo="{!packControl.lineaElimina}" value="{!tamCajas -1}" />
+                                                    </apex:commandLink>
+                                                </th>
+                                                <th>
+                                                    <apex:input type="number" value="{!pckc.Units}" styleClass="form-control" html-placeholder="{!$Label.EPC_Quantity}" />
+                                                </th>
+                                                <th>
+                                                    <apex:input type="number" value="{!pckc.Length}" styleClass="form-control" html-placeholder="{!$Label.EPC_In + ' ' + if(packControl.tipoLong == 'IN',$Label.EPC_Inches,$Label.EPC_Centimeters)}" />
+                                                </th>
+                                                <th>
+                                                    <apex:input type="number" value="{!pckc.Width}" styleClass="form-control" html-placeholder="{!$Label.EPC_In + ' ' + if(packControl.tipoLong == 'IN',$Label.EPC_Inches,$Label.EPC_Centimeters)}" />
+                                                </th>
+                                                <th>
+                                                    <apex:input type="number" value="{!pckc.Height}" styleClass="form-control" html-placeholder="{!$Label.EPC_In + ' ' + if(packControl.tipoLong == 'IN',$Label.EPC_Inches,$Label.EPC_Centimeters)}" />
+                                                </th>
+                                                <th>
+                                                    <apex:input type="number" value="{!pckc.Weight}" styleClass="form-control" html-placeholder="{!$Label.EPC_Weightin + ' ' + if(packControl.tipoPeso == 'LBS','Lbs','Kgs')}" />
+                                                </th>
+                                            </tr>
+                                            <apex:variable value="{!tamCajas + 1}" var="tamCajas" />
+                                        </apex:repeat>
+                                    </table>                                 
+                                </apex:outputPanel>
+                                <div class="row">
+                                    <div class="col-sm-8 col-md-8 col-md-offset-1">
+                                        <h5 class="text-danger" id="myModalLabelExcede">{!$Label.EPC_MaxWarning} </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!packControl.packageType != 'LTL'}" layout="block" styleClass="modal-body">
+                            <div class="row">
+                                <apex:repeat value="{!packControl.lineasDetalle}" var="pckc">
+                                    <div class="col-sm-6 col-md-4">
+                                        <div class="thumbnail">
+                                            <div class="caption">
+                                                <h4><apex:outputText value="{!pckc.LabelName}" /></h4>
+                                                <p><apex:outputText value="{!pckc.LabelDescrip}" /></p>
+                                                <div class="input-group input-group-lg">
+                                                    <apex:input type="number" value="{!pckc.Units}" styleClass="form-control" html-placeholder="{!$Label.EPC_Quantity}" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </apex:repeat>
+                            </div>
+                        </apex:outputPanel>
+                        <div class="modal-footer">
+                            <apex:commandButton styleClass="btn btn-success" action="{!packControl.apply}" status="esperaBLK" oncomplete="$('#modalBoxes').modal('hide');" value="{!$Label.EPC_Aplicar}" reRender="listaCajas,pesoCargDat" />
+                            <button type="button" class="btn btn-default" data-dismiss="modal">{!$label.EPC_Cerrar}</button>
+                        </div>
+                    </apex:outputPanel>
+                </div>
+            </div>
+            
+        </apex:form>
+        <c:EPfooter />
+    </body>
+</apex:page>

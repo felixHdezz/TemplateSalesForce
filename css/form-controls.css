@@ -6,6 +6,10 @@
     border: 1px solid #ccc;
 }
 
+.input-icon .select-shipment{
+    border: none !important;
+}
+
 .select-shipment .top-title {
     position: absolute;
     top: 5px;
@@ -31,6 +35,7 @@
     background-color: #ffffff !important;
     height: 30px !important;
     font-size: 85% !important;
+    border: none !important;
 }
 
 .sr-requests h2 {
@@ -45,4 +50,20 @@
     margin-bottom: 30px;
     display: block;
 }
+
+.input-icon .input-group-lg{
+    position: initial !important;
+    height: 100%;
+    padding-top: 5%;
+}
+
+.input-icon .input-group-lg .form-control{
+    position: relative !important;
+    text-align: right;
+    background-color: #CECECE;
+    height: 41px;
+    margin-bottom: 5px;
+    width: 92%;
+}
+
 

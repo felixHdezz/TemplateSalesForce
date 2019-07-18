@@ -9277,6 +9277,17 @@ header{
     width: 99%;
 }
 
+#filter-index-page .dir-field-lg .input-icon .ESTOYCtrl, #filter-index-page .dir-field-lg .input-icon .VOYCtrl{
+    border: none !important;
+    width: 99%;
+}
+
+
+.input-icon > input.ESTOYCtrl, .input-icon > input.VOYCtrl {
+    padding-left: 50px !important;
+    padding-right: 6px;
+}
+
 .help-block .lbl-title-button {
     text-transform: uppercase;
     text-align: left;

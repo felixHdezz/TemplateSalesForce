@@ -4329,7 +4329,7 @@ span.input-icon {
   display: inline-block;
 }
 .input-icon > input {
-  padding-left: 24px;
+  padding-left: 24px !important;
   padding-right: 6px;
 }
 .input-icon.input-icon-right > input {
