@@ -323,11 +323,13 @@ window.document.getElementById('j_id0:esperaBLK.stop').onstop=function(){showLoa
                                     <div class="input-group">
                                         <span class="input-group-addon">
                                             <span aria-hidden="true" class="glyphicon glyphicon-fullscreen"></span>
-                                        </span><select name="j_id0:j_id46:j_id91" class="form-control" size="1" onchange="A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id94','parameters':{'j_id0:j_id46:j_id94':'j_id0:j_id46:j_id94'} ,'status':'j_id0:esperaBLK'} )">	<option value="CM" selected="selected">Centimeters</option>
-	<option value="IN">Inches</option>
-</select>
+                                        </span>
+                                        <select name="j_id0:j_id46:j_id91" class="form-control" size="1" onchange="A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id94','parameters':{'j_id0:j_id46:j_id94':'j_id0:j_id46:j_id94'} ,'status':'j_id0:esperaBLK'} )">	<option value="CM" selected="selected">Centimeters</option>
+                                            <option value="IN">Inches</option>
+                                        </select>
                                     </div>
-                                </div><div id="j_id0:j_id46:listaCajas" class="table-responsive col-md-12">
+                                </div>
+                                <div id="j_id0:j_id46:listaCajas" class="table-responsive col-md-12">
                                     <table class="table">
                                         <tr>
                                             <th></th>

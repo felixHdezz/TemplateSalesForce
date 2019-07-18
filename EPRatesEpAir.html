@@ -47,6 +47,9 @@
     <link href="css/flag-icon.css" media="screen" rel="stylesheet" type="text/css">
     <link href="css/bootstrap-slider.css" media="screen" rel="stylesheet" type="text/css">
     <link href="css/bulk-ico.css" media="screen" rel="stylesheet" type="text/css">
+
+    <link href="./css/form-controls.css" media="screen" rel="stylesheet" type="text/css">
+
     <link href="css/font-awesome/font-awesome-4.7.0/css/font-awesome.css" media="screen" rel="stylesheet" type="text/css">
 
     <meta property="og:image" content="https://www.searates.com/design/images/apple-touch-icon-ipad-retina-152x152.png">
@@ -207,8 +210,8 @@
             <div class="container">
                 <div class="latest-requests-new" id="latest-request-block">
                     <div class="sr-requests">
-                        <h2>Find the best charge quote</h2>
-                        <b>Shipping to and from anywhere</b>
+                        <h2>EP Air Freight</h2>
+                        <b>HELP YOU IN THE LOGISTIC SITUATION YOU FACE</b>
                         <div class="filter_controls">
                             <div class="row shipping-box">
                                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -256,17 +259,6 @@
                                                                                     <input type="hidden" name="to" value="" id="pod-input">
                                                                                 </div>
                                                                             </div>
-                                                                            
-                                                                            <div class="col-md-4 col-sm-12 col-xs-12 padding-sp dir-field">
-                                                                                <div class="input-icon">
-                                                                                    <span>How much does the load weigh?</span>
-                                                                                </div>
-                                                                                <button class="btn btn-warning btn-lg" data-target="#modalBoxes" data-toggle="modal" style="width: 100%; margin-top:9%;" type="button">Add boxes</button>
-                                                                            </div>
-                                                                            
-                                                                        </div>
-
-                                                                        <div class="clearfix">
                                                                             <div class="col-md-4 col-sm-12 col-xs-12 padding-sp dir-field-lg">
                                                                                 <div class="input-icon">
                                                                                     <span>Chargeable weight</span>
@@ -275,10 +267,26 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
+
+                                                                        <div class="clearfix">
+                                                                            
+                                                                        </div>
                                                                         
                                                                         <div class="clearfix">
-                                                                            <div class="clearfix help-block text-center">
-                                                                                <input class="btn input-lg btn-search-shipping" id="j_id0:j_id46:j_id117" name="j_id0:j_id46:j_id117" onclick="return A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id117','html5Validate':true,'oncomplete':function(request,event,data){$('#modalBoxes').modal('hide');},'parameters':{'j_id0:j_id46:j_id117':'j_id0:j_id46:j_id117'} ,'status':'j_id0:esperaBLK'} );" value="Show me" type="submit" />
+                                                                            <div class="col-md-4 padding-sp dir-field">
+                                                                                    
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="clearfix help-block text-left">
+                                                                                    <span class="lbl-title-button">How much does the load weigh?</span>
+                                                                                    <button class="btn btn-warning btn-lg" style="width: 100% !important;" data-target="#modalBoxes" data-toggle="modal" type="button">Add boxes</button>
+                                                                                </div>    
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="clearfix help-block text-left">
+                                                                                    <span class="lbl-title-button">&nbsp;</span>
+                                                                                    <input class="btn input-lg btn-search-shipping" style="width: 100% !important;" id="j_id0:j_id46:j_id117" name="j_id0:j_id46:j_id117" onclick="return A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id117','html5Validate':true,'oncomplete':function(request,event,data){$('#modalBoxes').modal('hide');},'parameters':{'j_id0:j_id46:j_id117':'j_id0:j_id46:j_id117'} ,'status':'j_id0:esperaBLK'} );" value="Show me" type="submit" />
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -315,67 +323,66 @@
                                         </h4>
                                         <div class="space-6"></div>
                                         <div class="row">
-                                            <div id="dropdown-shipment" class="col-md-6 col-sm-12 col-ms-12 no-padding">
-                                                <div class="dropdown-shipment">
+                                            <div class="col-md-6 form-group">
+                                                <div class="select-shipment">
                                                     <span class="top-title">Calculate weight in</span>
-                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="ns-icon-fcl-light"></i><span>FCL</span><i class="icon-angle-down"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                        <li style="display: list-item;">
-                                                            <a data-mode="sea" data-type="KGS" href="javascript:;"><i class="ns-icon-fcl-light"></i><span>KGS</span></a>
-                                                        </li>
-                                                        <li style="display: list-item;">
-                                                            <a data-mode="sea" data-type="LBS" href="javascript:;"><i class="ns-icon-lcl-light"></i><span>LBS</span></a>
-                                                        </li>
-                                                    </ul>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <span aria-hidden="true" class="glyphicon glyphicon-scale"></span>
+                                                        </span>
+                                                        <select name="j_id0:j_id46:j_id84" class="form-control" size="1" onchange="A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id87','parameters':{'j_id0:j_id46:j_id87':'j_id0:j_id46:j_id87'} ,'status':'j_id0:esperaBLK'} )">	
+                                                            <option value="KGS" selected="selected">Kgs</option>
+                                                            <option value="LBS">Lbs</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div id="dropdown-shipment" class="col-md-6 col-sm-12 col-ms-12 no-padding">
-                                                <div class="dropdown-shipment">
-                                                    <span class="top-title">Calculate dimensions in</span>
-                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="ns-icon-fcl-light"></i><span>FCL</span><i class="icon-angle-down"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                        <li style="display: list-item;">
-                                                            <a data-mode="sea" data-type="CM" href="javascript:;"><i class="ns-icon-fcl-light"></i><span>Centimeters</span></a>
-                                                        </li>
-                                                        <li style="display: list-item;">
-                                                            <a data-mode="sea" data-type="IN" href="javascript:;"><i class="ns-icon-lcl-light"></i><span>Inches</span></a>
-                                                        </li>
-                                                    </ul>
+                                            <div class="col-md-6 form-group">
+                                                <div class="select-shipment">
+                                                        <span class="top-title">Calculate dimensions in</span>
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <span aria-hidden="true" class="glyphicon glyphicon-fullscreen"></span>
+                                                        </span>
+                                                        <select name="j_id0:j_id46:j_id91" class="form-control" size="1" onchange="A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id94','parameters':{'j_id0:j_id46:j_id94':'j_id0:j_id46:j_id94'} ,'status':'j_id0:esperaBLK'} )">	<option value="CM" selected="selected">Centimeters</option>
+                                                            <option value="IN">Inches</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
-
+                                        </div>
+                                        <div class="row">
                                             <div id="j_id0:j_id46:listaCajas" class="table-responsive col-md-12">
-                                                <br /><br />
-                                                <table class="table">
-                                                    <tr>
-                                                        <th></th>
-                                                        <th>Packaging Units</th>
-                                                        <th>Length</th>
-                                                        <th>Width</th>
-                                                        <th>Height</th>
-                                                        <th>Packaging Unit Weight</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>
-                                                            <a class="btn btn-success btn-sm" href="#" id="j_id0:j_id46:j_id98:0:j_id100" name="j_id0:j_id46:j_id98:0:j_id100" onclick="A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id98:0:j_id100','parameters':{'j_id0:j_id46:j_id98:0:j_id100':'j_id0:j_id46:j_id98:0:j_id100'} ,'status':'j_id0:esperaBLK'} );return false;">+</a>
-                                                        </th>
-                                                        <th>
-                                                            <input type="number" name="j_id0:j_id46:j_id98:0:j_id104" class="form-control" placeholder="Quantity" />
-                                                        </th>
-                                                        <th>
-                                                            <input type="number" name="j_id0:j_id46:j_id98:0:j_id106" class="form-control" placeholder="In Centimeters" />
-                                                        </th>
-                                                        <th>
-                                                            <input type="number" name="j_id0:j_id46:j_id98:0:j_id108" class="form-control" placeholder="In Centimeters" />
-                                                        </th>
-                                                        <th>
-                                                            <input type="number" name="j_id0:j_id46:j_id98:0:j_id110" class="form-control" placeholder="In Centimeters" />
-                                                        </th>
-                                                        <th>
-                                                            <input type="number" name="j_id0:j_id46:j_id98:0:j_id112" class="form-control" placeholder="Weight in Kgs" />
-                                                        </th>
-                                                    </tr>
-                                                </table>
+                                                    <table class="table">
+                                                        <tr>
+                                                            <th></th>
+                                                            <th>Packaging Units</th>
+                                                            <th>Length</th>
+                                                            <th>Width</th>
+                                                            <th>Height</th>
+                                                            <th>Packaging Unit Weight</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                <a class="btn btn-success btn-sm" href="#" id="j_id0:j_id46:j_id98:0:j_id100" name="j_id0:j_id46:j_id98:0:j_id100" onclick="A4J.AJAX.Submit('j_id0:j_id46',event,{'similarityGroupingId':'j_id0:j_id46:j_id98:0:j_id100','parameters':{'j_id0:j_id46:j_id98:0:j_id100':'j_id0:j_id46:j_id98:0:j_id100'} ,'status':'j_id0:esperaBLK'} );return false;">+</a>
+                                                            </th>
+                                                            <th>
+                                                                <input type="number" name="j_id0:j_id46:j_id98:0:j_id104" class="form-control" placeholder="Quantity" />
+                                                            </th>
+                                                            <th>
+                                                                <input type="number" name="j_id0:j_id46:j_id98:0:j_id106" class="form-control" placeholder="In Centimeters" />
+                                                            </th>
+                                                            <th>
+                                                                <input type="number" name="j_id0:j_id46:j_id98:0:j_id108" class="form-control" placeholder="In Centimeters" />
+                                                            </th>
+                                                            <th>
+                                                                <input type="number" name="j_id0:j_id46:j_id98:0:j_id110" class="form-control" placeholder="In Centimeters" />
+                                                            </th>
+                                                            <th>
+                                                                <input type="number" name="j_id0:j_id46:j_id98:0:j_id112" class="form-control" placeholder="Weight in Kgs" />
+                                                            </th>
+                                                        </tr>
+                                                    </table>
                                             </div>
                                         </div>
                                     </div>

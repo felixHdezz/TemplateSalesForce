@@ -32,7 +32,7 @@
   border: 1px solid #29b6f6 !important;
 }
 .btn-warning, .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .btn-warning.focus, .btn-warning:active, .btn-warning:focus, .btn-warning:hover, .open > .dropdown-toggle.btn-warning {
-  background-color: #ffd740 !important;
+  /*background-color: #ffd740 !important;*/
   border: 1px solid #ffd740 !important;
   color: #333333 !important;
 }

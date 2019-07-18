@@ -2395,6 +2395,7 @@ body .circle_inner.airplane:hover .circle_inner__layer:nth-of-type(3) {
 
 .btn-search-shipping-small{
     min-width: 46px !important;
+    height: 45px !important;
 }
 
 #btn-request-quote {
@@ -2635,7 +2636,7 @@ body .circle_inner.airplane:hover .circle_inner__layer:nth-of-type(3) {
     color: #132738 !important;
 }
 .shipping-box .panel-body {
-    padding: 30px 10px;
+    /*padding: 30px 10px;*/
 }
 .shipping-box .panel {
     border-width: 0 !important;
@@ -5396,6 +5397,7 @@ input.rail-tech-codes:hover{
     background-color: #fff;
     position: relative;
     border-radius: 0 5px 5px 0;
+    border: 1px solid #ccc;
 }
 
 #dropdown-shipment .dropdown-menu {
@@ -9272,8 +9274,14 @@ header{
 }
 #filter-index-page .dir-field-lg .input-icon{
     border: 1px solid #ccc;
+    width: 99%;
 }
 
+.help-block .lbl-title-button {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 11px;
+}
 #filter-index-page .data-block{
     width: 19.333333%;
     position: relative;
