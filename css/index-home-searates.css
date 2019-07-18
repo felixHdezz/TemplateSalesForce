@@ -10989,7 +10989,7 @@ header{
 
 .main-content.home-page{
     background: url(../img/main-page-bg1.png) no-repeat fixed;
-    /*background-size: 100% 120%;*/
+    background-size: 100% 120%;
 }
 
 .international-trade-block h2{
