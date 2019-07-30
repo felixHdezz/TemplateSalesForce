@@ -2,6 +2,7 @@ html {
   min-height: 100%;
   position: relative;
 }
+
 body {
   font-family: 'Montserrat', sans-serif !important;
   min-height: 100%;
@@ -12,6 +13,7 @@ body {
   margin: 0;
  -webkit-font-smoothing: antialiased;
 }
+
 h1, h2, h3, h4, h5, h6  {
   font-family: 'AvenirNextLTProBold';
   font-weight: normal !important;
@@ -830,7 +832,6 @@ header .navbar .navbar-slogan{
 .ace-nav > li > a:hover,
 .ace-nav > li > a:focus,
 .ace-nav > li.open > a {
- /*background-color: #283d56;*/
  color: #ffffff;
 }
 .ace-nav > li .dropdown-menu {
@@ -1603,9 +1604,7 @@ header .navbar .navbar-slogan{
     width: 1164px;
   }
 }
-@media (min-width: 992px) {
 
-}
 .main-container .menu-toggler {
   display: none;
 }
