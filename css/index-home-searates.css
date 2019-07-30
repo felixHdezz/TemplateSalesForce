@@ -10988,7 +10988,7 @@ header{
 }
 
 .main-content.home-page{
-    background: url(../img/main-page-bg1.png) no-repeat fixed;
+    /*background: url(../img/main-page-bg1.png) no-repeat fixed;*/
     background-size: 100% 120%;
 }
 

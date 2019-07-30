@@ -80,3 +80,101 @@
     /*border-color: #ccc;*/
 }
 
+/*** DETALLE COTIZACION ****/
+.data-info {
+    margin-top: 2%;
+    font-size: 16px;
+    color: #43637C;
+    text-transform: capitalize;
+}
+.data-info .col-data-info {
+    padding: 0px;
+    margin: 0px;
+}
+
+.data-info .col-data-info h5 {
+    padding: 0 10px 0 35px;
+    width: 100%;
+    font-size: 21px;
+    border-radius: 0 !important;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #43637C;
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
+    overflow: hidden;
+}
+
+.data-info .info {
+    padding: 0px;
+    margin: 0px;
+    height: 60px;
+    border-right: 1px solid #007EE5;
+    display: inline-block;
+    flex-direction: row;
+    text-align: center;
+    -webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,.15);
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.15);
+    margin-right: 5px;
+    background-color: #fff;
+    width: 100%;
+}
+.info span {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.row.detail-qoute{
+    margin-top: 5%;
+    color: #354d61;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.detailRate {
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+    display: inline-block;
+    flex-direction: row;
+    text-align: center;
+    -webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,.15);
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.15);
+    margin-right: 5px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.datail-qoute-price{
+    height: 100px;
+    text-align: center;
+}
+
+.datail-qoute-booknow {
+    text-align: center;
+    padding: 25px;
+}
+
+.wrapper-logo-company{
+    padding: 10px;
+    width: 15%;
+    float: left;
+    height: 80px;
+    margin-right: 1%;
+}
+.detailRate .col-md-8{
+    border-right: 1px solid #eff3f7;
+}
+.detailRate .col-md-4 {
+    padding: 0%;
+    margin: 0%;
+}
+
+.detailRate .col-md-4 .datail-qoute-price{
+    border-bottom: 1px solid #eff3f7;
+    padding: 19px;
+    height: 17%;
+}

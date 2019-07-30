@@ -3,7 +3,7 @@ html {
   position: relative;
 }
 body {
-  font-family: 'AvenirNextLTProRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
   min-height: 100%;
   padding-bottom: 0;
   font-size: 13px;
@@ -11505,7 +11505,7 @@ img.editable-click:hover {
 .ui-menu .ui-state-focus > .ui-menu-icon,
 .ui-menu .ui-state-active > .ui-menu-icon {
   text-decoration: none;
-  background-color: #ADEBFF;
+  /*background-color: #ADEBFF;*/
   margin: auto;
   font-weight: normal;
 }
