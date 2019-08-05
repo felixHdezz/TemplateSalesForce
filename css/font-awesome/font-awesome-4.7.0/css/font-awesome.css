@@ -1,19 +1,19 @@
 /*!
- *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ *  Font Awesome 4.7.0 by @davegandy - http://LineAwesome.io - @LineAwesome
+ *  License - http://LineAwesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-family: 'LineAwesome';
+  src: url('../fonts/LineAwesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/LineAwesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/LineAwesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/LineAwesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/LineAwesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/LineAwesome-webfont.svg?v=4.7.0#LineAwesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 .fa {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 14px/1 LineAwesome;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;

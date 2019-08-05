@@ -25,7 +25,7 @@ h2{
 
 .plt-title-bold{
     font-weight: 600;
-    font-family: 'AvenirNextLTProBold';
+    font-family: 'LineAwesome';
 }
 
 .plt-title{
@@ -134,7 +134,7 @@ p.subtitle{
     transform: translate(-50%, -50%) !important;
     white-space: nowrap !important;
     text-transform: uppercase;
-    font-family: 'AvenirNextLTProBold', 'Helvetica Neue', Roboto, sans-serif;
+    font-family: 'LineAwesome', 'Helvetica Neue', Roboto, sans-serif;
 }
 p.sub-title{
     font-size: 22px;
@@ -523,7 +523,7 @@ summary::-webkit-details-marker {
     display: none;
 }
 summary:before {
-    font-family: 'FontAwesome';
+    font-family: 'LineAwesome';
     content: "\f0fe";
     color: #50a5e4;
     margin-right: 10px;
@@ -532,7 +532,7 @@ summary:before {
     vertical-align: baseline;
 }
 details[open] summary:before {
-    font-family: 'FontAwesome';
+    font-family: 'LineAwesome';
     content: "\f146";
     color: #52A5E4;
     margin-right: 10px;
@@ -1054,7 +1054,7 @@ details[open] summary:before {
 }
 .tabs-links-routes a:after {
     content: "";
-    font-family: FontAwesome;
+    font-family: LineAwesome;
     margin-left: 5px;
 }
 .tabs-disclaimer-routes {
@@ -1190,7 +1190,7 @@ details[open] summary:before {
 }
 .nav-faq li a:before {
     content: "\f054";
-    font-family: FontAwesome;
+    font-family: LineAwesome;
 }
 .nav-faq li a:before {
     color: #aebad2;
@@ -3447,7 +3447,7 @@ body .circle_inner.airplane:hover .circle_inner__layer:nth-of-type(3) {
 }
 .siob-cunscruct h6{
     min-height: initial;
-    font-family: 'AvenirNextLTProRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'LineAwesome', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .siob-cunscruct-item{
     width: calc(100%/2);
@@ -3495,7 +3495,7 @@ body .circle_inner.airplane:hover .circle_inner__layer:nth-of-type(3) {
     padding: 60px 0 0 0;
 }
 .shipping-box .flex-line a{
-    font-family: 'AvenirNextLTProDemi';
+    font-family: 'LineAwesome';
     color: #0078e1;
     font-size: 16px;
 }
@@ -4344,7 +4344,7 @@ button, .block-slider a:hover, a:focus{
 }
 .tabs-list-rates .after span::after {
     content: "";
-    font-family: FontAwesome;
+    font-family: LineAwesome;
     margin-left: 3px;
     padding: 3px;
     transition: all .4s ease-in-out;
@@ -7193,7 +7193,7 @@ header{
     margin-bottom: 20px;
 }
 .who-are-you h2{
-    font-family: 'AvenirNextLTProDemi';
+    font-family: 'LineAwesome';
     text-align: center;
     margin-top: 50px;
 }
@@ -7616,7 +7616,7 @@ header{
 }
 .air-info p.title span{
     font-size: 40px;
-    font-family: 'AvenirNextLTProBold';
+    font-family: 'LineAwesome';
 }
 .air-info .item{
     text-align: center;
@@ -7641,7 +7641,7 @@ header{
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 0;
-    font-family: 'AvenirNextLTProBold', 'Helvetica Neue', Roboto, sans-serif;
+    font-family: 'LineAwesome', 'Helvetica Neue', Roboto, sans-serif;
 }
 
 /* cargo-tracking mobile */
@@ -7725,7 +7725,7 @@ header{
 }
 
 .rates-slider .rt-card-light .ar-price{
-    font-family: 'AvenirNextLTProBold', 'Helvetica Neue', Roboto, sans-serif;
+    font-family: 'LineAwesome', 'Helvetica Neue', Roboto, sans-serif;
     line-height: 1em;
 }
 
@@ -7807,7 +7807,7 @@ header{
     background-color: transparent !important;
     color: #334056!important;
     width: 100%;
-    font-family: 'AvenirNextLTProDemi';
+    font-family: 'LineAwesome';
     color: #2c2b54;
 
 }
@@ -8292,7 +8292,7 @@ header{
     left: -8px;
 }
 .item-info2 .title .icon-map-marker:before{
-    font-family: fontawesome;
+    font-family: LineAwesome;
 }
 @media all and (max-width: 1200px) {
     .screen-holder .gif-wrapper{
@@ -8573,11 +8573,11 @@ header{
     margin-top: 50px;
     margin-bottom: 15px;
     text-align: center;
-    font-family: 'AvenirNextLTProLight', 'Helvetica Neue', Roboto, sans-serif;
+    font-family: 'LineAwesome', 'Helvetica Neue', Roboto, sans-serif;
 }
 
 .trade-platform h2 b{
-    font-family: 'AvenirNextLTProBold', 'Helvetica Neue', Roboto, sans-serif;
+    font-family: 'LineAwesome', 'Helvetica Neue', Roboto, sans-serif;
 }
 .trade-platform p.title{
     font-size: 35px;
@@ -9032,7 +9032,7 @@ header{
 
 .le-video-block .container-tracking-half p.subtitle{
     text-align: left;
-    font-family: 'AvenirNextLTProBold';
+    font-family: 'LineAwesome';
     font-size: 20px;
 }
 
@@ -9155,7 +9155,7 @@ header{
 
 .international-trade-block .text a,
 .le-video-block .text a{
-    font-family: 'AvenirNextLTProBold';
+    font-family: 'LineAwesome';
     color: #000;
 }
 
@@ -9345,7 +9345,7 @@ header{
 }
 
 .company-comm .shipping-box .roll-header .info p{
-    font-family: 'AvenirNextLTProBold';
+    font-family: 'LineAwesome';
     font-size: 30px;
     position: relative;
     display: inline-block;
@@ -9472,7 +9472,7 @@ header{
 }
 
 .company-comm .item .btns-block p.price{
-    font-family: 'AvenirNextLTProBold';
+    font-family: 'LineAwesome';
     border: none;
     font-size: 18px;
     padding: 0;
@@ -9541,7 +9541,7 @@ header{
 }
 
 .company-comm.requests h2{
-    font-family: 'AvenirNextLTProDemi';
+    font-family: 'LineAwesome';
     margin-bottom: 10px;
     color: #43637C;
 }
@@ -9580,7 +9580,7 @@ header{
 
 .le-video-block .le-wrapper .text a {
     color: #5fc9cf;
-    font-family: 'AvenirNextLTProRegular';
+    font-family: 'LineAwesome';
     font-size: 16px;
     margin-right: 25px;
 }
@@ -9620,7 +9620,7 @@ header{
 
 .le-video-block .mt-wrapper .text a{
     color: #2195f3;
-    font-family: 'AvenirNextLTProRegular';
+    font-family: 'LineAwesome';
     font-size: 16px;
 }
 
@@ -9777,7 +9777,7 @@ header{
     border-color: #43637C;
     opacity: 1;
     border-bottom: 5px solid #43637C;
-    font-family: 'AvenirNextLTProBold';
+    font-family: 'LineAwesome';
 }
 
 .who-are-you ul.who li a{
@@ -9792,7 +9792,7 @@ header{
     text-transform: uppercase;
     display: block;
     color: #43637C;
-    font-family: 'AvenirNextLTProRegular';
+    font-family: 'LineAwesome';
     border-bottom: 2px solid #e3e3e2;
     line-height: 1em;
     margin-bottom: 10px;
@@ -9818,7 +9818,7 @@ header{
 }
 
 .shipping-info h2{
-    font-family: 'AvenirNextLTProDemi';
+    font-family: 'LineAwesome';
     margin-bottom: 50px;
     margin-top: 0;
 }
@@ -9889,13 +9889,13 @@ header{
 }
 
 .select-block p.step{
-    font-family: 'AvenirNextLTProBold';
+    font-family: 'LineAwesome';
     font-size: 83px;
     color: rgba(0, 120, 225, 0.07);
 }
 
 .select-block h3{
-    font-family: 'AvenirNextLTProDemi';
+    font-family: 'LineAwesome';
     font-size: 40px !important;
     color: #43637C !important;
 }
@@ -9949,12 +9949,12 @@ header{
 }
 
 .main-content.home-page{
-    background: url(../img/main-page-bg1.png) no-repeat fixed;
+    /*background: url(../img/main-page-bg1.png) no-repeat fixed;*/
     background-size: 100% 120%;
 }
 
 .international-trade-block h2{
-    font-family: 'AvenirNextLTProDemi';
+    font-family: 'LineAwesome';
     font-size: 40px !important;
     margin-bottom: 30px;
     color: #43637C;
@@ -9989,7 +9989,7 @@ header{
 }
 
 .item-block .desc-wrapper .desc p.step{
-    font-family: 'AvenirNextLTProBold';
+    font-family: 'LineAwesome';
     font-size: 83px;
     color: rgba(0, 120, 225, 0.07);
 }
@@ -10011,19 +10011,19 @@ header{
 }
 
 .item-block.templates .desc-wrapper .desc a:first-child {
-    font-family: 'AvenirNextLTProDemi';
+    font-family: 'LineAwesome';
     color: #0078e1 !important;
     margin-left: 0 !important;
 }
 
 .item-block.sell-block .desc-wrapper .desc a:first-child {
-    font-family: 'AvenirNextLTProDemi';
+    font-family: 'LineAwesome';
     color: #0078e1 !important;
     margin-left: 0 !important;
 }
 
 .item-block.sell-block .desc-wrapper .desc a:first-child {
-    font-family: 'AvenirNextLTProDemi';
+    font-family: 'LineAwesome';
     color: #fff !important;
     margin-left: 0 !important;
 }
@@ -10234,7 +10234,7 @@ header{
 }
 
 .our-apps-block h2{
-    font-family: 'AvenirNextLTProDemi';
+    font-family: 'LineAwesome';
     color: #43637C;
 }
 
@@ -10327,7 +10327,7 @@ header{
 
 .our-apps-block .item h4 span{
     font-size: 34px;
-    font-family: 'AvenirNextLTProDemi';
+    font-family: 'LineAwesome';
     margin-right: 10px;
     position: relative;
     top: 3px;
@@ -10394,7 +10394,7 @@ header{
 }
 
 .international-trade-block h2{
-    font-family: 'AvenirNextLTProDemi';
+    font-family: 'LineAwesome';
     font-size: 40px !important;
     margin-bottom: 30px;
     color: #43637C;
@@ -10408,7 +10408,7 @@ header{
 }
 
 .benefits-wrapper h2{
-    font-family: 'AvenirNextLTProDemi';
+    font-family: 'LineAwesome';
     font-size: 40px;
     color: #43637C;
 }
